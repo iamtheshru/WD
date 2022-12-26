@@ -7,44 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <center>
-    <h1>Contact Form</h1>
-    <p>Let know your Suggestions by filling out the contact form below</p>
-    </center>   
-    <form method="post">
-        <table border="0" align="center">
-            <tr>
-                <td><label for="Username">Your Name</td>
-                <td><input type="text" Name="Username" id="Username" placeholder="First Name"></td>
-                <td><input type="text" Name="Username" id="Username" Placeholder="Last Name"></td>
-            </tr>
-            <tr>
-                <td><label for="email">Your Email</label></td>
-                <td colspan="2"><input type="email" name="email" id="email" placeholde="e.g.hello@contact.com" required=""></td>
-            </tr>
-            <tr>
-                <td><label for="">Mobile</label></td>
-                <td><input type="tel" name="Mobile" id="Mobile"value="+91">
-            </tr>
-            <tr>
-                <td><label type="">Message Subject</label></td>
-                <td>
-                    <input type="text" name="" list="Message Subject" id="">
-                    <datalist id="Message Subject">
-                        <option value="Problem">
-                        <option value="Quarry">
-                        <option value="Other">
-                    </datalist>
-                </td>
-            </tr>
-            <tr>
-                <td><table for="Message">Message</table></td>
-                <td colspan="2"><textarea name="" id="" style="height: 100px;" cols="40" row="20"></textarea></td>
-            </tr>
-            <tr>
-                <td colspan="3"  align="center"><input type="submit" value="save" name="" id=""></td>
-            </tr>
-         </table>
-    </form>
+    <canvas id="mycanvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById("mycanvas");
+        var cnt = canvas.getContext('2d') 
+        cnt.fillStyle = 'green';
+        cnt.fillRect(0, 0, 500, 500);
+        console.log(canvas);
+    </script>
 </body>
 </html>
