@@ -1,18 +1,20 @@
-/* div {
+div {
     border-color: gray;
     border: 50px;
     border: groove;
-} */
+}
 
-/* div {
+div {
     border: 10px burlywood outset;
-} */
-/* div {
+}
+
+div {
     border-color: grey;
     border-style: dashed;
     border-width: 5px;
-} */
-/* .border-style-dashed {
+}
+
+.border-style-dashed {
     border-style: dashed;
 }
 
@@ -38,7 +40,7 @@
 
 .border-style-solid {
     border-style: solid;
-} */
+}
 
 div[class*="border-style"] {
     padding: 15px;

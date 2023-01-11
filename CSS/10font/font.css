@@ -9,9 +9,10 @@
     font-stretch: condensed;
 }
 
+
 p {
+    font-family: serif;
     font-family: sans-serif;
-    font-style: italic;
 }
 
 .font-size-200-percent {
