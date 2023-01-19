@@ -1,0 +1,25 @@
+* {
+    font-family: sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+table,
+td,
+th {
+    border: 2px solid;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+thead {
+    background-color: #545f91;
+}
+
+tr:nth-child(2n) {
+    background-color: #7683a5;
+}
