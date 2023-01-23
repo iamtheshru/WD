@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.main1 {
+    background-color: #333333;
+    padding: 10px;
+}
+
+.col1 ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+a {
+    color: whitesmoke;
+
+}
+
+.jsc {
+    justify-content: space-between;
+}
+
+.main2 {
+    background-color: rgb(94, 23, 216);
+    padding: 10px;
+
+}
+
+.sec1img img {
+    width: 100px;
+    padding: 10px;
+}
+
+.col3 ul {
+    display: flex;
+}
+
+.aline {
+    align-items: center;
+}
+
+.main2 ul li {
+    background-color: #333333;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 0px 10px;
+}
+
+.bgimage {
+    background-image: url(question-mark.jpg);
+    width: 100%;
+    height: 100vh;
+    color: aliceblue;
+    padding: 100px 0px 0px 100px;
+    background-size: cover;
+}
+
+.text1 {
+    font-size: 50px;
+    padding: 10px;
+}
+
+.text2 {
+    padding: 15px 0px 40px 15px;
+}
+
+.text3 {
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.text4 {
+    border: 1px solid rgb(32, 128, 218);
+    background-color: rgb(32, 128, 218);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px;
+}
