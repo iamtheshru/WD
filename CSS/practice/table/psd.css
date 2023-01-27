@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: serif;
 }
 
 .container {
@@ -27,6 +28,7 @@ ul li {
     list-style: none;
     text-transform: capitalize;
     font-size: 12px;
+    padding: 5px;
 }
 
 a {
@@ -39,14 +41,13 @@ a {
 }
 
 .main2 {
-    background-color: rgb(94, 23, 216);
+    background: linear-gradient(45deg, rgba(12, 151, 238, 0.5) 30%, rgba(12, 151, 238, 0.975) 50%);
     padding: 10px;
 
 }
 
 .sec1img img {
-    width: 100px;
-    padding: 10px;
+    width: 120px;
 }
 
 .col3 ul {
@@ -74,27 +75,38 @@ a {
     background-size: cover;
 }
 
-.text1 {
+.text p:nth-child(1) {
     font-size: 50px;
-    padding: 10px;
+    padding: 20px;
 }
 
-.text2 {
-    padding: 15px 0px 40px 15px;
+.text p:nth-child(n+2) {
+    padding: 20px;
 }
 
-.text3 {
-    border: 1px solid goldenrod;
+.col2 {
+    position: relative;
+}
+
+.col2 i {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: black;
+}
+
+.btn a:nth-child(1) {
+    border: 2px solid goldenrod;
     background-color: goldenrod;
     padding: 10px;
     border-radius: 5px;
-    margin: 30px;
+    margin: 25px 10px 10px 20px;
 }
 
-.text4 {
+.btn a:nth-child(n+2) {
     border: 1px solid rgb(32, 128, 218);
     background-color: rgb(32, 128, 218);
     padding: 10px;
     border-radius: 5px;
-    margin: 30px;
+    margin: 25px 10px 10px 20px;
 }
