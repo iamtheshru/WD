@@ -27,7 +27,14 @@
 ul li {
     list-style: none;
     text-transform: capitalize;
-    font-size: 12px;
+    font-size: 15px;
+}
+
+ul li i {
+    padding: 5px;
+}
+
+ul li input {
     padding: 5px;
 }
 
@@ -90,8 +97,7 @@ a {
 
 .col2 i {
     position: absolute;
-    top: 8px;
-    right: 10px;
+    right: 4px;
     color: black;
 }
 
