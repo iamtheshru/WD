@@ -66,6 +66,25 @@ ul li {
     width: 100%;
 }
 
-.col-50 p :nth-child(2) {
+.hed1 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 50px 30px;
+}
+
+.hed2 {
     font-size: 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+.col-50 button {
+    margin: 20px 0px 0px 200px;
+    border: 1px solid white;
+    padding: 15px;
+    background-color: lightcoral;
+}
+
+.col-50 a {
+    color: whitesmoke;
 }

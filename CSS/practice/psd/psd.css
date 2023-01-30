@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: serif;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-ab {
+    position: absolute;
+}
+
+.main1 {
+    height: 100px;
+    background-color: #ffffff;
+}
+
+.row {
+    display: flex;
+}
+
+.tel {
+    margin-left: auto;
+}
+
+.jsc {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sec1-list1 ul {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sec1-list1 ul li {
+    padding: 10px;
+}
+
+.ind {
+    width: 40%;
+    margin-right: 10px;
+}
+
+.sec1-list2 p i {
+    margin: 10px;
+}
+
+.sec1-list2 {
+    font-weight: bolder;
+}
+
+.sec1-list2 a {
+    color: #f2141d;
+    font-size: 20px;
+
+}
+
+.main2 {
+    height: 50px;
+    background-color: #f2141d;
+}
+
+.sec2-list1 ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.sec2-list1 ul a {
+    color: #ffffff;
+}
+
+.sec2-list1 ul i {
+    color: #ffffff;
+}
+
+.sec2-bgimg {
+    background-image: url(img1.png);
+    background-size: cover;
+    height: 550px;
+    background-position: center;
+}
+
+.sec2-bg {
+    background-color: #0000009c;
+    height: 550px;
+}
+
+.sec2-text {
+    padding: 13% 30%;
+}
+
+.sec2-text P {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    text-align: center;
+    padding: 50px;
+}
+
+.col-30 {
+    margin: 0 auto;
+    width: 30%;
+}
+
+.sec-3img img {
+    width: 100%;
+}
+
+.lll {
+    position: absolute;
+    /* top: 0; */
+    right: 10px;
+    bottom: 20px;
+}
+
+/* .col-50 {
+    display: flex;
+    justify-content: center;
+} */
+/* .sec4-text {
+    width: 45%;
+    text-align: left;
+    margin: 30px 10px 0px 20px;
+    padding: 10px;
+}
+
+.sec4-img img {
+    width: 500px;
+}
+
+.sec4-text1 {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px 0;
+}
+
+.sec4-text2 {
+    font-size: 15px;
+    /* padding: 10px 0px 10px 10px; */
+
+
+/* .sec4-text button {
+    padding: 5px 0px; 
+    color: whitesmoke;
+    background-color: #f2141d;
+    border: 1px solid #f2141d;
+} */

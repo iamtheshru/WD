@@ -17,9 +17,9 @@ th {
 }
 
 thead {
-    background-color: #545f91;
+    background-color: #4360e1;
 }
 
 tr:nth-child(2n) {
-    background-color: #7683a5;
+    background-color: #415280a9;
 }

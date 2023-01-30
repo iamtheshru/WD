@@ -1,7 +1,7 @@
 div {
     outline-color: rgb(134, 49, 49);
     outline-style: dashed;
-    outline: width 5px;
+    outline-width: 5px;
     padding: 20px;
     margin: 10px;
 }
