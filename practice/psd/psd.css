@@ -7,12 +7,6 @@
     list-style: none;
 }
 
-.container {
-    width: 100%;
-    /* margin: 0 auto; */
-}
-
-
 .pos-rel {
     position: relative;
 }
@@ -36,6 +30,9 @@
 
 .jsc {
     justify-content: space-between;
+}
+
+.align-items {
     align-items: center;
 }
 
@@ -44,19 +41,18 @@
     margin-top: 10px;
 }
 
-.sec1-list1 ul {
+/* .sec1-list1 ul {
     display: flex;
     font-weight: bold;
     font-size: 20px;
-}
+} */
 
-.sec1-list1 ul li {
+/* .sec1-list1 ul li {
     padding: 10px;
 }
 
 .ind {
     width: 40%;
-    margin-right: 10px;
 }
 
 .sec1-list2 p i {
@@ -65,15 +61,15 @@
 
 .sec1-list2 {
     font-weight: bolder;
-}
-
+} */
+/* 
 .sec1-list2 a {
     color: #f2141d;
     font-size: 20px;
 
-}
+} */
 
-.main2 {
+/* .main2 {
     height: 50px;
     background-color: #f2141d;
 }
@@ -90,22 +86,28 @@
 
 .sec2-list1 ul i {
     color: #ffffff;
-}
+} */
 
 .sec2-bgimg {
     background-image: url(img1.png);
     background-size: cover;
     height: 550px;
+    width: 100%;
     background-position: center;
+
 }
 
 .sec2-bg {
     background-color: #0000009c;
     height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.sec2-text {
-    padding: 13% 30%;
+.sec2-text p {
+    width: 40%;
+    margin: 0 auto;
 }
 
 .sec2-text P {
@@ -127,11 +129,25 @@
     width: 100%;
 }
 
-.lll {
+.sec-3img p {
     position: absolute;
     /* top: 0; */
     right: 10px;
+
     bottom: 20px;
+    opacity: 0.902;
+    width: 230px;
+    padding: 20px 0;
+    text-align: center;
+    /* height: 30px; */
+    background-color: #000000;
+    clip-path: polygon(9% 6%, 100% 8%, 101% 100%, 0% 100%);
+
+    color: #ffff;
+}
+
+.col-50 {
+    width: 50%;
 }
 
 /* .col-50 {
@@ -166,3 +182,45 @@
     background-color: #f2141d;
     border: 1px solid #f2141d;
 } */
+.sec4-img img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ----------- */
+.container_2 {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 80%;
+}
+
+.logo_text ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.logo_last ul li {
+    width: 40%;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.last {
+    color: red;
+    font-size: 19px;
+    margin: 0 20px;
+}
+
+.main {
+    width: 100%;
+    height: 30px;
+    background-color: #f2141d;
+}
+
+.logo_text ul li a {
+    color: #ffffff
+}
