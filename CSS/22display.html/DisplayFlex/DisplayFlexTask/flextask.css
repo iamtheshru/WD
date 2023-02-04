@@ -50,7 +50,7 @@ ul li {
     font-size: 50px;
     padding: 20px 25PX;
     color: whitesmoke;
-    box-shadow: 0 12px 30px rgb(0 0 0 / 80%);
+    box-shadow: 7px 9px 7px gray;
 }
 
 .list ul li a {
@@ -59,6 +59,7 @@ ul li {
 
 .list i:hover {
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(154, 190, 112, 1) 55%, rgba(253, 187, 45, 1) 90%);
+    width: 100px;
 }
 
 .box1 i {
