@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.col {
+    display: flex;
+    position: relative;
+    width: 1140px;
+    height: 550px;
+    /* background-color: rgba(0, 255, 255, 0.199); */
+    /* background-color: rgba(100, 148, 237, 0.607); */
+}
+
+.bgd {
+    background-image: url(./img.png);
+
+}
+
+img {
+    width: 100%;
+}
+
+.img1 {
+    position: absolute;
+    width: 430px;
+    right: -70px;
+    bottom: 0px;
+}
+
+.img2 {
+    position: absolute;
+    width: 180px;
+    top: 30px;
+    left: 100px;
+    transform: rotate(345deg);
+    border: 3px solid;
+}
+
+.img3 {
+    position: absolute;
+    width: 180px;
+    top: 190px;
+    left: 220px;
+    border: 3px solid;
+    transform: rotate(15deg);
+}
+
+.img4 {
+    position: absolute;
+    width: 180px;
+    bottom: 30px;
+    left: 100px;
+    transform: rotate(345deg);
+    border: 3px solid;
+}
+
+.img5 {
+    position: absolute;
+    width: 250px;
+    left: 470px;
+    top: 20px;
+}
+
+h2 {
+    position: absolute;
+    font-family: ice-creme;
+    left: 400px;
+    top: 170px;
+    font-size: 45px;
+    text-align: center;
+    width: 400px;
+    color: hsla(222, 92%, 47%, 0.715);
+}
+
+@font-face {
+    src: url(./bubble-boy-2/BubbleBoy2.ttf);
+    font-family: ice-creme;
+
+}
