@@ -9,76 +9,82 @@
 
 .col {
     display: flex;
-    /* position: relative; */
-    /* width: 1100px; */
+    position: relative;
+    width: 1140px;
     height: 550px;
     /* background-color: rgba(0, 255, 255, 0.199); */
-    /* background-color: rgba(100, 148, 237, 0.607); */
-}
-
-.bgd {
-    background-image: url(./img.png);
+    background-color: rgba(100, 148, 237, 0.607);
 
 }
+
 
 img {
     width: 100%;
+
+}
+
+.col .img1 {
+    border-radius: 50%;
 }
 
 .img1 {
     position: absolute;
-    width: 430px;
-    right: 0px;
-    bottom: 11px;
-}
+    width: 450px;
+    top: 50px;
+    left: 400px;
 
-.img2 {
-    position: absolute;
-    width: 170px;
-    top: 70px;
-    left: 150px;
-    transform: rotate(345deg);
-    border: 3px solid;
 }
 
 .img3 {
     position: absolute;
-    width: 170px;
-    top: 190px;
-    left: 270px;
+    width: 180px;
+    bottom: 200px;
+    left: 220px;
+    transform: rotate(345deg);
     border: 3px solid;
-    transform: rotate(10deg);
 }
 
 .img4 {
     position: absolute;
-    width: 170px;
-    bottom: 79px;
-    left: 145px;
-    transform: rotate(345deg);
+    width: 180px;
+    top: 200px;
+    left: 350px;
     border: 3px solid;
+    transform: rotate(350deg);
+}
+
+.img2 {
+    position: absolute;
+    width: 180px;
+    top: 200px;
+    left: 350px;
+    border: 3px solid;
+}
+
+.col .img2 {
+    border-radius: 50%;
 }
 
 .img5 {
     position: absolute;
     width: 250px;
-    right: 470px;
-    top: 30px;
+    left: 470px;
+    top: 20px;
 }
 
-h2 {
+/* h2 {
     position: absolute;
     font-family: ice-creme;
-    right: 400px;
-    top: 190px;
+    left: 400px;
+    top: 170px;
     font-size: 45px;
     text-align: center;
     width: 400px;
     color: hsla(222, 92%, 47%, 0.715);
-}
+} */
 
-@font-face {
+/* @font-face {
     src: url(./bubble-boy-2/BubbleBoy2.ttf);
     font-family: ice-creme;
 
-}
+} */

@@ -25,8 +25,8 @@
 }
 
 .posi-sticky {
-    position: static;
+    position: sticky;
     background-color: chartreuse;
     color: deeppink;
-    top: 60;
+    top: 10px;
 }
