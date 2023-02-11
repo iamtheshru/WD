@@ -5,6 +5,7 @@
     text-decoration: none;
     font-family: serif;
     list-style: none;
+    /* border: 1px solid; */
 }
 
 .pos-rel {
@@ -37,8 +38,9 @@
     margin: 0 auto;
 }
 
-.header_1 {
+.header_2 {
     background-color: #f2141d;
+    padding: 10px;
 }
 
 .logo img {
@@ -47,13 +49,19 @@
 
 .logo_text ul li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 5px;
+    font-weight: bold;
 }
 
 .logo_last ul li {
     width: 40%;
     display: inline-block;
     padding: 0 5px;
+    font-weight: bold;
+}
+
+.logo_last ul li i {
+    padding: 5px;
 }
 
 .last {
@@ -64,6 +72,11 @@
 
 .logo_text ul li a {
     color: #ffffff
+}
+
+.logo_text ul li i {
+    color: #ffffff;
+    padding: 0px 5px;
 }
 
 .sec-2 {
@@ -150,7 +163,7 @@ button {
     border: none;
 }
 
-.col-20 {
+.col-15 {
     width: 15%;
 
 }
@@ -199,3 +212,70 @@ button {
     border: none;
     color: #ffffff;
 }
+
+.foot_list {
+    margin: 20px 0px;
+    font-size: 15px;
+
+}
+
+.foot_list img {
+    width: 70%;
+}
+
+
+.foot_list p {
+    margin: 10px 0px;
+    font-weight: 1000;
+    font-size: larger;
+
+}
+
+.foot_list ul i {
+    font-size: 12px;
+    padding: 6px;
+}
+
+.foot_text1 ul li {
+    padding: 8px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+.foot_text1 ul li i {
+    padding: 0px 10px;
+    color: #f2141d;
+    font-size: 20px;
+}
+
+.foot_text2 ul li {
+    padding: 8px 0px;
+    font-weight: 900;
+    /* margin-left: 10px; */
+}
+
+.foot_text3 ul li {
+    padding: 3px 0px;
+}
+
+.foot_bol {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.foot_text4 {
+    margin-top: 50px;
+}
+
+/* .col_20 {
+    width: 20%;
+}
+
+.col_25 {
+    width: 25%;
+}
+
+.col_10 {
+    width: 10%;
+} */

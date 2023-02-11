@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    list-style: none;
     /* margin: 0;
     padding: 0; */
 }
@@ -26,9 +27,10 @@
     background-position: center;
 }
 
+/* 
 .align {
     align-items: center;
-}
+} */
 
 
 img {
@@ -36,15 +38,11 @@ img {
 }
 
 .col-50 {
-    width: 40%;
+    width: 50%;
 }
 
 .col {
     width: 100%;
-}
-
-p {
-    display: inline;
 }
 
 .sec-1 {
@@ -58,10 +56,16 @@ p {
     color: antiquewhite;
 }
 
-h2 {
-    display: inline;
-}
-
 .jsc {
     justify-content: space-between;
+}
+
+p {
+    display: inline-block;
+}
+
+ul li {
+    display: inline-block;
+
+
 }

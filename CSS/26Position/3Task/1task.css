@@ -30,9 +30,8 @@ img {
 .img1 {
     position: absolute;
     width: 450px;
-    top: 50px;
-    left: 400px;
-
+    bottom: 0px;
+    right: -60px;
 }
 
 .img3 {
