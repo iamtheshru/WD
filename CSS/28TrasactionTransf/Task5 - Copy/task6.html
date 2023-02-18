@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        position: relative;
+        width: 350px;
+        height: 190px;
+        transition: 0.5s;
+        background: #333;
+    }
+
+    .card:hover {
+        height: 320px;
+    }
+
+    .card .lines {
+        position: absolute;
+        inset: 0;
+        background: #000;
+        overflow: hidden;
+    }
+
+    .card .lines::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        height: 100px;
+        background: linear-gradient(transparent, #45f3ff, #45f3ff, #45f3ff, transparent);
+        animation: animate 4s linear infinite;
+    }
+
+
+    @keyframes animate {
+        0% {
+            transform: translate(-50px, -50px) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50px, -50px) rotate(360deg)
+        }
+    }
+
+    .card .lines::after {
+        content: "";
+        position: absolute;
+        inset: 3px;
+        background: #292929;
+
+    }
+
+    .card .imbx {
+        position: absolute;
+        z-index: 10;
+        right: 50px;
+        left: 100px;
+        transform: translateY(-50%);
+        width: 150px;
+        height: 150px;
+        background: #000;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .card:hover .imbx {
+        width: 250px;
+        height: 250px;
+        left: 50px;
+    }
+
+    .card .imbx::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        width: 400px;
+        height: 150px;
+        transform: translateY(-50%, -50%);
+        background: linear-gradient(transparent, #ff3c7b, #ff3c7b, #ff3c7b, transparent);
+        animation: animate2 1s linear infinite;
+    }
+
+    @keyframes animate2 {
+        0% {
+            transform: translate(-50px, -50px) rotate(360deg);
+        }
+
+        100% {
+            transform: translate(-50px, -50px) rotate(0deg)
+        }
+    }
+
+    .card .imbx::after {
+        content: "";
+        position: absolute;
+        background: #292929;
+        inset: 3px;
+
+    }
+
+    .card .imbx img {
+        position: absolute;
+        z-index: 1;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        z-index: 1;
+        width: 140px;
+        height: 140px;
+        filter: grayscale(1);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .card:hover .imbx img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .card .content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ff3c7b;
+    }
+
+    .data a i {
+        color: wheat;
+        font-size: 30px;
+
+    }
+</style>
+
+<body>
+    <div class="card">
+        <div class="lines"></div>
+        <div class="imbx"><img src="./img1.jpeg" alt=""></div>
+        <div>
+            <div class="content">
+                <div class="details">
+                    <h2>Shraddha Patel <br><span>Web Designer</span></h2>
+                    <div class="data">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
