@@ -16,15 +16,15 @@ img {
     height: 200px;
 }
 
-.box:hover,
-.box1:hover {
+.box:hover {
     flex-basis: 900px;
 }
 
-/* .box {
+.box {
     flex-shrink: 1;
 }
 
-.box1 {
-    flex-shrink: 2;
+/* .box1 {
+    flex-shrink: 1;
 } */
+*/
