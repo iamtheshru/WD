@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,109 +8,237 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Background.css">
+    <style>
+        div {
+            height: 400px;
+        }
+
+        .background {
+            /* background: grey; */
+            background-color: green;
+            height: 700px;
+        }
+
+        .back-img {
+            /* background: url(); */
+            background-image: url("ocean-3605547__340.jpg");
+        }
+
+        .background-repeat {
+            /* background: url(); */
+            background-image: url("ocean-3605547__340.jpg");
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            /* background-repeat: repeat; */
+            background-repeat: no-repeat;
+            height: 600px;
+        }
+
+        .background-attachment {
+            background-image: url(ocean-3605547__340.jpg);
+            /* background-attachment: local; */
+            /* background-attachment: scroll; */
+            background-attachment: fixed;
+        }
+
+        .background-clip {
+            background-image: url(ocean-3605547__340.jpg);
+            border: 15px dashed rebeccapurple;
+            padding: 50px;
+            margin: 50px;
+            /* background-clip:border-box; */
+            background-clip:content-box;
+            /* background-clip:border-box;
+            background-clip:content-box; */
+            
+        }
+        .background-origin {
+            background-image: url(ocean-3605547__340.jpg);
+            border: 15px dashed rebeccapurple;
+            padding: 50px;
+            margin: 50px;
+            background-origin:border-box;
+            background-origin:content-box;
+        }
+
+        .background-size {
+            background-image: url(ocean-3605547__340.jpg);
+            background-size:contain;
+            background-size:cover;
+        }
+
+
+        .background-position {
+            background-image: url(ocean-3605547__340.jpg);
+            background-position:50%
+        }
+        .background-shorthand{
+            /* background-image: url(ocean-3605547__340.jpg);
+            background-size: cover; */
+            background: url(ocean-3605547__340.jpg) no-repeat 30% 50% /cover;
+        }
+    </style>
 </head>
 
 <body>
-    <li>background-color</li>
-    <li>background-image</li>
-    <li>background-repeat</li>
-    <li>background-attachment</li>
-    <li>background-clip</li>
-    <li>background-origin</li>
-    <li>background-position</li>
-    <li>background-size</li>
-
-    <div class="background-color">Testing</div>
-    <div class="background-image">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
+    <ul>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-repeat</li>
+        <li>background-attachment</li>
+        <li>background-clip</li>
+        <li>background-size</li>
+        <li>background-origin</li>
+        <li>background-position</li>
+    </ul>
+    <div class="background">test</div>
+    <div class="back-img">test</div>
+    <h2>background-repeat</h2>
+    <div class="background-repeat">test
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
     </div>
-    <br>
-    <div class="background-repeat">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, accusantium. Officiis quam ipsam debitis
-            adipisci obcaecati inventore, porro magni odit, iure consequatur fuga laudantium quos molestias accusamus
-            quae magnam sapiente.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, accusantium. Officiis quam ipsam debitis
-            adipisci obcaecati inventore, porro magni odit, iure consequatur fuga laudantium quos molestias accusamus
-            quae magnam sapiente.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, accusantium. Officiis quam ipsam debitis
-            adipisci obcaecati inventore, porro magni odit, iure consequatur fuga laudantium quos molestias accusamus
-            quae magnam sapiente.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, accusantium. Officiis quam ipsam debitis
-            adipisci obcaecati inventore, porro magni odit, iure consequatur fuga laudantium quos molestias accusamus
-            quae magnam sapiente.</p>
-
+    <h2>background-attachment</h2>
+    <div class="background-attachment">test test
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
     </div>
-    <br>
-    <div class="background-attachment">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
+    <h2>background-clip</h2>
+    <div class="background-clip">test test
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
     </div>
-    <br>
-    <div class="background-clip">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
+    <h2>background-origin</h2>
+    <div class="background-origin">origin test
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
     </div>
-    <br>
-    <div class="background-origin">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
+    <h2>background-size</h2>
+    <div class="background-size">test test
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
     </div>
-    <br>
-    <div class="background-position">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
+    
+    <h2>background-position</h2>
+    <div class="background-position">position test
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi quisquam sed impedit quis magnam, natus
+            aperiam totam sapiente nisi molestiae saepe voluptatum, nostrum deleniti expedita quibusdam. Et, non
+            quisquam!</p>
     </div>
-    <br>
-    <div class="background-size">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita sunt voluptatibus odit eius
-            voluptatem quia consequuntur?</p>
-    </div>
+    <div class="background-shorthand">position test</div>
 </body>
 
 </html>

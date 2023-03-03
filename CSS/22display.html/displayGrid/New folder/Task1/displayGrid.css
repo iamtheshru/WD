@@ -16,7 +16,7 @@ img {
 
 .img1 {
     grid-column: 1;
-    grid-row: 1/3;
+    grid-row: 1;
 
 }
 
@@ -27,20 +27,50 @@ img {
 
 .img3 {
     grid-column: 3;
-    grid-row: 1/3;
+    grid-row: 1;
 }
 
 .img4 {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.img5 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.img4 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.img4 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.img4 {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.img5 {
     grid-column: 1;
     grid-row: 3;
 }
 
-.img5 {
+.img4 {
     grid-column: 2;
-    grid-row: 2/4;
+    grid-row: 3;
 }
 
-.img6 {
+.img4 {
     grid-column: 3;
+    grid-row: 3;
+}
+
+.img4 {
+    grid-column: 4;
     grid-row: 3;
 }
