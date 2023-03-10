@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .container {
@@ -212,16 +212,19 @@ ul li {
     font-size: 17px;
 }
 
-.col-25 {
+.col-22 {
     width: 22%;
-    height: 430px;
-    border: 1px solid;
-    display: flex;
-    align-items: end;
 }
 
 .Counse-boxs2 {
-    margin: 0 21px;
+    border: 1px solid;
+    padding-top: 95px;
+    padding-bottom: 50px;
+    margin: 30px 20px;
+}
+
+.ma {
+    top: 50px;
 }
 
 .icon {
@@ -238,10 +241,11 @@ ul li {
     margin: 33px 40px;
 }
 
+/* 
 .icon:hover .sec2-text1 {
     background-color: #19776b;
 
-}
+} */
 
 .sec2-text {
     margin: 0 auto;
@@ -269,20 +273,17 @@ ul li {
     padding: 80px 0;
 }
 
-.sec2-text1 {
-    padding: 30px 5px;
-}
-
 .sec2-text1 h2 {
     font-size: 30px;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
+    margin: 10px 0;
 }
 
 .sec2-text1 p {
     font-size: 22px;
     line-height: 30px;
-    padding: 20px 10px;
+    padding: 2px 10px;
     text-align: justify;
     border-top: 1px solid;
 
@@ -358,10 +359,6 @@ ul li {
     /* transition-delay: 0.1 */
 }
 
-.Counse-boxs3 {
-    margin: 80px 21px;
-}
-
 .col-50 {
     width: 50%;
 }
@@ -374,6 +371,10 @@ ul li {
     width: 15%;
 }
 
+.sec3 {
+    margin: 30px 0;
+}
+
 .sec3-icon1 i {
     color: #fff;
     font-size: 55px;
@@ -384,23 +385,26 @@ ul li {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -40px;
+    left: 0;
     font-size: 72px;
     line-height: 72px;
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 3px;
-    color: transparent;
-    -webkit-text-stroke: 1px blue;
+    /* color: transparent; */
+    -webkit-text-stroke: 1px #efa286;
     transform: rotate(-90deg);
     opacity: .18;
 }
 
 .sec3-img {
-    border-left: 30PX solid #efa286;
+    border-left: 20PX solid #efa286;
 }
 
+.sec3-img img {
+    display: block;
+}
 
 img {
     width: 100%;
@@ -422,12 +426,13 @@ img {
     width: 220px;
     height: 220px;
     border: 1px solid;
-    bottom: -70px;
+    bottom: -50px;
     right: -70px;
     background-color: #19776b;
     transition: all .1s linear;
     box-shadow: 0 0 0 30px rgba(255, 255, 255, .70);
     padding: 45px 35px;
+    border: none;
 }
 
 .sec3-textyears h2 {
@@ -525,11 +530,12 @@ img {
 
 .sec3-text button {
     width: 200PX;
-    height: 80PX;
+    height: 70PX;
     margin: 40PX 80PX;
     background-color: #efa286;
     color: #ffff;
     font-size: 14px;
+    border: none;
 }
 
 .col-45 {
@@ -543,7 +549,7 @@ img {
 .sec4-bg {
     padding: 30PX;
     background-color: #19776b;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .sec4-img img {
@@ -603,14 +609,17 @@ img {
 }
 
 .sec5-icon img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border: 1px solid;
     background-color: #19776b;
+    padding: 5px;
+    border: none;
 }
 
 .sec5-icon {
-    bottom: 100px;
+    bottom: 150px;
+    right: 70px;
 }
 
 .sec5-text h2 {
@@ -654,10 +663,11 @@ img {
 
 .sec5-boxs1 {
     margin: 30px 0;
+    padding: 30px 0;
 }
 
 .sec6-box {
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
 .sec6-img img {
@@ -728,59 +738,69 @@ img {
     padding: 15px 0;
 }
 
-.sec-text3 p {
+.sec7-text3 p {
     padding: 20px 0;
     font-size: 25px;
 }
 
+.sec7-icon1 {
+    background-color: #19776b;
+    border-radius: 50%;
+    padding: 12px;
+    border: 2px solid #ffff;
+}
+
+.sec7-icon1 i {
+    color: #ffff;
+}
+
 .sec7-icon img {
-    padding: 10px;
+    padding: 15px;
 }
 
 .sec7-box {
     padding: 20px 0;
 }
 
-.sec-text4 button {
+.sec7-text4 button {
     padding: 20px 70px;
     margin: 0 40px;
-    /* color: #ffff; */
+    /* border: none #ffff; */
 }
 
-.sec-text4 a {
+.sec7-text4 a {
     color: black;
 }
 
-.sec-tex5 input {
-    font-size: 25px;
-    padding: 5px;
-}
 
-.sec-text6 p {
+.sec7-text6 p {
     color: gray;
     padding: 0 6px;
     font-size: 18px;
 }
 
 .sec7-main {
-    /* padding: 40px 0 40px 90px; */
     display: flex;
     justify-content: right;
+    margin: 90px 0;
 }
 
-.sec7-text6 p {
+.sec7-text7 p {
     font-size: 20px;
     font-weight: 600;
     padding: 20px;
 }
 
-.sec7-text6 a {
+.sec7-text7 a {
     margin: 0 30px;
+    color: black;
 }
 
 .sec8-bg {
     background-color: #19776b;
-    padding: 50px;
+    padding: 40px 0;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .col-40 {
@@ -789,4 +809,121 @@ img {
 
 .col-60 {
     width: 60%;
+}
+
+.sec8-icon p {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.197);
+    margin: 0 auto;
+}
+
+
+.sec8-icon1 {
+    top: 10px;
+    right: 100px;
+}
+
+.sec8-icon1 i {
+    font-size: 40px;
+    color: #ffff;
+}
+
+.sec8-text p {
+    font-size: 25px;
+    color: #ffff;
+}
+
+.sec8-text {
+    margin: 0 30px;
+}
+
+.sec8-text button {
+    padding: 5px 25px;
+    margin: 10px 0;
+    background-color: #238074;
+    color: #ffff;
+    border: none;
+}
+
+.sec8-border {
+    border-right: 1px solid white;
+    margin: 10px 0;
+}
+
+.sce9-tex1 p {
+    color: #efa286;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.sce9-tex1 h2 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.sce9-tex2 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    color: gray;
+    padding: 42px 0;
+}
+
+.sec9-text {
+    padding: 10px 60px;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.sec9-boxs {
+    margin: 35px 0;
+}
+
+.sec9-img {
+    margin: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.sec9-img img {
+    display: block;
+}
+
+.sec10-text1 p {
+    color: #efa286;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+.sec10-text1 h2 {
+    font-size: 45px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.sec10-text2 p {
+    color: #efa286;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+.sec10-text2 h3 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+.sec10-box {
+    background-color: #ffff;
+    box-shadow: 2px 2px 2px gray;
+    margin: 15px 10px;
 }
