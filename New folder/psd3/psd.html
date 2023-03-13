@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
     <header class="header-bg1">
         <nav class="container pos-re">
-            <div class=" row menu-1">
+            <div class="row menu-1">
                 <div class="menu-left1">
                     <ul>
                         <li><a href="#"><i class="fa-solid fa-phone-volume"></i>+ 9831(0000)-9680</a></li>
@@ -86,11 +88,11 @@
     </header>
     <section class="sec1-bg1 pos-re">
         <div class="sec1-bg2 pos-ab">
-            <div class="container">
+            <div class="container ">
                 <div class="row">
                     <div class="sec1-text">
-                        <h2>Therapys Make Excellent Your Family</h2>
-                        <button>OUR COUNSELLING</button>
+                        <h2 data-aos="fade-down" data-aos-duration="3000">Therapys Make Excellent Your Family</h2>
+                        <button data-aos="fade-up" data-aos-duration="1800">OUR COUNSELLING</button>
                     </div>
                 </div>
             </div>
@@ -736,22 +738,109 @@
     </section>
     <footer class="footer-bg">
         <div class="container">
-            <div class="row">
+            <div class="row align jsc">
                 <div class="col-20">
                     <div class="footer-logo">
-                        <img src="" alt="">
+                        <img src="./img/logo-2.png" alt="">
                     </div>
-                    <p>There are emits consectetur notted aetinciduns pisicing jutre elit sed at eiusmode tempors.</p>
-                    <h2>Follow Us</h2>
-                    <div class="footer-icon">
-                        <ul>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"> <i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        </ul>
+                    <div class="footer-text1">
+                        <p>There are emits consectetur notted aetinciduns pisicing jutre elit sed at eiusmode tempors.
+                        </p>
+                        <h2></h2>
+                        <h3>Follow Us</h3>
+                        <div class="footer-icon1">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-20">
+                    <div class="footer-text2">
+                        <h3>CONTACT</h3>
+                        <P><span><i class="fa-solid fa-envelope"></i></span>needhelp@company.com</P>
+                        <P><span><i class="fa-solid fa-location-dot"></i></span>30 Commercial Road Fratton, Australia
+                        </P>
+                        <h3>Open Hours</h3>
+                        <p>Mon – Sat: 8:00 am to 6:00 pm Sunday: Closed</p>
+                    </div>
+                </div>
+                <div class="col-20">
+                    <div class="row">
+                        <div class="footer-text3">
+                            <h2>Instagram</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-30">
+                            <div class="footer-img1">
+                                <img src="./img/footer-img1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-30">
+                            <div class="footer-img1">
+                                <img src="./img/footer-img2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-30">
+                            <div class="footer-img1">
+                                <img src="./img/footer-img3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-30">
+                            <div class="footer-img1">
+                                <img src="./img/footer-img4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-30">
+                            <div class="footer-img1">
+                                <img src="./img/footer-img5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-30">
+                            <div class="footer-img1">
+                                <img src="./img/footer-img6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row footer-box">
+                        <div class="col">
+                            <div class="footer-icon2">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                        </div>
+                        <div class="col-80">
+                            <div class="footer-text3">
+                                <p>+92 (003) 68 - 090</p>
+                                <p class="call">Call to Our Experts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-20 footer-bg2">
+                    <div class="footer-text4">
+                        <h5>Emergency</h5>
+                        <h3>Free Consultation</h3>
+                        <input type="text" id="" name="" placeholder="Full Name" required>
+                        <input type="text" id="" name="" placeholder="Phone" required>
+                        <select name="" id="" placeholder="Choose Services">
+                            <option value="">Choose Service1</option>
+                            <option value="">Choose Service2</option>
+                            <option value="">Choose Service2</option>
+                        </select>
+                        <textarea name="" id="" cols="20" rows="5" placeholder="write message"></textarea>
+                        <button>Book Appointments</button>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
