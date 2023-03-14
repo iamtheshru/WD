@@ -1,0 +1,310 @@
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+        margin: 0 auto;
+    }
+
+    .sec1-text h2 {
+        font-size: 2rem;
+    }
+
+    .pra1 {
+        font-size: 0.5rem;
+    }
+
+    .pra2 {
+        width: 200px;
+        font-size: 0.8rem;
+    }
+
+    .sec1-text button {
+        font-size: .5rem;
+    }
+
+    .col-25 {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .sec3-text1 h2 {
+        font-size: 2rem;
+    }
+
+    .sec3-text1 p {
+        font-size: 0.9rem
+    }
+
+    .sec3-text1 button {
+        font-size: 0.5rem;
+        margin: 15px 0;
+    }
+
+    .sec4-text h2 {
+        font-size: 2.5rem;
+        margin: 59px;
+        text-align: center;
+    }
+
+    .sec4-text p {
+        font-size: 1.2rem;
+        margin: 60px 0;
+    }
+
+    .sec5-text h2 {
+        font-size: 2rem;
+        margin: -175px 0;
+    }
+
+    .sec5-text p {
+        font-size: 1.9rem;
+        margin: --38px 0;
+    }
+
+    .col-30 {
+        width: 100%;
+    }
+
+    .sec8-text h2 {
+        font-size: 4rem;
+        padding: 5px 0;
+    }
+
+    .sec8-text p {
+        font-size: 1.2rem;
+        padding: 5px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+        margin: 0 auto;
+    }
+
+    .sec1-text h2 {
+        font-size: 3rem;
+    }
+
+    .pra1 {
+        font-size: 1rem;
+    }
+
+    .pra2 {
+        width: 300px;
+        font-size: 1rem;
+    }
+
+    .sec1-text button {
+        font-size: 0.7rem;
+    }
+
+    .col-25 {
+        width: 43%;
+        margin: 10px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .sec3-text1 h2 {
+        font-size: 2.8rem;
+        margin: -145px 0 0;
+    }
+
+    .sec3-text1 p {
+        font-size: 0.9rem;
+    }
+
+    .sec3-text1 button {
+        font-size: 0.5rem;
+        margin: 20px 0;
+    }
+
+    .sec4-text h2 {
+        font-size: 5rem;
+    }
+
+    .sec4-text p {
+        font-size: 1.3rem;
+        margin: -34px 0 0;
+    }
+
+    .sec5-text h2 {
+        font-size: 2.8rem;
+        margin: -80px 0 0;
+        text-align: right;
+    }
+
+    .sec5-text p {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin: 0px 0 0;
+    }
+
+    .col-30 {
+        width: 100%;
+    }
+
+    .sec8-text h2 {
+        font-size: 4.2rem;
+        padding: 5px 0;
+    }
+
+    .sec8-text p {
+        font-size: 1.2rem;
+        padding: 5px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .sec1-text h2 {
+        font-size: 4rem;
+    }
+
+    .pra1 {
+        font-size: 1.5rem;
+    }
+
+    .pra2 {
+        width: 400px;
+        font-size: 1rem;
+    }
+
+    .sec1-text button {
+        font-size: 1rem;
+    }
+
+    .col-25 {
+        width: 31%;
+    }
+
+    .col-50 {
+        width: 50%;
+    }
+
+    .sec3-text1 h2 {
+        font-size: 2rem;
+    }
+
+    .sec3-text1 p {
+        font-size: 0.9rem;
+    }
+
+    .sec3-text1 button {
+        font-size: 0.5rem;
+    }
+
+    .sec4-text h2 {
+        font-size: 5rem;
+    }
+
+    .sec4-text p {
+        font-size: 1.3rem;
+    }
+
+    .sec5-text h2 {
+        font-size: 3rem;
+    }
+
+    .sec5-text p {
+        font-size: 3rem;
+    }
+
+    .col-30 {
+        width: 100%;
+    }
+
+    .sec8-text h2 {
+        font-size: 4rem;
+        padding: 5px 0;
+    }
+
+    .sec8-text p {
+        font-size: 1.2rem;
+        padding: 5px 0;
+    }
+}
+
+@media (min-width: 1380px) {
+    .container {
+        width: 1340px;
+        margin: 0 auto;
+    }
+
+    .pra2 {
+        width: 550px;
+        font-size: 1.2rem;
+    }
+
+    .sec1-text h2 {
+        font-size: 5rem;
+    }
+
+    .pra1 {
+        font-size: 1.5rem;
+    }
+
+    .sec1-text button {
+        font-size: 1rem;
+    }
+
+    .col-25 {
+        width: 25%;
+    }
+
+    .col-50 {
+        width: 50%;
+    }
+
+    .sec3-text1 h2 {
+        font-size: 2.9rem;
+    }
+
+    .sec3-text1 p {
+        font-size: 1.1rem;
+    }
+
+    .sec3-text1 button {
+        font-size: 1rem;
+    }
+
+    .sec4-text h2 {
+        font-size: 5rem;
+    }
+
+    .sec4-text p {
+        font-size: 1.3rem;
+    }
+
+    .sec5-text h2 {
+        font-size: 4rem;
+    }
+
+    .sec5-text p {
+        font-size: 3.9rem;
+    }
+
+    .col-30 {
+        width: 30%;
+    }
+
+    .sec8-text h2 {
+        font-size: 4rem;
+        padding: 5px 0;
+    }
+
+    .sec8-text p {
+        font-size: 1.2rem;
+        padding: 5px 0;
+    }
+}
