@@ -5,20 +5,24 @@
     }
 
     .sec1-text h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .pra1 {
-        font-size: 0.5rem;
-    }
-
-    .pra2 {
-        width: 200px;
         font-size: 0.8rem;
     }
 
+    .pra2 {
+        width: 250px;
+        font-size: 0.9rem;
+    }
+
     .sec1-text button {
-        font-size: .5rem;
+        font-size: 0.8rem;
+    }
+
+    .sec2-text p {
+        text-align: justify;
     }
 
     .col-25 {
@@ -46,22 +50,25 @@
     .sec4-text h2 {
         font-size: 2.5rem;
         margin: 59px;
-        text-align: center;
     }
 
     .sec4-text p {
         font-size: 1.2rem;
         margin: 60px 0;
+        text-align: justify;
     }
 
     .sec5-text h2 {
         font-size: 2rem;
-        margin: -175px 0;
     }
 
     .sec5-text p {
         font-size: 1.9rem;
-        margin: --38px 0;
+    }
+
+    .sec5-text {
+        margin-left: auto;
+        margin-top: -100px;
     }
 
     .col-30 {
@@ -113,7 +120,6 @@
 
     .sec3-text1 h2 {
         font-size: 2.8rem;
-        margin: -145px 0 0;
     }
 
     .sec3-text1 p {
@@ -126,24 +132,21 @@
     }
 
     .sec4-text h2 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .sec4-text p {
         font-size: 1.3rem;
         margin: -34px 0 0;
+        text-align: justify;
     }
 
     .sec5-text h2 {
         font-size: 2.8rem;
-        margin: -80px 0 0;
-        text-align: right;
     }
 
     .sec5-text p {
-        font-size: 2.5rem;
-        font-weight: 800;
-        margin: 0px 0 0;
+        font-size: 2.5rem
     }
 
     .col-30 {
@@ -151,13 +154,12 @@
     }
 
     .sec8-text h2 {
-        font-size: 4.2rem;
-        padding: 5px 0;
+        font-size: 4rem;
     }
 
     .sec8-text p {
         font-size: 1.2rem;
-        padding: 5px 0;
+        text-align: justify;
     }
 }
 
@@ -176,12 +178,17 @@
     }
 
     .pra2 {
-        width: 400px;
-        font-size: 1rem;
+        width: 410px;
+        font-size: 1.2rem;
+        text-align: justify;
     }
 
     .sec1-text button {
         font-size: 1rem;
+    }
+
+    .sec2-text p {
+        text-align: center;
     }
 
     .col-25 {
@@ -210,6 +217,7 @@
 
     .sec4-text p {
         font-size: 1.3rem;
+        text-align: center;
     }
 
     .sec5-text h2 {
@@ -226,12 +234,11 @@
 
     .sec8-text h2 {
         font-size: 4rem;
-        padding: 5px 0;
     }
 
     .sec8-text p {
         font-size: 1.2rem;
-        padding: 5px 0;
+        text-align: center;
     }
 }
 
@@ -279,19 +286,28 @@
     }
 
     .sec4-text h2 {
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
     .sec4-text p {
         font-size: 1.3rem;
     }
 
+    .sec4-text {
+        margin: 80px 0;
+    }
+
     .sec5-text h2 {
         font-size: 4rem;
+        margin-top: 100px;
     }
 
     .sec5-text p {
         font-size: 3.9rem;
+    }
+
+    .sec5-text {
+        margin-top: 0;
     }
 
     .col-30 {
@@ -299,12 +315,10 @@
     }
 
     .sec8-text h2 {
-        font-size: 4rem;
-        padding: 5px 0;
+        font-size: 5rem;
     }
 
     .sec8-text p {
-        font-size: 1.2rem;
-        padding: 5px 0;
+        font-size: 1.3rem;
     }
 }
