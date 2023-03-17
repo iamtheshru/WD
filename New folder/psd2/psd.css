@@ -129,13 +129,13 @@ img {
 }
 
 .sec1-text1 h2 {
-    font-size: 2rem;
+    font-size: 4rem;
     margin: 40px 0;
 }
 
 .sec1-text1 p {
     word-spacing: 2px;
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 25px;
     text-align: justify;
 }
@@ -165,13 +165,13 @@ img {
 }
 
 .sec2-text1 h2 {
-    font-size: 30px;
+    font-size: 3rem;
     color: #1b2427;
     font-weight: 900;
 }
 
 .pera {
-    font-size: 1.1rem;
+    font-size: 2.1rem;
 }
 
 .sec3-bg {
@@ -200,7 +200,7 @@ img {
 
 .sec3-text1 p {
     text-align: center;
-    font-size: 35px;
+    font-size: 3rem;
     color: #ad6c12;
     font-weight: 600;
     margin: 11px 0;
@@ -318,11 +318,11 @@ img {
 }
 
 .sec3-text2 h2 {
-    font-size: 1.3rem;
+    font-size: 3rem;
 }
 
 .sec3-text2 p {
-    font-size: 1.1rem;
+    font-size: 2rem;
     padding: 5px 0;
 }
 
@@ -339,7 +339,7 @@ img {
 }
 
 .sec4-text1 h2 {
-    font-size: 35px;
+    font-size: 3rem;
     color: #1b2427;
     font-weight: 900;
 }
@@ -348,12 +348,12 @@ img {
     width: 70%;
     margin: 0 auto;
     padding: 30px 0;
-    font-size: 23px;
+    font-size: 2rem;
 }
 
 .sec4-text2 ul li {
     display: inline-block;
-    font-size: 23px;
+    font-size: 2rem;
     color: #1b2427;
     padding: 10px 10px;
 }
@@ -379,7 +379,7 @@ img {
 }
 
 .sec5-text1 h2 {
-    font-size: 4.3rem;
+    font-size: 4.5rem;
     color: #2c3a42;
     font-weight: 600;
     font-family: Lucida Handwriting;
@@ -413,20 +413,20 @@ img {
 }
 
 .sec5-text3 h2 {
-    font-size: 2rem;
+    font-size: 3.2rem;
     color: #1b2427;
     font-weight: 900;
     margin: 8px 0;
 }
 
 .sec5-text3 span {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #1b2427;
     font-weight: 900;
 }
 
 .sec5-text3 p {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #1b2427;
     font-weight: 300;
     margin: 8px 0;
@@ -454,7 +454,7 @@ img {
 }
 
 .sec7-text1 h2 {
-    font-size: 4.3rem;
+    font-size: 4.2rem;
     color: #ffffff;
     font-weight: 900;
     font-family: Lucida Handwriting;
@@ -467,7 +467,7 @@ img {
 }
 
 .sec7-text2 p {
-    font-size: 25px;
+    font-size: 2.5rem;
     padding: 8px 0;
     text-align: center;
     color: #ffffff;
@@ -500,7 +500,7 @@ img {
 }
 
 .sec9-text1 h2 {
-    font-size: 3.8rem;
+    font-size: 4rem;
     color: #2c3a42;
     font-weight: 900;
     font-family: Lucida Handwriting;
@@ -519,7 +519,7 @@ img {
 }
 
 .sec9-box {
-    padding: 40px 30px;
+    padding: 10px;
 }
 
 .sec9-text2 {
@@ -530,17 +530,20 @@ img {
 .sec9-text2 h3 {
     color: #1b2427;
     padding: 10px;
+    font-size: 2.2rem;
 }
 
 .sec9-text2 h2 {
     color: #1b2427;
     font-weight: 700;
     padding: 0 10px;
+    font-size: 2.5rem;
 }
 
 .sec9-text2 P {
     color: #1b2427;
     padding: 0 10px;
+    font-size: 1.7rem;
 }
 
 .sec9-text2 a {
@@ -562,7 +565,7 @@ img {
 .icon i {
     color: #ffffff;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.8rem;
     padding: 10px 0;
 }
 
@@ -572,12 +575,12 @@ img {
     margin: 0 auto;
     color: #ffffff;
     padding: 10px 0;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .sec10-text2 ul li {
     display: inline-block;
-    font-size: 28px;
+    font-size: 2rem;
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
@@ -604,7 +607,7 @@ img {
 .sec11-text1 {
     width: 70%;
     padding: 10px 0;
-    font-size: 1.1rem;
+    font-size: 2rem;
 }
 
 .sec11-text1 {
@@ -614,13 +617,13 @@ img {
 
 .sec11-text1 h2 {
     color: #2c3a42;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     font-weight: 900;
     padding: 0 10px;
     text-align: center;
 }
 
 .sec11-text1 ul li {
-    font-size: 1.1rem;
+    font-size: 2rem;
     padding: 5px 0;
 }

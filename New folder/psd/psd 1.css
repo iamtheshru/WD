@@ -4,21 +4,12 @@
         margin: 0 auto;
     }
 
-    .sec1-text h2 {
-        font-size: 2.5rem;
-    }
-
-    .pra1 {
-        font-size: 0.8rem;
+    html {
+        font-size: 60%;
     }
 
     .pra2 {
         width: 250px;
-        font-size: 0.9rem;
-    }
-
-    .sec1-text button {
-        font-size: 0.8rem;
     }
 
     .sec2-text p {
@@ -34,36 +25,17 @@
         width: 100%;
     }
 
-    .sec3-text1 h2 {
-        font-size: 2rem;
-    }
-
-    .sec3-text1 p {
-        font-size: 0.9rem
-    }
-
     .sec3-text1 button {
-        font-size: 0.5rem;
         margin: 15px 0;
     }
 
     .sec4-text h2 {
-        font-size: 2.5rem;
         margin: 59px;
     }
 
     .sec4-text p {
-        font-size: 1.2rem;
         margin: 60px 0;
         text-align: justify;
-    }
-
-    .sec5-text h2 {
-        font-size: 2rem;
-    }
-
-    .sec5-text p {
-        font-size: 1.9rem;
     }
 
     .sec5-text {
@@ -76,12 +48,10 @@
     }
 
     .sec8-text h2 {
-        font-size: 4rem;
         padding: 5px 0;
     }
 
     .sec8-text p {
-        font-size: 1.2rem;
         padding: 5px 0;
     }
 }
@@ -92,21 +62,12 @@
         margin: 0 auto;
     }
 
-    .sec1-text h2 {
-        font-size: 3rem;
-    }
-
-    .pra1 {
-        font-size: 1rem;
+    html {
+        font-size: 62%;
     }
 
     .pra2 {
         width: 300px;
-        font-size: 1rem;
-    }
-
-    .sec1-text button {
-        font-size: 0.7rem;
     }
 
     .col-25 {
@@ -118,47 +79,20 @@
         width: 100%;
     }
 
-    .sec3-text1 h2 {
-        font-size: 2.8rem;
-    }
-
-    .sec3-text1 p {
-        font-size: 0.9rem;
-    }
-
     .sec3-text1 button {
-        font-size: 0.5rem;
         margin: 20px 0;
     }
 
-    .sec4-text h2 {
-        font-size: 4rem;
-    }
-
     .sec4-text p {
-        font-size: 1.3rem;
         margin: -34px 0 0;
         text-align: justify;
-    }
-
-    .sec5-text h2 {
-        font-size: 2.8rem;
-    }
-
-    .sec5-text p {
-        font-size: 2.5rem
     }
 
     .col-30 {
         width: 100%;
     }
 
-    .sec8-text h2 {
-        font-size: 4rem;
-    }
-
     .sec8-text p {
-        font-size: 1.2rem;
         text-align: justify;
     }
 }
@@ -169,22 +103,13 @@
         margin: 0 auto;
     }
 
-    .sec1-text h2 {
-        font-size: 4rem;
-    }
-
-    .pra1 {
-        font-size: 1.5rem;
+    html {
+        font-size: 65%;
     }
 
     .pra2 {
         width: 410px;
-        font-size: 1.2rem;
         text-align: justify;
-    }
-
-    .sec1-text button {
-        font-size: 1rem;
     }
 
     .sec2-text p {
@@ -199,45 +124,15 @@
         width: 50%;
     }
 
-    .sec3-text1 h2 {
-        font-size: 2rem;
-    }
-
-    .sec3-text1 p {
-        font-size: 0.9rem;
-    }
-
-    .sec3-text1 button {
-        font-size: 0.5rem;
-    }
-
-    .sec4-text h2 {
-        font-size: 5rem;
-    }
-
     .sec4-text p {
-        font-size: 1.3rem;
         text-align: center;
-    }
-
-    .sec5-text h2 {
-        font-size: 3rem;
-    }
-
-    .sec5-text p {
-        font-size: 3rem;
     }
 
     .col-30 {
         width: 100%;
     }
 
-    .sec8-text h2 {
-        font-size: 4rem;
-    }
-
     .sec8-text p {
-        font-size: 1.2rem;
         text-align: center;
     }
 }
@@ -248,21 +143,12 @@
         margin: 0 auto;
     }
 
+    html {
+        font-size: 70%;
+    }
+
     .pra2 {
         width: 550px;
-        font-size: 1.2rem;
-    }
-
-    .sec1-text h2 {
-        font-size: 5rem;
-    }
-
-    .pra1 {
-        font-size: 1.5rem;
-    }
-
-    .sec1-text button {
-        font-size: 1rem;
     }
 
     .col-25 {
@@ -273,52 +159,19 @@
         width: 50%;
     }
 
-    .sec3-text1 h2 {
-        font-size: 2.9rem;
-    }
-
-    .sec3-text1 p {
-        font-size: 1.1rem;
-    }
-
-    .sec3-text1 button {
-        font-size: 1rem;
-    }
-
-    .sec4-text h2 {
-        font-size: 6rem;
-    }
-
-    .sec4-text p {
-        font-size: 1.3rem;
-    }
-
     .sec4-text {
         margin: 80px 0;
     }
 
     .sec5-text h2 {
-        font-size: 4rem;
         margin-top: 100px;
     }
 
-    .sec5-text p {
-        font-size: 3.9rem;
-    }
-
     .sec5-text {
-        margin-top: 0;
+        margin-top: 50px;
     }
 
     .col-30 {
         width: 30%;
-    }
-
-    .sec8-text h2 {
-        font-size: 5rem;
-    }
-
-    .sec8-text p {
-        font-size: 1.3rem;
     }
 }
