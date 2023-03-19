@@ -7,7 +7,7 @@
 }
 
 .container {
-    width: 1370px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -77,13 +77,13 @@ img {
     text-align: center;
     color: #ffff;
     width: 70%;
+    font-family: sans-serif;
 }
 
 .header-text h2 {
     font-size: 3.8rem;
     margin: 0 auto;
     padding: 0 40px;
-    font-family: sans-serif;
 }
 
 .header-text p {
@@ -114,15 +114,15 @@ img {
 
 .sec2-text {
     padding: 60px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     color: #7287ae;
     font-weight: 900;
     font-family: sans-serif
 }
 
-.col-25 {
-    width: 30%;
+.col-30 {
+    width: 100%;
 }
 
 .sec2-box {
@@ -139,10 +139,12 @@ img {
 .sec2-text1 h2 {
     font-weight: 700;
     padding: 5px;
+    font-size: 2.5rem;
 }
 
 .sec2-text1 p {
     padding: 5px;
+    font-size: 1.5rem;
 }
 
 .sec2-bt button {
@@ -160,7 +162,7 @@ img {
 }
 
 .col-50 {
-    width: 50%;
+    width: 100%;
 }
 
 .sec3-text1 h2 {
@@ -198,7 +200,7 @@ img {
 
 .sec3-box {
     background-color: #ffffff;
-    box-shadow: 3px 5px 3px 3px gray;
+    /* box-shadow: 3px 5px 3px 3px gray; */
 }
 
 .sec3-img1 img {
