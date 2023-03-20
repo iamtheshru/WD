@@ -82,14 +82,14 @@ img {
 }
 
 .header-text h2 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     margin: 0 auto;
     padding: 0 40px;
 }
 
 .header-text p {
     font-size: 1.5rem;
-    padding: 40px;
+    /* padding: 40px; */
 }
 
 .header-img1 {
@@ -112,7 +112,10 @@ img {
 
 .sec2-text {
     padding: 60px;
-    font-size: 2.5rem;
+}
+
+.sec2-text h2 {
+    font-size: 3rem;
     text-transform: uppercase;
     color: #7287ae;
     font-weight: 900;
@@ -220,7 +223,7 @@ img {
 
 .sec4-text1 h2 {
     padding: 10px 0;
-    font-size: 4rem;
+    font-size: 3.8rem;
 }
 
 .sec4-text2 {
@@ -264,7 +267,7 @@ img {
 }
 
 .sec5-text1 h2 {
-    font-size: 4.8rem;
+    font-size: 4.5rem;
 }
 
 .sec5-text1 p {
@@ -273,7 +276,7 @@ img {
 }
 
 .sec5-text1 button {
-    padding: 20px 70px;
+    padding: 20px 50px;
     margin: 50px 0;
     border-radius: 38px;
     border: none;
@@ -290,6 +293,7 @@ img {
     text-align: center;
     padding: 80px;
     color: #7287ae;
+    font-family: sans-serif;
 }
 
 .sec6-text1 h2 {
