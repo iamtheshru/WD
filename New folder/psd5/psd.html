@@ -52,12 +52,24 @@
                             architecto numquam expedita soluta rerum hic similique corrupti, praesentium sunt et,
                             vero
                             officiis exercitationem? Alias, adipisci vel?</p>
-                        <button>JOIN NOW</button>
+                        <!-- <button class="text-white"><a href="psd.html">JOIN NOW</a></button> -->
+                        <button onclick="abc(6)">JOIN NOW</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script>
+        function abc(id) {
+            if(id==5){
+                window.location.href = "pd.html";
+            }else{
+                window.location.href = "psd.html";
+            }
+             
+           // console.log(id);
+        }
+    </script>
     <section class="sec1-bg">
         <div class="container pos-re">
             <div class="row align jsc">
@@ -263,7 +275,7 @@
                             eveniet aspernatur ratione ad fugit suscipit.</p>
                         <div class="row submit pos-re">
                             <input type="Your Email" id="" name="">
-                            <button class="pos-ab">Subscribe</button>
+                            <button class="pos-ab"onclick="abc(5)">Subscribe</button>
                         </div>
                     </div>
                 </div>
