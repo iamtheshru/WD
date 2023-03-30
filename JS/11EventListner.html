@@ -9,16 +9,15 @@
 </head>
 
 <body>
-    <p>function </p>
-    <ol>
-        <li>Pre-definded </li>
-        <li>user-definded UDF</li>
-    </ol>
+
+    <button onclick="btnClicked()">Click</button>
+    <button id="btn">Click</button>
     <script>
-        function testing() {
+        function btnClicked() {
             console.log("called");
         }
-        // console.log(testing);
-        console.log(testing());
+        document.getElementById("btn").addEventListener("click", function () {
+            console.log("called");
+        })
     </script>
 </body>

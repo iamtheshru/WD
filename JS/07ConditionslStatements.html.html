@@ -40,7 +40,7 @@
         // }
 
         let precent = 80
-        if (precent <= 50 && precent > 60) {
+        if (precent >= 50 && precent < 60) {
             console.log('pass class');
             document.write('pass class');
         } else if (precent >= 60 && precent < 70) {
@@ -89,14 +89,13 @@
         let age = "20"
         switch (true) {
             case (age >= 15 && age < 20):
-                console.log("you are eligible");
-                document.write("you are eligible");
-                break;
-            case (age >= 20 && age < 30):
                 console.log("you are not eligible");
                 document.write("you are not eligible");
                 break;
-
+            case (age >= 20 && age < 30):
+                console.log("you are eligible");
+                document.write("you are eligible");
+                break;
             default:
                 console.log("Enter the valid age");
                 document.write("Enter the valid age");
