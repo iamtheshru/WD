@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mydiv"> </div>
+
+    <script>
+        var h1 = document.createElement("h1");
+        var newtext = document.createTextNode("text");
+        h1.appendChild(newtext);
+
+
+
+        MyDiv = document.getElementById("mydiv")
+        MyDiv.append(h1)
+
+        console.log(MyDiv)
+        // console.log(document)
+        // document.write(mydiv)
+
+        // document.body.appendChild(h1);
+
+    </script>
+</body>

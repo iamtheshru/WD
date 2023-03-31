@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, aperiam reprehenderit ipsam rerum architecto
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, aperiam reprehenderit ipsam rerum
+        architecto
         aliquid hic ullam? Incidunt amet dignissimos velit, impedit enim aperiam est cumque laudantium. Corporis,
         tenetur impedit.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nostrum iure excepturi voluptatum fugiat
@@ -37,27 +38,39 @@
             console.log(kaipan.value);
             document.getElementById("disp").innerText = kaipan.value
         }
-        document.getElementsByTagName("p").addEventListener("color", function () {
-            console.log("document.body");
 
+        document.getElementById("btn").addEventListener("click", function () {
+            console.log(docuent.body)
 
             // Inp = document.getElementById("inpId")
-            // Para = document.getElementsByTagName("p")
-            // InpClass = document.getElementsByName("inpClass")
-            // InpClassName = document.getElementsByClassName("inpClass")
-            // InpClassNameQuerySelector = document.querySelector(".inpClass")
-            // InpClassNameQuerySelectorAll = document.querySelectorAll(".inpClass")
-            // console.log(InpClassNameQuerySelector);
-            // console.log(InpClassNameQuerySelectorAll);
             // console.log(Inp.value);
+
+            // Para = document.getElementsByTagName("p")
+            // Para[0].style.color = "red"
+            // Para[3].style.color = "red"
             // console.log(Para);
+
+            // let doc = document.getElementsByTagName("p")[1]
+            // doc.style.color = "red"
+            // console.log(doc);
+
+            // InpClass = document.getElementsByName("inpClass")
             // console.log("InpClass",InpClass);
             // console.log("InpClass",InpClass[0]);
             // console.log("InpClass",InpClass[0].value);
+
+
+            // InpClassName = document.getElementsByClassName("inpClass")
             // console.log("InpClass",InpClassName);
-            // Para[0].style.color = "red"
-            Para[3].style.color = "red"
+
+            // InpClassNameQuerySelector = document.querySelector(".inpClass")
+            // console.log(InpClassNameQuerySelector);
+
+            // InpClassNameQuerySelectorAll = document.querySelectorAll(".inpClass")
+            // console.log(InpClassNameQuerySelectorAll);
 
         })
+        // console.log(document.body.p);
+        // document.body.p.style.backgroundColor = "grey"
     </script>
 </body>
