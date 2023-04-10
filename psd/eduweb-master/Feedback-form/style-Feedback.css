@@ -1,0 +1,128 @@
+* {
+  /* border: 1px solid; */
+}
+
+.container {
+  width: 1380px;
+  margin: 0 auto;
+}
+
+.sec {
+  background-color: #f9f6f2;
+}
+
+.sec_1 {
+  margin: 0 auto;
+  /* border: 1px solid; */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jsc {
+  justify-content: center;
+}
+
+.align {
+  align-items: center;
+}
+
+.sec1-log img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+.sec1-head h2 {
+  font-size: 50px;
+}
+
+.sec1-text {
+  width: 100%;
+  margin: 10px 30px;
+}
+
+.sec1-text1 span {
+  display: block;
+  width: 20%;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 900;
+  padding: 10px;
+}
+
+.sec1-text1 input,
+.sec1-text1 select {
+  padding: 10px 70px;
+  text-align: center;
+  margin: 5px 10px;
+  border-radius: 10px;
+  /* border: 1px solid; */
+}
+
+.sec1-text1 label {
+  margin: 12px 2px;
+  padding: 0 10px;
+}
+
+
+.sec1-text3 {
+  padding-left: 40px;
+}
+
+.sec1-text3 p {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.bt {
+  padding: 10px 70px;
+  background-color: #25b88e;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-40 {
+  width: 40%;
+}
+
+.int {
+  padding: 10px 80px;
+}
+
+.sec1-card1 {
+  margin: 50px 0;
+  position: relative;
+}
+
+.sec1-img img {
+  border-radius: 20px;
+}
+
+.sec1-card2 {
+  border-radius: 30px;
+  background-color: #ffff;
+  padding: 20px;
+  position: absolute;
+  margin: 0 20px;
+  width: 80%;
+  top: 450px;
+  border: none;
+  border-radius: 20px 50px 20px 50px gray;
+}
+
+.sec1-card2 p {
+  color: gray;
+  font-family: sans-serif;
+}

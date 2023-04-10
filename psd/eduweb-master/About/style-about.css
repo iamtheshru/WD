@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 1380px;
+  margin: 0 auto;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jsc {
+  justify-content: center;
+}
+
+.align {
+  align-items: center;
+}
+
+.sec_1 {
+  background-color: #f5f2eb;
+}
+
+.sec-bg {
+  background-image: url(./dark-23\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+.sec-text {
+  color: #ffff;
+  margin: 50px;
+  padding: 50px;
+}
+
+.sec-text h2 {
+  font-size: 80px;
+  padding: 10px;
+}
+
+.sec-text p {
+  font-size: 23px;
+  padding: 10px;
+  word-spacing: 2px;
+}
+
+.sec-text1 {
+  margin: 20px 40px;
+  padding: 40px;
+  text-align: center;
+}
+
+.sec-text1 h2 {
+  padding: 20px;
+  font-size: 50px;
+}
+
+.sec-text1 span {
+  color: #1ab79d;
+  padding: 0 5px;
+}
+
+.sec-text1 p {
+  padding: 10px;
+  line-height: 25px;
+}
+
+.col-70 {
+  width: 60%;
+}
+
+.col-30 {
+  width: 40%;
+}
+
+.sec-text2 h2 {
+  font-size: 55px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.sec-text2 p {
+  font-size: 20px;
+  line-height: 25px;
+  padding: 10px 0;
+  color: gray;
+  text-align: justify;
+}
+
+.sec-text2 {
+  margin: 0 50px;
+}
+
+img {
+  width: 100%;
+}
+
+.sec-img img {
+  display: block;
+}
+
+.sec-text2 span {
+  color: #ee4962;
+}
