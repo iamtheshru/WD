@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>jQuery | Hide/Show, Toggle and Fading methods with Examples</p>
+    <p>jQuery hide() and show()</p>
+    <p>jQuery hide() : Hides the Syntax or the element of html that you want to hide.</p>
+    <!-- <p>$(selector).hide(speed, callback);</p> <......example....> -->
+    <p>jQuery show() : Shows the syntax or the element of html that you want the user to see.</p>
+    <!-- <p>$(selector).show(speed, callback);</p> <......example....> -->
+    <p>If you click on the "Hide" button, I will disappear.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("p").hide();
+            });
+            $("#show").click(function () {
+                $("p").show();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
