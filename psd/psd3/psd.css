@@ -34,20 +34,71 @@
 }
 
 .logo {
+    position: absolute;
     right: 580px;
     height: 115px;
     width: 200px;
     text-align: center;
     background-color: #efa286;
     border-radius: 20px;
+    padding: 10px;
 }
 
-.logo img {
-    margin: 30px 0;
+.logo {
+    transition: all .5s;
+    position: absolute;
+    top: 11px;
+    right: 580px;
+    height: 115px;
+    width: 200px;
+    margin: auto;
+    background-color: #efa286;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
 
 .header-bg1 {
     background-color: #19776b;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-right2 i {
+    color: gray;
+}
+
+.sticky {
+    top: -70px;
+    background-color: #ffff;
+}
+
+.sticky .header-bg2 {
+    background-color: #ffff;
+}
+
+/* .sticky .menu-left2 a {
+    color: #ffff;
+} */
+
+.sticky .logo {
+    top: 0;
+    height: 80px;
+    width: 180px;
+    position: relative;
+    left: 0;
+    margin: auto;
+    border-radius: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sticky.menu-right2 i {
+    color: #ffff;
 }
 
 ul li {
@@ -182,7 +233,7 @@ ul li {
     background-image: url(./img/sec2-img.jpg);
     background-position: center;
     background-size: cover;
-    height: 30rem;
+    height: 38rem;
 }
 
 .sec1-bg2 {

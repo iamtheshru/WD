@@ -24,9 +24,7 @@
                         <li><a href="#"><i class="fa-solid fa-envelope-open-text"></i>inform@company.com</a></li>
                     </ul>
                 </div>
-                <div class="logo pos-ab">
-                    <img src="./img/logo-1.png" alt="">
-                </div>
+
                 <div class="menu-right1">
                     <ul>
                         <li><a href="#"><i class="fa-solid fa-location-dot"></i>Melbourne, Australia</a></li>
@@ -76,6 +74,9 @@
                         <li><a href="">Blog</a></li>
                         <li><a href="">contact</a></li>
                     </ul>
+                </div>
+                <div class="logo">
+                    <img src="./img/logo-1.png" alt="">
                 </div>
                 <div class="menu-right2">
                     <ul>
@@ -839,7 +840,21 @@
             </div>
         </div>
     </footer>
+
+    <script src="../../jQuery/jquery.min.js"></script>
+
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > 10) {
+                jQuery('.header-bg1').addClass("sticky")
+            } else {
+                jQuery('.header-bg1').removeClass("sticky")
+            };
+        });
+    </script>
+
     <script>
         AOS.init();
     </script>

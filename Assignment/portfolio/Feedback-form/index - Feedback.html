@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style-Feedback.css">
+</head>
+
+<body>
+  <section class="container">
+    <div class="post">
+      <div class="text">Thanks for rating us!</div>
+      <div class="edit">EDIT</div>
+    </div>
+    <div class="star-widget">
+      <input type="radio" name="rate" id="rate-5">
+      <label class="fa-solid fa-star" for="rate-5"></label>
+      <input type="radio" name="rate" id="rate-4">
+      <label class="fa-solid fa-star" for="rate-4"></label>
+      <input type="radio" name="rate" id="rate-3">
+      <label class="fa-solid fa-star" for="rate-3"></label>
+      <input type="radio" name="rate" id="rate-2">
+      <label class="fa-solid fa-star" for="rate-2"></label>
+      <input type="radio" name="rate" id="rate-1">
+      <label class="fa-solid fa-star" for="rate-1"></label>
+      <form action="#">
+        <header></header>
+        <div class="textarea">
+          <textarea name="" id="" cols="35" rows="10" placeholder="Describe your exper..."></textarea>
+        </div>
+        <div class="btn">
+          <button type="submit">Post</button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+  <script>
+    const btn = document.querySelector("button");
+    const post = document.querySelector(".post");
+    const widget = document.querySelector(".star-widget");
+    const editBtn = document.querySelector(".edit");
+    btn.onclick = () => {
+      widget.style.display = "none";
+      post.style.display = "block";
+      editBtn.onclick = () => {
+        widget.style.display = "block";
+        post.style.display = "none";
+      }
+      return false
+    }
+
+  </script>
+
+</body>
+
+</html>
