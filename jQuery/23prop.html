@@ -1,0 +1,40 @@
+<!-- The .prop() method gets the property value for only the first element in the matched set. It returns undefined for the value of a property that has not been set, or if the matched set has no elements. To get the value for each element individually, use a looping construct such as jQuery's .each() or .map() method. -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>prop demo</title>
+    <style>
+        img {
+            padding: 10px;
+        }
+
+        div {
+            color: red;
+            font-size: 24px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <input type="checkbox" checked="checked" class="check">
+    <input type="checkbox" checked="checked" class="check">
+    <input type="checkbox" checked="checked" class="check">
+    <input type="checkbox" checked="checked" class="check">
+    <input type="checkbox" checked="checked" class="check">
+    <button id="b">Click</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b").click(function () {
+                $(".check").attr('disabled', !$(".check").attr('disabled'));
+            });
+            $("#b").click(function () {
+                $(".check").removeattr('disabled', !$(".check").attr('disabled'));
+            });
+        });
+    </script>
+</body>
