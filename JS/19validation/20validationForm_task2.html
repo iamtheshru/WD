@@ -22,7 +22,7 @@
     <script>
         const allinput = document.querySelectorAll('input')
         allinput.forEach((inputs) => {
-            // console.log(data);
+            // console.log(data);  
             inputs.addEventListener("blur", function () {
                 let p = document.createElement("span");
                 const newtest = document.createTextNode("This field is required");
@@ -36,17 +36,18 @@
                     } else {
                         this.after(p)
                     }
+                    // this.after(p)
                 } else {
-                    this.nextsibling;
-                    console.log(this.nextSibling);
+                    // this.nextsibling;
+                    // console.log(this.nextSibling);
                     console.log(this.nextSibling.remove());
                 }
-            })
-        })
-        document.getElementById("myform").addEventListener("submit", (e) => {
-            e.preventDefault();
-            console.log("called");
-        })
+            });
+        });
+        // document.getElementById("myform").addEventListener("submit", (e) => {
+        //     e.preventDefault();
+        //     console.log("called");
+        // })
 
         // document.getElementById("username").addEventListener("blur", myFunction);
         // function myFunction() {/*from   w  w w. j a  va2  s.c  om*/
