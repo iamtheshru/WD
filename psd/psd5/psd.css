@@ -70,8 +70,8 @@ ul li {
 
 .menu {
     width: 100%;
-    height: 50px;
-    background-color: #6c9894af;
+    height: 30px;
+    background-color: #3f827c;
 }
 
 img {
@@ -97,22 +97,21 @@ img {
 
 .header-text2 h2 {
     font-size: 4.2rem;
-    color: #6c9894;
+    color: #3f827c;
 }
 
 .header-text2 p {
     font-size: 1.2rem;
-    color: #6c9894;
+    color: #3f827c;
     font-weight: 400;
     padding: 30px;
 }
 
 .header-text2 button {
     font-size: 1.1rem;
-    color: #6c9894;
     font-weight: 400;
     padding: 10px 20px;
-    background-color: #6c9894;
+    background-color: #3f827c;
     color: #ffff;
     letter-spacing: 5px;
     border-radius: 30px;
@@ -120,7 +119,7 @@ img {
 }
 
 .sec1-bg {
-    background-color: #6c9894;
+    background-color: #3f827c;
 }
 
 .col-30 {
@@ -187,14 +186,14 @@ img {
 
 .sec2-text1 h2 {
     font-size: 3.2rem;
-    color: #6c9894;
+    color: #3f827c;
     text-align: center;
     padding: 20px;
 }
 
 .sec2-text1 p {
     font-size: 1.5rem;
-    color: #6c9894;
+    color: #3f827c;
     text-align: center;
     padding: 20px 80px;
 }
@@ -203,7 +202,7 @@ img {
     width: 280px;
     height: 280px;
     border-radius: 50%;
-    border: 5px solid #6c9894;
+    border: 5px solid #3f827c;
     text-align: center;
     margin: 0 auto;
 }
@@ -252,7 +251,7 @@ img {
     border-radius: 4px;
     background-color: #f4f9f4;
     padding: 15px 45px;
-    color: #6c9894;
+    color: #3f827c;
     font-size: 1rem;
     margin: 10px 80px;
     border: none;
@@ -448,9 +447,44 @@ img {
 }
 
 .sec7-text1 button {
-    border: 2px solid black;
     right: 0;
     outline: none;
     border-radius: 20px 20px;
     padding: 10px 50px;
+    border: none;
+}
+
+.col-55 {
+    width: 55%;
+}
+
+.col-15 {
+    width: 15%;
+}
+
+.footer-text {
+    margin: 80px 20px;
+    color: #3f827c;
+}
+
+.footer-text1 h2 {
+    padding: 20px 5px;
+    font-size: 33px;
+}
+
+.footer-text1 p {
+    line-height: 28px;
+    font-size: 22px;
+    padding: 0 40px 0 0;
+}
+
+.footer-text1 ul li {
+    font-size: 20px;
+    padding: 5px 3px;
+    display: block;
+}
+
+.footer-text1 ul li i {
+    color: #3f827c;
+    padding: 0 10px 0 0;
 }
