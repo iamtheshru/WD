@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .card {
+        .box1 {
             position: relative;
             width: 25%;
             height: 200px;
-            overflow: hidden;
         }
 
-        .card-hover-text {
+        .box {
             position: absolute;
             top: 0;
             width: 100%;
@@ -37,11 +36,11 @@
             text-align: center;
         }
 
-        .card:hover .card-hover-text {
+        .box1:hover .box {
             display: block;
         }
 
-        .card-hover-text:hover {
+        .box1:hover {
             transform: scale(1.5);
         }
     </style>
@@ -52,12 +51,12 @@
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quo vitae dolorem fuga reiciendis, consectetur
     quisquam recusandae temporibus aperiam beatae molestias sint iusto ab minus, molestiae blanditiis soluta quidem!
     Iste.
-    <div class="card">
+    <div class="box1">
         <img src="img1.jpeg" alt="">
-        <div class="card-hover-text">
-            <p>
+        <div class="box">
+            <!-- <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
-            </p>
+            </p> -->
         </div>
     </div>
 
