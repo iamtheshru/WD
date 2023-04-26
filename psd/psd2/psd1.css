@@ -9,7 +9,11 @@
     }
 
     html {
-        font-size: 65%;
+        font-size: 50%;
+    }
+
+    .sec1-text1 h2 {
+        font-size: 3.3rem;
     }
 
     .col-40 {
@@ -467,11 +471,15 @@
     }
 
     html {
-        font-size: 70%;
+        font-size: 55%;
     }
 
     .col-40 {
         width: 40%;
+    }
+
+    .header-text {
+        padding: 80px 50px;
     }
 
     .sec1-text1 {
@@ -498,6 +506,10 @@
 
     .discover-box1 {
         padding: 50px 0;
+    }
+
+    .sec5-text1 h2 {
+        font-size: 5rem;
     }
 
     .col-50 {
