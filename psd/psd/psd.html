@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="psd.css">
+    <link rel="stylesheet" href="psd 1.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="psd 1.css">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
         </div>
         <div class="container pos-rel">
             <div class="row">
-                <div class="sec1-text">
+                <div class="sec1-text" data-aos="fade-right" data-aos-duration="3000">
                     <h2>IT´S TIME <br> FOR HIKING</h2>
                     <p class="pra1">LOREMIPSUM DOLOR</p>
                     <button>READ MORE</button>
@@ -151,7 +152,7 @@
             <img src="./img/sec2.png" alt="" class="pos-ab sec4-img1 ">
             <div class="container">
                 <div class="row  align">
-                    <div class="sec4-text">
+                    <div class="sec4-text" data-aos="zoom-in" data-aos-duration="3000">
                         <h2>Hiking in the mountains</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae ratione culpa
                             quas
@@ -167,7 +168,7 @@
         <div class="sec5-img1">
             <img src="./img/sec2.png" alt="" class="pos-ab sec5-img1">
         </div>
-        <div class="container">
+        <div class="container" data-aos="zoom-in" data-aos-duration="3000">
             <div class="row">
                 <div class="sec5-text">
                     <h2>EXPLORE</h2>
@@ -229,14 +230,16 @@
             <img src="./img/sec2.png" alt="" class="pos-ab sec8-img1 ">
             <div class="container">
                 <div class="row">
-                    <div class="sec8-text">
+                    <div class="sec8-text" data-aos="zoom-in" data-aos-duration="3000">
                         <h2>Title Here</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae ratione culpa
                             quas
                             in harum eius eveniet at, exercitationem quibusdam, magnam nesciunt ea mollitia veniam quis.
                             Velit eius et fuga!</p>
-                        <input type="text" placeholder="Your Email">
-                        <button>Subscribe</button>
+                        <div class="row submit pos-rel">
+                            <input type="Your Email" id="" name="" placeholder="Details">
+                            <button class="pos-ab">Subscribe</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -248,7 +251,7 @@
             <img src="./img/sec2.png" alt="" class="pos-ab footer-img1 ">
         </div>
         <div class="container">
-            <div class="row canter align">
+            <div class="row canter ">
                 <div class="col-40 footer-ma-pa">
                     <div class="footer-text1">
                         <h2>Title Here</h2>
@@ -305,4 +308,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
