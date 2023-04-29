@@ -78,18 +78,18 @@ img {
     text-align: center;
     color: #ffff;
     font-family: sans-serif;
-    width: 60%;
+    width: 70%;
 }
 
 .header-text h2 {
     font-size: 3.8rem;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 30px;
 }
 
 .header-text p {
-    font-size: 1.5rem;
-    /* padding: 40px; */
+    font-size: 2rem;
+    padding: 40px;
 }
 
 .header-img1 {
@@ -362,18 +362,18 @@ img {
 
 .footer-text1 h2 {
     padding: 20px 0;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .footer-text1 p {
-    line-height: 30px;
-    font-size: 1.3rem;
+    line-height: 32px;
+    font-size: 1.5rem;
 }
 
 .footer-text1 ul li {
     display: block;
     padding: 15px 0;
-    font-size: 1.3rem
+    font-size: 1.5rem
 }
 
 .col40 {
@@ -382,4 +382,71 @@ img {
 
 .col20 {
     width: 100%;
+}
+
+.footer-text1 ul li {
+    transition: all 1.6s;
+}
+
+.footer-text1 ul li:hover {
+    padding-left: 20px;
+    color: #f1cd93;
+    font-weight: 500;
+}
+
+.footer-text1 h2 {
+    transition: all 1.6s;
+}
+
+.footer-text1 h2:hover {
+    color: #f1cd93;
+    transform: scale(1.1);
+}
+
+.sec4-text2 h3 {
+    transition: all 1.6s;
+}
+
+.sec4-text2 h3:hover {
+    color: #ffff;
+    background-color: #7287ae18;
+}
+
+ul li {
+    transition: all 1.5s;
+}
+
+ul li:hover {
+    padding-top: 20px;
+}
+
+.sec2-img1,
+.sec3-img1 {
+    overflow: hidden;
+}
+
+.sec2-img1 img,
+.sec3-img1 img {
+    width: 100%;
+    transition: all 2s;
+}
+
+.sec2-img1 img:hover,
+.sec3-img1 img:hover {
+    transform: scale(1.2);
+    filter: brightness(40%);
+}
+
+button {
+    transition: all 2s;
+}
+
+button:hover {
+    color: black;
+    box-shadow: inset 1px 2px 2px 30px rgba(255, 255, 255, 0.525);
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 2px solid #54524f;
 }

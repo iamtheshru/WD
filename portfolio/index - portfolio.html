@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../WD/portfolio/portfolio-css/style-portfolio.css">
+</head>
+
+<body>
+  <header class="home-bg">
+    <div class="container">
+      <div class="row jsc align" id="BackgroundEffect">
+        <div class="col">
+          <div class="home-text1">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Journal</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row align jsc">
+        <div class="col">
+          <div class="home-text2">
+            <h2>I'M <span> Shraddha</span> Patel</h2>
+            <h3>Web <span>Design</span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="sec_1">
+    <div class="container">
+      <div class="row align jsc">
+        <div class="col">
+          <div class="sec_1-text1">
+            <h2>About me</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-50 card_1">
+          <div class="card">
+            <div class="lines"></div>
+            <div class="imbx">
+              <img src="../portfolio/image/img1.jpeg" alt="">
+            </div>
+            <div class="content">
+              <div class="details">
+                <h2>Shraddha Patel <br>Web Designer</h2>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-50">
+          <div class="sec_1-text2">
+            <h2>We Can make it together</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt eligendi aspernatur vel
+              accusantium repellat alias nisi modi voluptatum ducimus iure repellendus omnis rem distinctio voluptate
+              officia, pariatur explicabo hic?</p>
+            <button></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script>
+    jQuery(window).scroll(function () {
+      if (jQuery(this).scrollTop() > 10) {
+        jQuery('#BackgroundEffect').addClass("sticky")
+      } else {
+        jQuery('#BackgroundEffect').removeClass("sticky")
+      };
+    });
+  </script>
+</body>
+
+</html>
