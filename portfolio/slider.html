@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-------slick slider link------>
+  <link rel="stylesheet" href="../portfolio/slick-1.8.1/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="../portfolio/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+  <!-- -----css link---->
+l<!-- <link rel="stylesheet" href="../../WD/portfolio/portfolio-css/style-portfolio.css"> -->
+  <style>
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-------sec4------>
+  <section class="sec_4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="sec_4_text1">
+            <h2>My Journey</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="center slider">
+            <div>
+              <img src="http://placehold.it/350x100?text=1">
+            </div>
+            <div>
+              <img src="http://placehold.it/350x100?text=2">
+            </div>
+            <div>
+              <img src="http://placehold.it/350x100?text=3">
+            </div>
+            <div>
+              <img src="http://placehold.it/350x100?text=4">
+            </div>
+            <div>
+              <img src="http://placehold.it/350x100?text=5">
+            </div>
+            <div>
+              <img src="http://placehold.it/350x100?text=6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="../portfolio/slick-1.8.1/slick-1.8.1/slick/slick.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".center").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    });
+  </script>
+</body>
+
+</html>
