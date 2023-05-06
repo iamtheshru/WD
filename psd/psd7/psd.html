@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./psd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header_bg1">
+        <div class="conatiner ">
+            <div class="row main">
+                <div class="col-30 header_bg2 ">
+                    <div class="header-icon1">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="header-text1">
+                        <h2>HELLO,NAME!</h2>
+                        <P>Lorem ipsum dolor</P>
+                    </div>
+                    <div class="header-text2 ">
+                        <p class="menu"><i class="fa-solid fa-bars menu"></i><span>MENU</span></p>
+                        <p><i class="fa-solid fa-envelope"></i><span>Email</span></p>
+                        <p><i class="fa-solid fa-envelope"></i><span>Email</span></p>
+                        <p><i class="fa-solid fa-envelope"></i><span>Email</span></p>
+                        <p><i class="fa-solid fa-envelope"></i><span>Email</span></p>
+                    </div>
+                </div>
+                <div class="col-70 header_bg3">
+                    <div class="row jsc align border">
+                        <div class="col-50  ">
+                            <div class="header-text3">
+                                <p>Lorem ipsum dolor sit</p>
+                                <h2>DASHBOARD</h2>
+                                <h3>USER PANEL</h3>
+                            </div>
+                        </div>
+                        <div class="col-50 pos-rel">
+                            <div class="header-text4 pos-rel">
+                                <span class="pos-ab"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" id="" name="" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-30 pas">
+                            <div id="columnchart_material"></div>
+                        </div>
+                        <div class="col-70 pas">
+                            <div id="barchart_material"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-30 pas">
+                            <div id="donut_single"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses', 'Profit'],
+                ['2014', 500, 300, 100],
+                ['2015', 200, 560, 250],
+                ['2016', 350, 150, 470],
+                ['2017', 230, 440, 150]
+            ]);
+
+            var options = {
+                chart: {
+                    title: 'Company Performance',
+                    subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+                }
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses', 'Profit'],
+                ['2014', 1000, 400, 200],
+                ['2015', 1170, 460, 250],
+                ['2016', 660, 1120, 300],
+                ['2017', 1030, 540, 350]
+            ]);
+
+            var options = {
+                chart: {
+                    title: 'Company Performance',
+                    subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+                },
+                bars: 'horizontal' // Required for Material Bar Charts.
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Effort', 'Amount given'],
+                ['My all', 100],
+            ]);
+
+            var options = {
+                pieHole: 0.5,
+                pieSliceTextStyle: {
+                    color: 'black',
+                },
+                legend: 'none'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donut_single'));
+            chart.draw(data, options);
+        }
+    </script>
+
+
+</body>
+
+</html>
