@@ -49,16 +49,22 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-30 pas">
+                        <div class="col-35 pas">
                             <div id="columnchart_material"></div>
                         </div>
-                        <div class="col-70 pas">
+                        <div class="col-65 pas">
                             <div id="barchart_material"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-30 pas">
                             <div id="donut_single"></div>
+                        </div>
+                        <div class="col-30 pas">
+                            <div id="chart_div"></div>
+                        </div>
+                        <div class="col-30 pas">
+                            <div id="curve_chart"></div>
                         </div>
                     </div>
                 </div>
@@ -82,7 +88,7 @@
             var options = {
                 chart: {
                     title: 'Company Performance',
-                    subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+                    // subtitle: 'Sales, Expenses, and Profit: 2014-2017',
                 }
             };
 
@@ -108,7 +114,7 @@
             var options = {
                 chart: {
                     title: 'Company Performance',
-                    subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+                    // subtitle: 'Sales, Expenses, and Profit: 2014-2017',
                 },
                 bars: 'horizontal' // Required for Material Bar Charts.
             };
@@ -141,6 +147,54 @@
             chart.draw(data, options);
         }
     </script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses'],
+                ['2013', 1000, 400],
+                ['2014', 1170, 460],
+                ['2015', 660, 1120],
+                ['2016', 1030, 540]
+            ]);
+
+            var options = {
+                title: 'Company Performance',
+                hAxis: { title: 'Year', titleTextStyle: { color: '#333' } },
+                vAxis: { minValue: 0 }
+            };
+
+            var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses'],
+                ['2004', 1000, 400],
+                ['2005', 1170, 460],
+                ['2006', 660, 1120],
+                ['2007', 1030, 540]
+            ]);
+
+            var options = {
+                title: 'Company Performance',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
 
 
 </body>

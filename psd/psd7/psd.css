@@ -29,7 +29,7 @@
 }
 
 .header_bg1 {
-    background: linear-gradient(90deg, rgba(48, 191, 153, 1) 0%, rgba(19, 193, 207, 0.5439425770308124) 100%);
+    background: linear-gradient(90deg, rgba(48, 191, 153, 0.771) 0%, rgba(19, 193, 207, 0.5439425770308124) 100%);
 }
 
 .header-icon1 {
@@ -153,4 +153,12 @@
 
 .pas {
     padding: 10px;
+}
+
+.col-35 {
+    width: 35%;
+}
+
+.col-65 {
+    width: 65%;
 }
