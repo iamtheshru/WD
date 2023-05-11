@@ -133,19 +133,31 @@ img {
 }
 
 .sec1-text1 {
-    top: 240px;
+    top: 220px;
     color: #fff;
     text-align: center;
 }
 
 .sec1-text1 h2 {
-    font-size: 60px;
+    font-size: 70px;
     padding: 5px;
 }
 
 .sec1-text1 p {
     font-size: 20px;
     padding: 5px;
+}
+
+.ps {
+    padding: 50px 0;
+}
+
+.mt-1 {
+    margin: 0 50px;
+}
+
+.col-50 {
+    width: 50%;
 }
 
 .col-60 {
@@ -172,13 +184,13 @@ img {
     width: 20%;
 }
 
-.col-50 {
-    width: 50%;
-}
-
 .header-bg1 {
     background-color: #238074;
 }
+
+
+
+
 
 .footer-bg {
     padding: 80px 0;

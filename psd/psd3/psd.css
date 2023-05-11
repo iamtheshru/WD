@@ -784,19 +784,20 @@ img {
     letter-spacing: 3px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    padding: 15px 0;
+    padding: 20px 0;
+    font-size: 25px;
 }
 
 .sec7-text1 h2 {
     font-weight: 500;
     font-size: 50px;
-    padding: 15px 0;
+    /* padding: 15px 0; */
 }
 
 .sec7-text1 h3 {
     color: #efa286;
     font-size: 35px;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .sec7-text1 p {
@@ -814,7 +815,8 @@ img {
     background-color: #19776b;
     border-radius: 50%;
     padding: 12px;
-    border: 2px solid #ffff;
+    /* border: 2px solid #ffff; */
+    border: 5px solid #ffffff99;
 }
 
 .sec7-icon1 i {
@@ -832,11 +834,17 @@ img {
 .sec7-text4 button {
     padding: 20px 70px;
     margin: 0 40px;
-    /* border: none #ffff; */
+    border: none #ffff;
 }
 
 .sec7-text4 a {
     color: black;
+}
+
+.sec7-text input {
+    margin: 0 30px;
+    border: none;
+    background: none;
 }
 
 
@@ -844,6 +852,7 @@ img {
     color: gray;
     padding: 0 6px;
     font-size: 18px;
+    margin: 10px 20px;
 }
 
 .sec7-main {
@@ -855,12 +864,34 @@ img {
 .sec7-text7 p {
     font-size: 20px;
     font-weight: 600;
-    padding: 20px;
+    padding: 20px 30px;
 }
 
 .sec7-text7 a {
-    margin: 0 30px;
-    color: black;
+    margin: 0 40px;
+    color: gray;
+    font-size: 20px;
+}
+
+.sec7-text7 i {
+    padding: 0 10px;
+
+}
+
+
+.sec7-icon2 {
+    top: 50px;
+    right: -30px;
+    font-size: 30px;
+    padding: 18px;
+    background-color: #efa286;
+    border-radius: 50%;
+    color: #fff;
+    border: 7px solid #fff;
+}
+
+.sec7-icon i {
+    background-color: #efa286;
 }
 
 .sec8-bg {
@@ -924,22 +955,24 @@ img {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     letter-spacing: 5px;
+    padding: 0 50px;
 }
 
 .sce9-tex1 h2 {
     font-size: 60px;
     font-weight: 500;
+    padding: 0 30px;
 }
 
 .sce9-tex2 p {
     font-family: 'Poppins', sans-serif;
     font-size: 23px;
     color: gray;
-    padding: 42px 0;
+    padding: 34px;
 }
 
 .sec9-text {
-    padding: 10px 60px;
+    padding: 10px 100px;
 }
 
 .col-30 {
@@ -991,7 +1024,7 @@ img {
 
 .sec10-box {
     background-color: #ffff;
-    box-shadow: 2px 2px 2px gray;
+    /* box-shadow: 2px 2px 2px gray; */
     margin: 15px 10px;
 }
 
