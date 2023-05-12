@@ -188,9 +188,87 @@ img {
     background-color: #238074;
 }
 
+.sec2-text {
+    margin: 30px;
+    color: #878c8f;
+}
 
+.sec2-img {
+    margin: 30px 0;
+}
 
+.sec2-text1 {
+    bottom: -35px;
+    right: 100px;
+    padding: 20px;
+    text-align: center;
+    background-color: #238074;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+}
 
+.sec2-text2 ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 18px;
+}
+
+.sec2-text2 i {
+    padding: 0 10px;
+    color: #238074;
+}
+
+.sec2-text3 h2 {
+    padding: 10px 0;
+    color: #000;
+    font-size: 35px;
+}
+
+.sec2-text3 p {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.sec2-text3 a {
+    color: #000;
+    font-size: 17px;
+    padding: 20px 0;
+}
+
+.sec2-text3 i {
+    padding: 0 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.sec2-btn button {
+    margin: 50px 0;
+    padding: 15px;
+    border: none;
+    background-color: #f2f7f7;
+}
+
+.sec2-input1 {
+    margin: 30px 0;
+    padding: 20px 0;
+    background-color: #f2f7f7;
+    text-align: center;
+}
+
+.sec2-input1 input {
+    padding: 15px;
+}
+
+.sec2-input1 i {
+    padding: 10px;
+    position: absolute;
+    background-color: #238074;
+    top: 25px;
+    right: 90px;
+}
 
 .footer-bg {
     padding: 80px 0;
@@ -347,5 +425,4 @@ textarea::placeholder {
     width: 100%;
     padding: 10px;
     border: 1px solid #ffffff36;
-
 }
