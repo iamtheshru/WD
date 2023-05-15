@@ -37,6 +37,34 @@
     justify-content: space-between;
 }
 
+.header-bg1 {
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+}
+
+.header-bg2 {
+    background-color: #238074;
+}
+
+.nav-text2 ul li {
+    display: inline-block;
+    padding: 25px 10px;
+}
+
+.nav-text2 ul li i {
+    padding: 0 10px;
+}
+
+.nav-text3 {
+    background-color: #343a40;
+    padding: 25px 30px;
+}
+
+.nav-text1 {
+    padding: 25px 10px;
+}
+
 .head-text1 ul li {
     display: inline-block;
 }
@@ -178,10 +206,6 @@ img {
 
 .col-20 {
     width: 20%;
-}
-
-.header-bg1 {
-    background-color: #238074;
 }
 
 .sec2-text1 h2 {
