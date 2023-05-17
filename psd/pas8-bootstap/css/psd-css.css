@@ -22,3 +22,11 @@ i[class*=" flaticon-"]:before {
     font-size: 40px;
     color: #ec1616;
 }
+
+.size {
+    width: 33% !important;
+}
+
+.size1 {
+    width: 40% !important;
+}
