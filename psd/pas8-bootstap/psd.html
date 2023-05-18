@@ -209,28 +209,100 @@
                 </div>
             </div>
         </section>
+        <section class="container d-flex justify-content-center">
+            <!-- <div class="position-absolute">
+                <div class="contact-inner1  m-5 p-3 text-center rad  bg-light">
+                    <div class="contact-area1  m-5 p-3 text-center rad bg-light">
+                        <div class="section-title1 m-5">
+                            <h3>Make An Inquiry</h3>
+                        </div>
+                        <form method="post">
+                            <div class="form-floating mb-3 bor">
+                                <input type="text" class="form-control1 w-100 p-2 mt-2 mb-2" id="Name"
+                                    placeholder="Name">
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="Email" class="form-control1 w-100 p-2 mt-2 mb-2" id="Email"
+                                    placeholder="Email">
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="date" class="form-control1 w-100 p-2 mt-2 mb-2" id="date"
+                                    placeholder="Wedding Date">
+                            </div>
+                            <div class="mt-2 mb-3">
+                                <select class="form-select" aria-label="">
+                                    <option selected>Number of Guests</option>
+                                    <option value=" 1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="3">04</option>
+                                    <option value="3">05</option>
+                                </select>
+                            </div> -->
+            <div class="form-floating mb-3">
+                <input type="submit" class="form-control1 p-2" id="submit" value="SEND AN INQUIRY">
+            </div>
+            </form>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 pe-5">
+                    <img src="./img/img1-sec4.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <img src="./img/img2-sec4.png" alt="">
+                </div>
+            </div>
+        </section>
         <section class="container">
             <div class="row">
-                <div class="col">
-                    <div class="contact-inner">
-                        <div class="contact-area">
-                            <div class="section-title">
-                                <h3>Make An Inquiry</h3>
-                            </div>
-                            <form method="post">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="Name" placeholder="Name">
-                                </div>
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="Password" placeholder="Password">
-                                </div>
-                            </form>
+                <div id="carouselExampleInterval" class="carousel slide vertical-center" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="./img/1 (1).jpeg" class=" w-25" alt="...">
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <img src="./img/1 (3).jpeg" class=" w-25" alt="...">
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <img src="./img/1 (3).jpeg" class=" w-25" alt="...">
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <img src="./img/1 (3).jpeg" class=" w-25" alt="...">
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <img src="./img/1 (3).jpeg" class=" w-25" alt="...">
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <img src="./img/1 (3).jpeg" class=" w-25" alt="...">
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+            </div>
         </section>
     </main>
-
+    <script>
+        $(document).on('ready', function () {
+            $(".vertical-center").slick({
+                dots: true,
+                vertical: true,
+                centerMode: true,
+                slidesToShow: 4,
+                slidesToScroll: 2
+            });
+        })
+    </script>
 </body>
 
 </html>
