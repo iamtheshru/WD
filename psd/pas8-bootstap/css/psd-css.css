@@ -29,98 +29,61 @@ i[class*=" flaticon-"]:before {
 
 .rad {
     border-radius: 320px 320px 0px 0px;
-    border: 1px solid #000 !important;
+    border: 1px solid #000;
 }
 
-.bor input {
-    border-bottom: 2px solid #000;
+.slider {
+    width: 50%;
+    margin: 100px auto;
 }
 
-.ourworks-box {
-    width: 60%;
-    justify-content: center;
-    text-align: center;
+.slick-slide {
+    margin: 0px 20px;
 }
 
-.our-works-head {
-    font-size: 30px;
-    font-weight: 400;
-    color: black;
-}
-
-.introduce {
-    height: 250px;
-    background-color: white;
-    box-shadow: 0 3px 10px #5969f642;
-    border-bottom: 4px solid #5969f6;
-    color: black;
-}
-
-.introduce:hover {
-    box-shadow: 0 3px 15px #5969f666;
-    border-bottom: 4px solid #B122e5;
-    color: black;
-    text-decoration: none;
-}
-
-.flex-column-1 {
-    height: 70%;
+.slick-slide img {
     width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.animation {
+    transition: all 3s;
 
 }
 
-.flex-column-2 {
-    height: 30%;
-    width: 100%;
-    align-items: center;
+.animation:hover {
+    padding-left: 40px !important;
 }
 
-.text-gray {
-    color: gray;
+.width img {
+    aspect-ratio: 2/1;
+    object-fit: contain;
+    background-color: #f7f7f7;
 }
 
-.pic {
-    height: 70px;
-    width: 70px;
-    margin-left: 20px;
-    border-radius: 50%;
-    transition: all .2s ease-in-out;
-}
-
-.introduce:hover .pic {
-    transform: scale(1.1);
-}
-
-.carousel-indicators .active {
-    background-color: #46eeaa;
-}
-
-.carousel-indicators li {
-    background-color: #c8e5ff;
-}
-
-.carousel-indicators {
-    bottom: -50px;
-}
-
-.p1 {
-    background-image: url("http://lorempixel.com/150/150/nature");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.p2 {
-    background-image: url("http://lorempixel.com/150/150/people");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.p3 {
-    background-image: url("http://lorempixel.com/150/150/cats");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.slick-slide {
+    margin: 0px 10px !important;
 }
