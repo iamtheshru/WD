@@ -356,6 +356,10 @@ ul li {
 
 }
 
+.color {
+    background-color: #d9ba91;
+}
+
 .sec2-text1 a {
     font-size: 20px;
     padding: 10px;
@@ -567,6 +571,13 @@ img {
 .sec3-aboutcompany-text p {
     font-size: 26px;
     color: gray;
+}
+
+.center1 {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+    font-size: 20px !important;
 }
 
 .col-70 {
