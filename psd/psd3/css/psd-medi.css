@@ -1,0 +1,297 @@
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+
+    header {
+        display: none;
+    }
+
+    html {
+        font-size: 50%;
+        align-items: center;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-75 {
+        width: 100%;
+    }
+
+    .col-15 {
+        width: 24%;
+    }
+
+    .col-22 {
+        width: 100%;
+    }
+
+    .col-70 {
+        width: 70%;
+    }
+
+    .col-20 {
+        width: 15%;
+    }
+
+    .col-45 {
+        width: 48%;
+    }
+
+    .col-55 {
+        width: 100%;
+    }
+
+    .col-40 {
+        width: 100%;
+    }
+
+    .col-60 {
+        width: 90%;
+    }
+
+    .col-30 {
+        width: 30%;
+    }
+
+    .col-28 {
+        width: 80%;
+    }
+
+    .col-25 {
+        width: 100%;
+    }
+
+    .sec1-text {
+        width: 63%;
+        font-size: 34px;
+    }
+
+    .ma {
+        top: 0px;
+    }
+
+    .Counse-boxs1 .col-22 {
+        width: 68%;
+    }
+
+    .Counse-boxs2 {
+        margin: 30px auto;
+    }
+
+    .sec3-about-text {
+        display: none;
+    }
+
+    .sec3-textyears {
+        width: 141px;
+        height: 143px;
+        bottom: -55px;
+        right: 9px;
+        padding: 8px 35px;
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, .70);
+    }
+
+    .sec3-icon1 {
+        width: 98px;
+        height: 100px;
+        top: -39px;
+        left: -36px;
+    }
+
+    .sec3-aboutcompany-text h3 {
+        font-size: 28px;
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+
+    .sec3-aboutcompany-text {
+        padding: 0px 23px;
+    }
+
+    .sec3-aboutcompany-text h2 {
+        font-size: 51px;
+        padding: 37px 0;
+        text-align: center;
+    }
+
+    .sec3-text {
+        text-align: center;
+    }
+
+    .sec3-text button {
+        margin: 40px 0;
+    }
+
+    .sec4-img {
+        margin: 0px;
+    }
+
+    .sec4-text1 p {
+        padding: 0px;
+    }
+
+    .sec4-text1 h2 {
+        font-size: 27px;
+        padding: 0px;
+    }
+
+    .sec4-border {
+        height: 238px;
+        top: 55px;
+    }
+
+    .sec4-text1 {
+        padding: 20px 0;
+    }
+
+    .sec5-boxs1 {
+        margin: 0px 0;
+        padding: 14px 0;
+    }
+
+    .sec5-text {
+        padding: 22px 0;
+    }
+
+    .sec5-text1 h2 {
+        text-align: center;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .sec6-img {
+        display: none;
+    }
+
+    .sec6-icon {
+        width: 82px;
+        height: 83px;
+        top: 10px;
+        left: 219px;
+    }
+
+    .sec6-text {
+        display: block;
+        text-align: center;
+    }
+
+    .sec6-text h2 {
+        width: 100%;
+        margin: 0px;
+        margin-top: 100px;
+    }
+
+    .sec6-text button {
+        padding: 20px 0;
+    }
+
+    .sec7-text1 {
+        padding: 20px;
+    }
+
+    .sec7-text4 button {
+        margin: 0 15px;
+    }
+
+    .sec7-tex5 {
+        padding: 0px;
+    }
+
+    .pa {
+        padding: 10px 20px;
+    }
+
+    .sec7-img1 {
+        margin: 20px;
+    }
+
+    .sec8 .col-20 {
+        width: 48%;
+    }
+
+    .sec8-icon1 {
+        top: 10px;
+        right: 112px;
+    }
+
+    .sec8-icon1 i {
+        font-size: 29px;
+    }
+
+    .sec9-text {
+        padding: 10px 0px;
+    }
+
+    .sce9-tex1 p {
+        padding: 0px 10px;
+    }
+
+    .sce9-tex1 h2 {
+        font-size: 43px;
+        padding: 0 10px;
+    }
+
+    .sce9-tex2 p {
+        padding: 10px;
+    }
+
+    .sec10-icon {
+        right: 47px;
+        bottom: 123px;
+    }
+
+    .sec11-ma .col-45 {
+        width: 100%;
+    }
+
+    .sec11-box2 {
+        margin: 20px;
+    }
+
+    .sec12-box1 {
+        margin: 85px 38px;
+    }
+
+    .sec12-box {
+        margin: 15px 0;
+    }
+
+    .footer-bg .col-20 {
+        width: 100%;
+    }
+
+    .footer-bg .col-30 {
+        width: 16%;
+    }
+
+    .footer-bg2 {
+        margin: 20px 7px;
+    }
+
+    .footer-bg {
+        padding: 50px 0;
+    }
+}
+
+
+/* @media (min-width: 768px) {
+    ...
+}
+
+@media (min-width: 992px) {
+    ...
+}
+
+@media (min-width: 1200px) {
+    ...
+}
+
+@media (min-width: 1400px) {
+    ...
+} */
