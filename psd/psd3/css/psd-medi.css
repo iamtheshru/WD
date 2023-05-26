@@ -1,3 +1,338 @@
+@media (min-width: 320px) {
+    .container {
+        width: 300px;
+    }
+
+    header {
+        display: none;
+    }
+
+    html {
+        font-size: 50%;
+        align-items: center;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-75 {
+        width: 100%;
+    }
+
+    .col-15 {
+        width: 87%;
+    }
+
+    .col-22 {
+        width: 100%;
+    }
+
+    .col-70 {
+        width: 98%;
+    }
+
+    .col-20 {
+        width: 15%;
+    }
+
+    .col-45 {
+        width: 99%;
+    }
+
+    .col-55 {
+        width: 100%;
+    }
+
+    .col-40 {
+        width: 100%;
+    }
+
+    .col-60 {
+        width: 100%;
+    }
+
+    .col-30 {
+        width: 100%;
+    }
+
+    .col-28 {
+        width: 100%;
+    }
+
+    .col-25 {
+        width: 100%;
+    }
+
+    .sec1-bg1 {
+        height: 53rem;
+    }
+
+    .sec4-border {
+        display: none;
+    }
+
+    .sec3-icon2 {
+        margin: 10px 0;
+    }
+
+    .sec1-text button {
+        padding: 9px 35px;
+    }
+
+    .sec1-bg2 {
+        background-size: 93% 102%;
+    }
+
+    .sec1-text {
+        width: 100%;
+        font-size: 29px;
+    }
+
+    .sec2-text h2 {
+        width: 100%;
+        font-size: 48px;
+    }
+
+    .sec3-online-text h2 {
+        font-size: 39px;
+    }
+
+    .sec3-online-text p {
+        font-size: 23px;
+    }
+
+    .Counse-boxs1 {
+        padding: 38px 0;
+    }
+
+    .sec3-aboutcompany-text p {
+        font-size: 21px;
+    }
+
+    .ma {
+        top: 0px;
+    }
+
+    .Counse-boxs2 {
+        margin: 30px auto;
+    }
+
+    .sec3-about-text {
+        display: none;
+    }
+
+    .sec3-textyears {
+        width: 141px;
+        height: 143px;
+        bottom: -55px;
+        right: 9px;
+        padding: 8px 35px;
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, .70);
+    }
+
+    .sec3-icon1 {
+        width: 98px;
+        height: 100px;
+        top: -39px;
+        left: -36px;
+    }
+
+    .sec3-aboutcompany-text h3 {
+        font-size: 21px;
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-top: 89px;
+    }
+
+    .sec3-aboutcompany-text {
+        padding: 0px 23px;
+    }
+
+    .sec3-aboutcompany-text h2 {
+        font-size: 27px;
+        padding: 19px 0;
+        text-align: initial;
+    }
+
+    .sec3-text {
+        text-align: initial;
+        margin: 10px;
+    }
+
+    .sec5-text h2 {
+        font-size: 48px;
+        font-weight: lighter;
+    }
+
+    .sec3-text button {
+        margin: 40px 0;
+    }
+
+    .sec4-img {
+        margin: 0px;
+    }
+
+    .sec4-text1 p {
+        padding: 0px;
+    }
+
+    .sec4-text1 h2 {
+        font-size: 35px;
+        padding: 0px;
+    }
+
+    .sec4-border {
+        height: 238px;
+        top: 55px;
+    }
+
+    .sec4-text1 {
+        padding: 20px 0;
+    }
+
+    .sec5-boxs1 {
+        margin: 0px 0;
+        padding: 14px 0;
+    }
+
+    .sec5-text {
+        padding: 22px 0;
+    }
+
+    .sec5-text1 h2 {
+        text-align: center;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .sec6-img {
+        display: none;
+    }
+
+    .sec6-icon {
+        width: 82px;
+        height: 83px;
+        top: 10px;
+        left: 189px;
+    }
+
+    .sec3-textyears {
+        display: none;
+    }
+
+    .sec3-img {
+        left: 18px;
+    }
+
+    .sec6-text {
+        display: block;
+        text-align: center;
+    }
+
+    .sec6-text h2 {
+        width: 100%;
+        margin: 0px;
+        margin-top: 100px;
+    }
+
+    .sec6-text button {
+        padding: 20px 0;
+    }
+
+    .sec7-text1 {
+        padding: 20px;
+    }
+
+    .sec7-text4 button {
+        margin: 0 15px;
+    }
+
+    .sec7-tex5 {
+        padding: 0px;
+    }
+
+    .pa {
+        padding: 10px 20px;
+    }
+
+    .sec7-img1 {
+        margin: 20px;
+    }
+
+    .sec8 .col-20 {
+        width: 48%;
+    }
+
+    .sec8-icon1 {
+        top: 10px;
+        right: 112px;
+    }
+
+    .sec8-icon1 i {
+        font-size: 29px;
+    }
+
+    .sec9-text {
+        padding: 10px 0px;
+    }
+
+    .sce9-tex1 p {
+        padding: 0px 10px;
+    }
+
+    .sce9-tex1 h2 {
+        font-size: 43px;
+        padding: 0 10px;
+    }
+
+    .sce9-tex2 p {
+        padding: 10px;
+    }
+
+    .sec10-icon {
+        right: 47px;
+        bottom: 123px;
+    }
+
+    .sec11-ma .col-45 {
+        width: 100%;
+    }
+
+    .sec11-box2 {
+        margin: 20px;
+    }
+
+    .sec12-box1 {
+        margin: 85px 38px;
+    }
+
+    .sec12-box {
+        margin: 15px 0;
+    }
+
+    .footer-bg .col-20 {
+        width: 100%;
+    }
+
+    .footer-bg .col-30 {
+        width: 16%;
+    }
+
+    .footer-bg2 {
+        margin: 20px 7px;
+    }
+
+    .footer-bg {
+        padding: 50px 0;
+    }
+}
+
+
+
+
 @media (min-width: 576px) {
     .container {
         width: 540px;
@@ -278,7 +613,6 @@
         padding: 50px 0;
     }
 }
-
 
 @media (min-width: 768px) {
     .container {
@@ -1353,7 +1687,7 @@
     }
 
     .col-15 {
-        width: 24%;
+        width: 15%;
     }
 
     .col-22 {
@@ -1361,7 +1695,7 @@
     }
 
     .col-70 {
-        width: 70%;
+        width: 46%;
     }
 
     .col-20 {
@@ -1430,9 +1764,9 @@
     }
 
     .sec3-about-text {
-        left: -10px;
-        top: 33px;
-        font-size: 68px;
+        left: 75px;
+        top: 65px;
+        font-size: 63px;
     }
 
     .sec3-textyears {
@@ -1442,6 +1776,10 @@
         right: -52px;
         padding: 2px 35px;
         box-shadow: 0 0 0 30px rgba(213, 204, 204, 0.7);
+    }
+
+    .sec3 {
+        margin: 100px 0;
     }
 
     .sec3-icon1 {
@@ -1459,7 +1797,7 @@
     }
 
     .sec3-aboutcompany-text {
-        padding: 0px 23px;
+        padding-left: 150px;
     }
 
     .sec3-aboutcompany-text h2 {
@@ -1483,6 +1821,10 @@
     .sec3-icon2 {
         width: 85px;
         height: 85px;
+    }
+
+    .ma_left {
+        margin-left: 140px;
     }
 
     .sec4-img {
@@ -1537,7 +1879,7 @@
     }
 
     .sec6-box1 {
-        height: 215px;
+        height: 272px;
     }
 
     .sec6-text {
@@ -1559,18 +1901,15 @@
     }
 
     .sec7-main {
-        margin: 0px 100px;
-    }
-
-    .sec7-main {
         margin: 0px 0px;
+
     }
 
     /* .sec7-text2{
         margin: 0px 100px;
     } */
     .sec7-main .col-50 {
-        width: 57%;
+        width: 50%;
     }
 
     .sec7-text1 {
@@ -1594,9 +1933,9 @@
     }
 
     .sec7-icon2 {
-        top: 28px;
-        right: -23px;
-        padding: 5px;
+        top: 36px;
+        right: -28px;
+        padding: 13px;
     }
 
     .sec7-box {
@@ -1608,7 +1947,7 @@
     }
 
     .sec7-text7 p {
-        padding: 20px 13px;
+        padding: 20px 18px;
     }
 
     .sec7-text7 {
@@ -1629,7 +1968,7 @@
 
     .sec8-icon1 {
         top: 10px;
-        right: 120px;
+        right: 150px;
     }
 
     .sec8-icon1 i {
@@ -1637,7 +1976,7 @@
     }
 
     .sec9-text {
-        padding: 10px 0px;
+        padding: 23px;
     }
 
     .sce9-tex1 p {
@@ -1645,12 +1984,13 @@
     }
 
     .sce9-tex1 h2 {
-        font-size: 43px;
+        font-size: 59px;
         padding: 0 10px;
     }
 
     .sce9-tex2 p {
         padding: 10px;
+        font-size: 25px;
     }
 
     .sec10-icon {
@@ -1692,19 +2032,25 @@
     }
 
     .sec12-text2 p {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .sec12-text2 h2 {
-        font-size: 25px;
+        font-size: 29px;
     }
 
     .footer-bg .col-20 {
-        width: 24%;
+        width: 23%;
     }
 
     .footer-bg .col-30 {
-        width: 33%;
+        width: 30%;
+    }
+
+    .sec3-online-text h2 {
+        font-size: 31px;
+        font-weight: 300;
+        padding: 7px;
     }
 
     .footer-bg2 {
