@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ordered collection of items = array
+
+        let frutits = ["apple", "mango"];
+        console.log(frutits[0]);
+        console.log(frutits);
+
+
+        // change array=Ex.
+        frutits[1] = "banana";
+        console.log(frutits);
+
+        //  type chack
+        console.log(typeof frutits);
+        console.log(Array.isArray(frutits));
+
+        //object type
+        let number = [1, 2, 3, 4, 5];
+        console.log(number);
+        let obj = {};
+        console.log(obj);
+
+        // push and pop array
+        //unshift and shift
+
+        //push last ma add kare chhe.
+        let frutits1 = ["apple", "mango"];
+        frutits1.push("banana");
+        console.log(frutits1);
+
+
+        //pop last ma remove kare chhe.
+        let fruits2 = ["apple", "mango", "banana"];
+        // fruits2.pop();
+        // console.log(fruits2);
+
+        let poppedfruits2 = fruits2.pop();
+        console.log(poppedfruits2);//retune
+
+        //unshift stating ma add kare.
+        frutits.unshift("mango");
+        console.log(frutits);
+
+        //unshift stating ma remove kare.
+
+        let fruits3 = ["apple", "mango", "banana"];
+        // fruits3.shift();
+        // console.log(fruits3);
+
+        let removefruit = fruits3.shift();
+        console.log(removefruit);//retune
+
+
+
+
+    </script>
+</body>
