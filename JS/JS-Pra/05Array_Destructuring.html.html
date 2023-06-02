@@ -10,7 +10,7 @@
 
 <body>
     <script>
-
+        // array
         const array1 = [1, 2, 3, 4, 5]
         // let myvar1 = array1[0];
         // let myvar2 = array1[1];
@@ -23,6 +23,18 @@
         console.log(newarray);
         const array2 = [].concat(newarray, 4, 5, 6);
         console.log(array2);
+
+
+        // Object
+        const detail = {
+            name: "shraddha",
+            age: 28,
+            year: 1995
+        };
+
+        let { name, ...newdetail } = detail;
+        console.log(name)
+        console.log(newdetail);
 
     </script>
 </body>

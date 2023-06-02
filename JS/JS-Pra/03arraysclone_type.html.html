@@ -28,5 +28,22 @@
         console.log(array1);
         console.log(array2);
 
+        //object spread operator
+        const obj1 = {
+            key1: "value1",
+            key2: "value2"
+        };
+
+        const obj2 = {
+            key1: "value",
+            key3: "value3",
+            key4: "value4"
+        };
+
+        const newobject = { ...obj1, ...obj2, key5: "value5" }
+        console.log(obj1);
+        console.log(obj2);
+        console.log(newobject);
+
     </script>
 </body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // objects referance type
+        // arrays are good but not sufficient  for real world data.
+
+        // how to create objects
+        const person = { name: "shraddha", age: "26" };
+        console.log(person);
+        //how to access data from objects
+        console.log(person.name); //dot
+        console.log(person.age);
+        //how to add key value pair to objects
+        person["person"] = "female";
+        console.log(person);
+
+        // differant between dot and brecket notaion
+        // const key = "email"
+        const person1 = { name: "shraddha", age: "26", "person hobbies": ["sleeping", "listening"] };
+
+        // console.log(person1["person hobbies"]); // brecket notaion
+        // person1[key] = "s.j.patel.3110@gmail.com";
+        // console.log(person1);
+
+
+
+        //how to iterate object[ploo]
+
+        // for loop
+        // for (let key in person1) {
+        //     // console.log(`${key}:${person1[key]}`);
+        //     // console.log(key, "", person1[key]);
+        // }
+
+        //object.keys
+        console.log(typeof (Object.keys(person1)));
+        // const val = Array.isArray(object.key(person1));
+        // console.log(val);
+
+        for (let key of Object.keys(person1)) {
+            console.log(person1[key]);
+        }
+
+    </script>
+</body>

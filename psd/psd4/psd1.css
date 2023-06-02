@@ -5,7 +5,7 @@
     }
 
     html {
-        font-size: 62%;
+        font-size: 60%;
     }
 
     .header-text {
@@ -23,7 +23,7 @@
     }
 
     .header-bg1 {
-        height: 420px;
+        height: 500px;
     }
 
     .sec2-text {
@@ -73,7 +73,7 @@
     }
 
     .footer-bg1 {
-        height: 470px;
+        /* height: 0px; */
     }
 
     .header-img1 {

@@ -9,6 +9,7 @@
 .container {
     width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .pos-re {
@@ -88,7 +89,7 @@ img {
 }
 
 .header-text p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 40px;
 }
 
@@ -115,7 +116,7 @@ img {
 }
 
 .sec2-text h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     color: #7287ae;
     font-weight: 900;
