@@ -36,5 +36,22 @@
         console.log(name)
         console.log(newdetail);
 
+        // param destructuring
+        const person = {
+            name: "shraddha",
+            gender: "Female"
+        }
+
+        // function printfunc(obj) {
+        //     console.log(obj.name);
+        //     console.log(obj.gender);
+        // }
+        // printfunc(person);
+
+        function printfunc({ name, gender }) {
+            console.log(name);
+            console.log(gender);
+        }
+        printfunc(person);
     </script>
 </body>

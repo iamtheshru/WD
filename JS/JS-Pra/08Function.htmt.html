@@ -22,8 +22,8 @@
         const ThreeNumbers = function (number1, number2, number3) {
             return number1 + number2 + number3;
         }
-        const ans = ThreeNumbers(2, 3, 4);
-        console.log(ans);
+        const ans1 = ThreeNumbers(2, 3, 4);
+        console.log(ans1);
 
 
         // function findtarget(array, target) {
@@ -71,6 +71,57 @@
         // console.log(myarray[1]);
 
 
-        
+        //Normal Function
+
+        // function findTarget(array, target) {
+        //     for (let i = 0; i < array.length; i++) {
+        //         if (array[i] === target) {
+        //             return i;
+        //         }
+        //     }
+        //     return -1;
+        // }
+
+        // const myarray = [2, 5, 8, 50];
+        // const ans = findTarget(myarray, 5);
+        // console.log(ans)
+
+        //Function Expression
+
+
+        // const findTarget = function (array, target) {
+        //     for (let i = 0; i < array.length; i++) {
+        //         if (array[i] === target) {
+        //             return i;
+        //         }
+        //     }
+        //     return -1;
+        // }
+
+        // const myarray = [2, 5, 8, 50];
+        // const ans = findTarget(myarray, 5);
+        // console.log(ans)
+
+
+        // arrow Function
+        const findTarget = (array, target) => {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] === target) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        const myarray = [2, 5, 8, 50];
+        const ans = findTarget(myarray, 5);
+        console.log(ans)
+
+        //single line code in function
+        let wellcome = name => `Hello ${name}`;
+        console.log(wellcome("shraddha", 27));
+        console.log(typeof wellcome)
+
+
     </script>
 </body>
