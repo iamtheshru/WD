@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const numbers = [4, 2, 7, 4, 8];
+        // function multiplyby(number, index) {
+        //     // console.log("index is", index);
+        //     console.log(`index is ${index} number is ${number}`);
+        //     console.log(`${number}*2=${number * 2}`);
+        // }
+
+        // multiplyby(numbers[0], 0);
+
+
+        // for (let i = 0; i < numbers.length; i++) {
+        //     // console.log(i);
+        //     multiplyby(numbers[i], i);
+        // }
+
+        // numbers.forEach(multiplyby);
+
+        // numbers.forEach(function (number, index) {
+        //     console.log(`index is ${index} number is ${number}`);
+        //     console.log(`${number}*2=${number * 2}`);
+        // });
+
+        numbers.forEach((number, index) => {
+            console.log(`index is ${index} number is ${number}`);
+            console.log(`${number}*2=${number * 2}`);
+        });
+
+
+        const users = [
+            { fristName: "meghna", age: 33 },
+            { fristName: "pooja", age: 30 },
+            { fristName: "shraddha", age: 27 },
+            { fristName: "zeel", age: 25 },
+        ]
+
+        // users.forEach(function (user) {
+        //     console.log(user.fristName)
+        // });
+
+        users.forEach(user => {
+            console.log(user.fristName)
+        });
+
+        // for (let user of users) {
+        //     console.log(user.fristName);
+        // }
+
+    </script>
+</body>
