@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        //iterables
+        //jispe hum for of loop laga sakein.
+        // string,array are iterables
+
+        // const fristname = "shraddha";
+        // for (let char of fristname) {
+        //     console.log(char);
+        // }
+
+        // const items = ["item1", "item2", "item3"]
+        // for (let item of items) {
+        //     console.log(item);
+        // }
+
+        // object is not iterables
+        // const users = { 'key1': "value1", 'key2': "value2" }
+        // for (let user of users) {
+        //     console.log(user);
+        // }
+
+        //array like object
+        //jinke pas length property hoti hai
+        //aur jiko hum index se access kar sakte hai.
+        //ex-String
+
+        // const name = "zeel";
+        // console.log(name.length);
+        // console.log(name[2]);
+
+        // sets (it is iterable)
+        // strore data
+        //sets also have its own methods
+        //no index-based access
+        //Order is not guaranteed
+        // unique items only(no duplicates allowd)
+
+        const items1 = ["item1", "item2", "item3"]
+        const numbers = new Set([2, 3, 5]);
+        console.log(numbers[2]);
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+        numbers.add(items1);
+        numbers.add(["item1", "item2", "item3"]);
+        numbers.add(["item1", "item2", "item3"]);
+        // if (numbers.has(1)) {
+        //     console.log("1 is present");
+        // } else {
+        //     console.log("1 is not present");
+        // }
+
+        // for (let number of numbers) {
+        //     console.log(number);
+        // }
+        // console.log(numbers);
+
+        const myArray = [1, 2, 3, 4, 4, 5, 6, 5, 6];
+        const uniqueElements = new Set(myArray);
+        console.log(uniqueElements);
+        console.log(myArray);
+        let length = 0;
+        for (let element of uniqueElements) {
+            length++;
+        }
+        console.log(length);
+
+    </script>
+</body>
