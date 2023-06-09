@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        const user = {
+            firstName: "shraddha",
+            lastName: "patel",
+            email: "s.j.patel.3110@gmaail.com",
+            age: 27,
+            about: function () {
+                return `${this.firstName} is ${this.age} years old.`;
+            },
+            is18: function () {
+                return this.age >= 18;
+            }
+        }
+
+        //function (that function create object)
+        // add key value pair
+        // object ko return krega
+
+        // function createUser(firstName, lastName, email, age) {
+        //     const user = {};
+        //     user.firstName = firstName;
+        //     user.lastName = lastName;
+        //     user.email = email;
+        //     user.age = age;
+        //     user.about = function () {
+        //         return `${this.firstName} is ${this.age} years old.`;
+        //     };
+        //     user.is18 = function () {
+        //         return this.age >= 18;
+        //     }
+        //     return user;
+        // }
+        // const user1 = createUser('Shraddha', 'patel', 's.j.patel@gmail.com', 18)
+        // console.log(user1);
+        // const is18 = user1.is18();
+        // const about = user1.about();
+        // console.log(is18);
+        // console.log(about);
+
+
+        //multipal function
+        const userMethods = {
+            about: function () {
+                return `${this.firstName} is ${this.age} years old.`;
+            },
+            is18: function () {
+                return this.age >= 18;
+            },
+            sing: function () {
+                return 'toon na na na la la'
+            }
+        }
+
+        function createUser(firstName, lastName, email, age) {
+            // const user = {};
+            const user = Object.create(userMethods); //__proto__
+            user.firstName = firstName;
+            user.lastName = lastName;
+            user.email = email;
+            user.age = age;
+            user.about = userMethods.about;
+            user.is18 = userMethods.is18;
+            user.sing = userMethods.sing;
+            return user;
+        }
+        const user1 = createUser('Shraddha', 'patel', 's.j.patel@gmail.com', 18)
+        console.log(user1);
+        console.log(user1.about());
+        console.log(user1.is18());
+        console.log(user1.sing());
+        // const is18 = user1.is18();
+        // const about = user1.about();
+        // const sing = user1.sing();
+        // console.log(is18);
+        // console.log(about);
+        // console.log(sing);
+
+        //__proto__
+
+        const obj1 = {
+            key1: "value1",
+            key2: "value2"
+        }
+        const obj2 = Object.create(obj1);
+        // console.log(obj2.key2)
+        obj2.key3 = "value3";
+        // obj2.key2 = "unique";
+        // console.log(obj2.key2)
+        console.log(obj2);
+
+        //__proto__ [[prototype]]
+
+        console.log(obj2.__proto__)
+
+    </script>
+</body>
