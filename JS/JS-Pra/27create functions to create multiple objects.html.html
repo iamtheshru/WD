@@ -52,35 +52,35 @@
 
 
         //multipal function
-        const userMethods = {
-            about: function () {
-                return `${this.firstName} is ${this.age} years old.`;
-            },
-            is18: function () {
-                return this.age >= 18;
-            },
-            sing: function () {
-                return 'toon na na na la la'
-            }
-        }
+        // const userMethods = {
+        //     about: function () {
+        //         return `${this.firstName} is ${this.age} years old.`;
+        //     },
+        //     is18: function () {
+        //         return this.age >= 18;
+        //     },
+        //     sing: function () {
+        //         return 'toon na na na la la'
+        //     }
+        // }
 
-        function createUser(firstName, lastName, email, age) {
-            // const user = {};
-            const user = Object.create(userMethods); //__proto__
-            user.firstName = firstName;
-            user.lastName = lastName;
-            user.email = email;
-            user.age = age;
-            user.about = userMethods.about;
-            user.is18 = userMethods.is18;
-            user.sing = userMethods.sing;
-            return user;
-        }
-        const user1 = createUser('Shraddha', 'patel', 's.j.patel@gmail.com', 18)
-        console.log(user1);
-        console.log(user1.about());
-        console.log(user1.is18());
-        console.log(user1.sing());
+        // function createUser(firstName, lastName, email, age) {
+        //     // const user = {};
+        //     const user = Object.create(userMethods); //__proto__
+        //     user.firstName = firstName;
+        //     user.lastName = lastName;
+        //     user.email = email;
+        //     user.age = age;
+        //     user.about = userMethods.about;
+        //     user.is18 = userMethods.is18;
+        //     user.sing = userMethods.sing;
+        //     return user;
+        // }
+        // const user1 = createUser('Shraddha', 'patel', 's.j.patel@gmail.com', 18)
+        // console.log(user1);
+        // console.log(user1.about());
+        // console.log(user1.is18());
+        // console.log(user1.sing());
         // const is18 = user1.is18();
         // const about = user1.about();
         // const sing = user1.sing();
@@ -100,10 +100,47 @@
         // obj2.key2 = "unique";
         // console.log(obj2.key2)
         console.log(obj2);
-
-        //__proto__ [[prototype]]
-
         console.log(obj2.__proto__)
+
+        //[[prototype]] only function ma hoy.
+        function hello() {
+            console.log("hello world");
+        }
+
+        hello.prototype.abc = "abc";
+        hello.prototype.xyz = "xyz";
+        hello.prototype.shraddha = function () {
+            return "shraddha";
+        }
+        console.log(hello.prototype.shraddha)
+
+        if (hello.prototype) {
+            console.log("prototype is present");
+        } else {
+            console.log("prototype is not present");
+        }
+
+        // prototype function use 
+
+        function createUser(firstName, lastName, email, age) {
+            user.firstName = firstName;
+            user.lastName = lastName;
+            user.email = email;
+            user.age = age;
+            return user;
+        }
+        createUser.prototype.about = function () {
+            return `${this.firstName} is ${this.age} year old`
+        };
+
+        createUser.prototype.is18 = function () {
+            return this.age >= 18;
+        };
+
+        const user1 = createUser('Shraddha', 'patel', 's.j.patel@gmail.com', 18)
+        console.log(user1);
+        console.log(user1.about());
+        console.log(user1.is18());
 
     </script>
 </body>
