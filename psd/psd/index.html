@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/psd.css">
-    <link rel="stylesheet" href="./css/psd 1.css">
+    <link rel="stylesheet" href="./css/psd-css.css">
+    <link rel="stylesheet" href="./css/psd-media.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -24,15 +24,15 @@
                 <div class="toggle-menu ">
                     <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
                 </div>
-                <div class="menu-right " id="main-menu">
+                <div class="menu-right row " id="main-menu">
                     <ul class="nav-bar">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Our Story</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
-                    <div id="main-menu2" class="active ">
-                        <a href="#"><input type="text" name="" id=""><i class="fa-solid fa-magnifying-glass"
+                    <div id="main-menu2" class="active pos-rel">
+                        <a href="#"><input type="text" name="" id=""><i class="fa-solid fa-magnifying-glass pos-ab"
                                 onclick="serchMneu()"></i></a>
                     </div>
                 </div>
@@ -325,9 +325,9 @@
             add.classList.toggle('dips-b-mobile');
             console.log("hello");
         }
-        function serchMneu() {
-            add2.classList.toggle('active');
-            console.log("hello");
-        }
+        // function serchMneu() {
+        //     add2.classList.toggle('active');
+        //     console.log("hello");
+        // }
     </script>
 </body>

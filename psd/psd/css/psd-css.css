@@ -29,8 +29,21 @@
     /* align-items: center; */
 }
 
-.menu-right {
-    display: block;
+.active {
+    margin: 15px 10px;
+}
+
+.active input {
+    padding: 5px 10px;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.active i {
+    top: 7px;
+    right: 10px;
+    font-size: 15px;
+    color: gray;
 }
 
 .jsc {
@@ -74,7 +87,7 @@
 }
 
 .sec1-bg {
-    background-image: linear-gradient(90deg, rgba(52, 52, 52, 0.046) 0%, rgb(67 64 55 / 0%) 100%), url(img/sec1.png);
+    background-image: linear-gradient(90deg, rgba(52, 52, 52, 0.046) 0%, rgb(67 64 55 / 0%) 100%), url(../img/sec1.png);
     z-index: -2;
     background-position: center;
     background-size: cover;
@@ -296,7 +309,8 @@
 }
 
 .sec5-bg {
-    background-image: linear-gradient(100deg, rgba(52, 52, 52, 0.046) 0%, rgb(67 64 55 / 0%) 100%), url(img/img9.png);
+    /* background-image: linear-gradient(100deg, rgba(52, 52, 52, 0.046) 0%, rgb(67 64 55 / 0%) 100%), url(img/img9.png); */
+    background-image: linear-gradient(100deg, rgba(52, 52, 52, 0.046) 0%, rgb(67 64 55 / 0%) 100%), url(../img/img9.png);
     z-index: -2;
     background-position: center;
     background-size: cover;
@@ -572,4 +586,56 @@ ul li:hover {
 
 .footer-text1 h2:hover {
     color: rgba(0, 0, 0, 0.499);
+}
+
+.toggle-menu {
+    display: block;
+}
+
+.menu-right ul li {
+    display: none;
+
+}
+
+.menu-right ul {
+    position: absolute;
+    left: -200px;
+    width: 80%;
+    /* background-color: #776c642d; */
+    transition: all 2s ease-in-out;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #e2a25553;
+    backdrop-filter: blur(60px);
+
+}
+
+.menu-right ul li {
+    border: 2px solid #fff;
+}
+
+.menu-right input {
+    display: none;
+}
+
+.toggle-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 100;
+    font-size: 25px;
+}
+
+.active i {
+    top: -10px;
+    right: 30px;
+}
+
+.dips-b-mobile ul {
+    position: absolute;
+    left: -15px;
+}
+
+.dips-b-mobile ul li {
+    display: block;
 }
