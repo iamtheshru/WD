@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        function myFun() {
+            // return [1, 2];
+            return { a: "1" };
+        }
+        const ans = myFun();
+        console.log(ans);
+
+
+
+        function outerFunction() {
+            function innerFunction() {
+                console.log("hello world");
+            }
+            return innerFunction;
+        }
+        const ans1 = outerFunction();
+        ans1();
+
+
+        function printFullName(fristName, lastName) {
+            function printName() {
+                console.log("hello world");
+            }
+            return printName;
+        }
+        const ans2 = printFullName("shraddha", "Patel");
+        ans2();
+
+
+    
+    </script>
+</body>
