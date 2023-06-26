@@ -59,9 +59,9 @@
 
 
 .flex-flow {
-    /* flex-flow: column;
-    flex-flow: column-reverse; */
-    flex-flow: row-reverse;
+    /* flex-flow: column; */
+    flex-flow: column-reverse;
+    /* flex-flow: row-reverse; */
 }
 
 .flex-column-row-gap {

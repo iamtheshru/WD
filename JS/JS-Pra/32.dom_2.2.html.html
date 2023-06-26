@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .todo-input {
+            margin: 30px;
+        }
+
+        .todo-input input,
+        button {
+            padding: 10px 80px;
+            text-align: center;
+
+        }
+
+
+
+        .todo-list1 li {
+            list-style: none;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin: 10px 0;
+            width: 30%;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="todo-input">
+        <input type="text">
+        <button>click</button>
+    </div>
+    <div class="todo-list ">
+        <ul class="todo-list1">
+            <!-- <li class="frist-todo">Todo</li> -->
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+            <li>Item5</li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        // const todoList = document.querySelector(".todo-list1");
+        // todoList.innerHTML += "<li>New Todo </li>"
+        // todoList.innerHTML += "<li>New Todo </li>"
+        // todoList.innerHTML += "<li>New Todo </li>"
+
+        // const todoList = document.querySelector(".todo-list1");
+        // todoList.insertAdjacentHTML("beforebegin", "<li>New Todo </li>");//befor
+        // todoList.insertAdjacentHTML("beforeend", "<li>New Todo </li>");//apend
+        // todoList.insertAdjacentHTML("afterbegin", "<li>New Todo </li>");//prepend
+        // todoList.insertAdjacentHTML("afterend", "<li>New Todo </li>");//after
+
+
+        // const ul = document.querySelector(".todo-list1");
+        // const li = document.createElement("li");
+        // li.textContent = "new Todo";
+        // const li2 = li.cloneNode(true);//append and prepend bane use kariye tyare
+        // ul.append(li);
+        // ul.prepend(li2);
+
+
+        //static and live list  1. queryselectorAll hamein static list degi and 2.getElementBySomething hamein live list degi.
+
+        // const listItems = document.querySelectorAll(".todo-list1 li");
+        // const sixhli = document.createElement("li");
+        // sixhli.textContent = "Item 6";
+        // const ul = document.querySelector(".todo-list1");
+        // ul.append(sixhli);
+        // console.log(listItems);
+
+        // const ul = document.querySelector(".todo-list1");
+        // const listItems1 = ul.getElementsByTagName("li");
+        // const sixhli = document.createElement("li");
+        // sixhli.textContent = "Item 6";
+        // ul.append(sixhli);
+        // console.log(listItems1);
+
+        //hight and with
+        const todoInput = document.querySelector(".todo-input");
+        // const info = todoInput.getBoundingClientRect();
+        // const info = todoInput.getBoundingClientRect().top;
+        // const info = todoInput.getBoundingClientRect().height;
+        const info = todoInput.getBoundingClientRect().width;
+        console.log(info);
+    </script>
+</body>
+
+</html>
