@@ -70,9 +70,9 @@
             const newTodoText = todoInput.value;
             const newLi = document.createElement("li");
             const newLiInnerHtml = ` <span> ${newTodoText} </span>
-            <div class="btn">
-            <button>Done</button>
-                    <button>Remove</button>
+                <div class="btn">
+                    <button class="done">Done</button>
+                    <button class="remove">Remove</button>
                 </div>`;
             newLi.innerHTML = newLiInnerHtml;
             todoList.append(newLi);
@@ -86,7 +86,7 @@
                 const targetLi = e.target.parentNode.parentNode;
                 targetLi.remove();
             }
-            if (e.target.classList.contains("done")) {
+            else if (e.target.classList.contains("done")) {
                 const liSpan = e.target.parentNode.previousElementSibling;
                 liSpan.style.textDecoration = "line-through";
                 console.log(liSpan);
