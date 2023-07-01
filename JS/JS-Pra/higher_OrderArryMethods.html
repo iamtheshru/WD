@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>What are higher order array methods?</h2>
+    <p>In Javascript, functions can be assigned to variables in the same way that strings or arrays can. They can be
+        passed into other functions as parameters or returned from them as well. A “higher-order function” is a function
+        that accepts functions as parameters and/or returns a function.</p>
+    <ul>
+        <li>Filter</li>
+        <li>Map</li>
+        <li>Reduce</li>
+    </ul>
+    <script>
+        // Array map method
+        let arr = [45, 23, 21]
+        let a = arr.map((value, index) => {
+            console.log(value, index, arr)
+            // return value + 1
+            return value + index
+        })
+        console.log(arr)
+        console.log(a)
+
+        // Array fillter method
+        let arr2 = [45, 23, 21, 0, 3, 5];
+
+        let a2 = arr2.filter((a) => {
+            return a < 10
+        })
+        console.log(a2);
+
+        // Array Reduce method
+        // let arr3 = [1, 2, 3, 5, 2, 1];
+        // let newarr3 = arr3.reduce((r, p) => {
+        //     return r + p
+        // })
+        // console.log(newarr3);
+
+
+        let arr3 = [1, 2, 3, 5, 2, 1];
+        const reduce_func = (r, p) => {
+            return r + p
+        }
+        let newarr3 = arr3.reduce(reduce_func)
+        console.log(newarr3)
+    </script>
+</body>
+
+</html>
