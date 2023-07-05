@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHR</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <script>
+        const URL = "https://jsonplaceholder.typicode.com/posts";
+        const xhr = new XMLHttpRequest();
+        // console.log(xhr);
+
+        // console.log(xhr.readyState);
+        xhr.open("GET", URL);
+        // console.log(xhr.readyState);
+
+        xhr.onreadystatechange = function () {
+            // console.log(xhr.readyState);
+            if (xhr.readyState === 4) {
+                // console.log(xhr.response);
+                // console.log(typeof xhr.response); //string
+                const response = xhr.response;
+                const data = JSON.parse(response);
+                // console.log(data);
+                console.log(typeof data); //object
+            }
+        }
+
+        xhr.send();
+    </script>
+
+</body>
+
+</html>
