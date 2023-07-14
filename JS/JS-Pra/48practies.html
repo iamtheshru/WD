@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+
+
+    <script>
+
+        // let a = [];
+        // let b = [];
+        // console.warn(a == b);
+        // console.warn(a === b); //false
+
+        // let a = [];
+        // let b = a;
+        // console.warn(a == b);
+        // console.warn(a === b); //true
+
+        // let a = [20];
+        // let b = [20];
+        // console.warn(a[0] == b[0]);
+        // console.warn(a[0] === b[0]); //element compare //true
+
+        // let a = [1, 2, 3, 4, 5];
+        // console.warn(...z);  //1,2,3,4,5
+
+        // console.warn(typeof NaN); //not a number (type of number)
+
+        // let data = 10 - -10;
+        // console.warn(data); //20
+
+        // const set = new Set([1, 1, 2, 3, 4, 5]);
+        // console.log(set); //1,2,3,4,5
+
+        // let data = { name: "shru" };
+        // // console.warn(delete data.name); //true
+        // console.warn(delete data); //false
+        // console.warn(data);
+
+        // let data = ["poo", "zee", "megh"];
+        // const [y] = data;
+        // console.log(y); //poo
+
+        // let data = ["poo", "zee", "megh"];
+        // const [, y] = data;
+        // console.log(y); //zee
+
+        // const data = { name: "shraddha", age: "26" };
+        // const { name } = data;
+        // const { age } = data;
+        // console.log(name);
+        // console.log(age);
+
+
+        // let data = { name: "shraddha", age: "26" };
+        // let info = { city: "kutch", main: "s.j.patel@gmail.com" }
+        // data = { ...data, ...info };
+        // console.log(data);
+
+
+        // let data = { name: "shraddha", age: "26" };
+        // let info = { city: "kutch" }
+        // data = { data, ...info };
+        // console.log(data);
+
+        // let data = { name: "shraddha", age: "26", city: "ahemdabad" };
+        // let info = { city: "kutch" }
+        // data = { ...data, ...info };
+        // console.log(data);
+
+        // const name = "shru";
+        // console.log(name()); //error
+
+        // const result = false || {} || null;
+        // console.log(result); //{}-true hoy ae aave
+
+        // const result = false || "" || null;
+        // console.log(result); //null -true na male to last vali value aapse
+
+        // const result = [] || "" || null;
+        // console.log(result); //[] -true value
+
+        // console.warn(Promise.resolve(5)); //fulfilled
+
+        // JSON.parse();
+        // what is the method will do.
+        //ans:- parse JSON to a javaScript Value
+
+        // let name = "shru";
+        // function getName() {
+        //     console.log(name);
+        //     let name = "poo"
+        // }
+        // getName(); //error
+
+        // let name = "shru";
+        // function getName() {
+        //     console.log(name);
+        // }
+        // getName(); //shru
+
+
+        // console.log(`${(x => x)('i love')} to program`); //return
+
+
+        // function values(x, y, z) {
+        //     return x + y + z;
+        // }
+        // console.warn(...[1, 2, 3]); //ans
+        // console.warn([1, 2, 3]);
+
+        // const name = "code step by step";
+        // console.log(!typeof name === "object");//false
+        // console.log(!typeof name === "string"); //left to right false
+        // console.log(!typeof name === false); //true
+
+        // const name = "shru";
+        // const age = 27;
+        // console.log(isNaN(name)); //true
+        // console.log(isNaN(age)); //false
+
+        // let person = { name: "shru" };
+        // Object.seal(person);//value add nahi kar sakte modify kar skate hai.
+        // console.warn(person);
+
+        // let data = [2, 4, 6, 9];
+        // data.shift();
+        // console.warn((data)); //[4,6,9]
+
+        // let data = [2, 4, 6, 9];
+        // data.pop();
+        // console.warn((data)); //[2,4,6]
+
+        // check any value is odd or event
+        // let a = 30;
+        // console.warn(a % 2 == 0);
+        // console.warn(a % 2 != 0);
+
+        // let data = {
+        //     name: "shru",
+        // }
+        // delete data.name
+        // console.log(data); //{}
+
+        // let data = "true";
+        // console.warn(!data); //false
+        // console.warn(!!data); //true
+        // console.warn(typeof !data); //boolean
+
+        // different between map and forEach function => map return kare chhe and forEach return nathhi kartu.
+
+        // let data = ["shru", "poo", "zee"];
+        // delete data[1];
+        // console.warn(data); //["shru",empty,"zeel"]
+
+        // let data = ["shru", "poo", "zee"];
+        // delete data[1];
+        // console.warn(data.length); //3
+
+        // let a = [1, 2, 3];
+        // let b = [3, 4, 5];
+        // let c = [...a, ...b];
+        // console.warn(c);[1,2,3,3,4,5]
+
+        // let c = 3 ** 3;
+        // console.warn(c);//27
+
+        // let c = 3 * 3;
+        // console.warn(c);//9
+
+        // let a = 2;
+        // setTimeout(() => {
+        //     console.warn(a);
+        // }, 0);
+        // a = 100; //ans=>100;
+
+        // let a = 2;
+        // let A = 30;
+        // console.warn(A); //30
+
+        // let A10 = "like";
+        // let 10A = "okay"; //stating ma number nahi lai sakiye.
+        // console.warn(A10);
+
+        // let a = "like";
+        // let b = 'like';
+        // console.log(a === b); //true
+
+        // let a=1;
+        // let b=2;
+        // console.warn(--b ===a); //true (b ni value - thai )
+
+        // let a = 1;
+        // let b = 1;
+        // let c = 2;
+        // console.warn(a === b === --c);//false
+        // console.warn(a === --c);//false
+
+        // console.warn(3 * 3);//9
+        // console.warn(3 ** 3);//27
+        // // console.warn(3***3);// 3star nahi lai shakiye error aavase
+
+        // console.warn(a);
+        // var a; //undefined
+
+        // console.warn(a); //not defined
+
+        // console.warn([[[[]]]]); //nested array malse
+
+        //how to find OS name.
+        // navigator.platform //Win32
+
+        // let for= 100; //for ae riegave kivad hota hai jo varible ma kam nahi kare.
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
