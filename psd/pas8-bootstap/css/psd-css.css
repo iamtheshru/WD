@@ -186,3 +186,11 @@ select {
     color: #343131;
     font-size: 27px;
 }
+
+.navbar1 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
