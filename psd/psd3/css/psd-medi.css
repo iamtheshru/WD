@@ -216,7 +216,7 @@
         width: 82px;
         height: 83px;
         top: 10px;
-        left: 189px;
+        left: 123px;
     }
 
     .sec3-textyears {
@@ -240,6 +240,11 @@
 
     .sec6-text button {
         padding: 20px 0;
+        margin: 20px 0;
+    }
+
+    .sec7-icon2 {
+        display: none;
     }
 
     .sec7-text1 {
@@ -263,7 +268,7 @@
     }
 
     .sec8 .col-20 {
-        width: 48%;
+        width: 84%;
     }
 
     .sec8-icon1 {
@@ -327,6 +332,10 @@
 
     .footer-bg {
         padding: 50px 0;
+    }
+
+    .sec6-text h2 {
+        font-size: 29px;
     }
 }
 
@@ -402,6 +411,19 @@
     .sec1-text {
         width: 63%;
         font-size: 34px;
+    }
+
+    .sec7-icon2 {
+        display: block;
+    }
+
+    .sec7-icon2 {
+        top: 23px;
+        right: -42px;
+    }
+
+    .sec6-text h2 {
+        font-size: 48px;
     }
 
     .ma {
@@ -511,7 +533,7 @@
     .sec6-icon {
         width: 82px;
         height: 83px;
-        top: 10px;
+        top: 23px;
         left: 207px;
     }
 
@@ -524,6 +546,7 @@
         width: 100%;
         margin: 0px;
         margin-top: 100px;
+        padding: 30px 0;
     }
 
     .sec6-text button {
