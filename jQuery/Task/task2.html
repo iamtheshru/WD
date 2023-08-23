@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>prop demo</title>
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+
+    <div id="rem1">
+        <button id="btn" onclick="click1()">Click me!</button>
+    </div>
+    <div id="rem">
+        <input type="text" name="" id="inp1" class="hide">
+        <button onclick="click2()" id="inp2" class="hide">Enter</button>
+        <input type="text" name="" id="inp3" class="hide">
+        <input type="text" name="" id="inp4" class="hide">
+        <button onclick="click3()" id="inp5" class="hide">Save</button>
+    </div>
+
+    <script>
+
+        function click1() {
+            var text1 = document.getElementById("inp1");
+            var text2 = document.getElementById("inp2");
+            text1.classList.toggle("show");
+            text2.classList.toggle("show");
+        }
+        function click2() {
+            var text3 = document.getElementById("inp3");
+            var text4 = document.getElementById("inp4");
+            var text5 = document.getElementById("inp5");
+            text3.classList.toggle("show");
+            text4.classList.toggle("show");
+            text5.classList.toggle("show");
+        }
+
+
+        $(document).ready(function () {
+            $("#inp5").click(function () {
+                $("#rem").remove();
+            });
+        });
+
+    </script>
+</body>
+
+</html>

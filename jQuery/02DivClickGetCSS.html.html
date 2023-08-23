@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 50px;
+            margin: 5px;
+            padding: 5px;
+            float: left;
+        }
+
+        #box1 {
+            width: 50px;
+            color: rgb(42, 42, 19);
+            background-color: rgb(0, 157, 255);
+            font-size: larger;
+        }
+
+        #box2 {
+            width: 50px;
+            color: yellow;
+            background-color: blue;
+            border-radius: 20px;
+        }
+
+        #box3 {
+            width: 50px;
+            color: rgb(76, 0, 255);
+            background-color: rgb(230, 56, 22);
+            font-style: italic;
+        }
+
+        #box4 {
+            width: 50px;
+            color: yellow;
+            background-color: rgb(221, 9, 59);
+            box-shadow: 2px 2px 3px gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        menu
+    </header>
+    <main>
+        <p id="result">&nbsp;</p>
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+    </main>
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <!-- <script>
+            $('div').click(function () {
+                var htmlcontent = ["The clicked div has the following styles:"];
+                var styleprops = $(this).css([
+                    "width", "height", "color", "background-color"
+                ]);
+                $.each(styleprops, function (key, value) {
+                    // console.log("key : ", key, "value : ", value);
+                    htmlcontent.push(key + ":" + value)
+                })
+                // styleprops.forEach(element => { each });
+                $("#result").html(htmlcontent.join("<br>"));
+            })   
+        </script> -->
+        <!-- <script>
+            $('div').click(function () {
+                var htmlcontent = ["The clicked div has the following styles:"];
+                var styleprops = $(this).css([
+                    "width", "colo", "font-size",
+                ]);
+                $.each(styleprops, function (key, value) {
+                    htmlcontent.push(key + ":" + value)
+                })
+                $("#result").html(htmlcontent.join("<br>"));
+            })
+        </script> -->
+        <script>
+            $('div').click(function () {
+                var htmlcontent = ["The clicked div has the following style"]
+                var styleprops = $(this).css([
+                    "color", "box-shadow", "font-style", "border-radius"
+                ]);
+                $.each(styleprops, function (key, value) {
+                    htmlcontent.push(key + ":" + value)
+                })
+                $("#result").html(htmlcontent.join("<br>"));
+            })
+        </script>
+    </footer>
+</body>
+
+</html>
