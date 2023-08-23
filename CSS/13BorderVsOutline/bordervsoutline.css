@@ -1,0 +1,21 @@
+.border-hover:hover {
+    border-top: 10px solid;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-bottom: 10px solid;
+}
+
+.outline-hover:hover {
+    outline: 10px solid;
+}
+
+a {
+    text-decoration: none;
+}
+
+.diff-border-vs-outline {
+    border: 5px gray dashed;
+    outline: 5px lightseagreen dotted;
+    margin: 5px;
+    padding: 5px;
+}
