@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        // methods
+        //function inside object
+
+        // const person = {
+        //     name: "shraddha",
+        //     age: 8,
+        //     about: function () {
+        //         console.log(`person name is ${this.name} and person age ${this.age}`)
+        //     }
+        // }
+        // person.about();
+
+        function personInfo() {
+            console.log(`person name is ${this.name} and person age ${this.age}`)
+        }
+
+        const person1 = {
+            name: "shraddha",
+            age: 27,
+            about: personInfo
+        }
+        const person2 = {
+            name: "zeel",
+            age: 26,
+            about: personInfo
+        }
+        const person3 = {
+            name: "pooja",
+            age: 30,
+            about: personInfo
+        }
+        const person4 = {
+            name: "meghna",
+            age: 32,
+            about: personInfo
+        }
+        person1.about();
+        person2.about();
+        person3.about();
+        person4.about();
+
+
+        //console.log(window);
+        // console.log(this);
+
+        function myfunc1() {
+            // "use strict"
+            console.log(this);
+        }
+        myfunc1()
+
+        function myfunc() {
+            "use strict"
+            console.log(this);
+        }
+        myfunc()
+
+
+
+    </script>
+</body>

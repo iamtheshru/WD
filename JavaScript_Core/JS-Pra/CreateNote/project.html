@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #cf9aff, #95c0ff);
+            color: #fff;
+            padding-top: 4%;
+            padding-left: 10%;
+        }
+
+        .container h1 {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .container h1 i {
+            width: 40px;
+            color: #7025b2
+        }
+
+        .container button i {
+            width: 20px;
+            margin-right: 8px;
+            border-bottom: 1px solid;
+            padding: 2px;
+        }
+
+        .container button {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(#9418fd, #571094);
+            color: #fff;
+            font-size: 16px;
+            outline: 0;
+            border: 0;
+            border-radius: 40px;
+            padding: 15px 20px;
+            margin: 30px 30xp;
+            cursor: pointer;
+        }
+
+        .input-box {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            min-height: 150px;
+            background: #fff;
+            color: #333;
+            padding: 20px;
+            margin: 20px 0;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .notes-container img {
+            width: 30px;
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1><i class="fa-solid fa-book"></i> Notes</h1>
+        <button onclick="" class="btn"> <i class="fa-solid fa-pencil"></i>Create Note</button>
+        <div class="notes-container">
+            <!-- <p contenteditable="true" class="input-box">
+                <i class="fa-solid fa-trash"></i>
+                <img src="./delete.png" alt="">
+            </p> -->
+        </div>
+    </div>
+
+    <script>
+        const notesContainer = document.querySelector(".notes-container");
+        const createBtn = document.querySelector(".btn");
+        let notes = document.querySelectorAll(".input-box")
+
+        // function showNotes() {
+        //     notesContainer.innerHTML = localStorage.getItem("notes");
+        // }
+        // showNotes();
+
+        function updateStorage() {
+            localStorage.setItem("notes", notesContainer.innerText);
+        }
+
+        createBtn.addEventListener("click", () => {
+            let inputBox = document.createElement("P");
+            let icon = document.createElement("img");
+            inputBox.className = "input-box";
+            inputBox.setAttribute("contenteditable", "true");
+            icon.src = "./delete.png";
+            notesContainer.appendChild(inputBox).appendChild(icon);
+        })
+
+        notesContainer.addEventListener("click", function (e) {
+            if (e.target.tagName === "IMG") {
+                e.target.parentElement.remove();
+                updateStorage();
+            }
+            else if (e.target.tagName === "P") {
+                notes = document.querySelectorAll(".input-box");
+                notes.forEach(nt => {
+                    nt.onkeyup = function () {
+                        updateStorage();
+                    }
+                })
+            }
+        })
+
+        document.addEventListener("keydown", event => {
+            if (event.key === "Enter") {
+                document.execCommand("insertLinerBreck");
+                event.preventDefault();
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

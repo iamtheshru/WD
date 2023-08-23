@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        const numbers = ["Hello", "cat", "dog", "loin"];
+        function isLength3(string) {
+            return string.length === 3;
+        }
+        const ans = numbers.find((string) => string.length === 3);
+        console.log(ans);
+
+        const users = [
+            { users: 1, usersName: "Megha" },
+            { users: 2, usersName: "pooja" },
+            { users: 3, usersName: "zeel" },
+            { users: 4, usersName: "Shraddha" },
+        ]
+        const myUser = users.find((user) => user.users === 4);
+        console.log(myUser);
+    </script>
+</body>

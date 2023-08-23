@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        const numbers = [2, 4, 6, 8, 10];
+        // function isEven(numbers) {
+        //     return numbers % 2 === 0;
+        // }
+        // const ans = numbers.every(isEven);
+        // console.log(ans);
+
+        const ans = numbers.every((numbers) => numbers % 2 === 0);
+        console.log(ans);
+
+        const users = [
+            { users: 1, usersName: "Megha", age: 32 },
+            { users: 2, usersName: "pooja", age: 30 },
+            { users: 3, usersName: "zeel", age: 25 },
+            { users: 4, usersName: "Shraddha", age: 27 },
+        ]
+        const myUser = users.every((users) => users.age <= 30);
+        console.log(myUser);
+    </script>
+</body>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+    <style>
+
+    </style>
+
+</head>
+
+<h1 class="heading1">Hello World</h1>
+<h1 class="heading2">Hello World</h1>
+<h1 class="heading3">Hello World</h1>
+<h1 class="heading4">Hello World</h1>
+<h1 class="heading5">Hello World</h1>
+<h1 class="heading6">Hello World</h1>
+<h1 class="heading7">Hello World</h1>
+
+<body>
+    <script>
+        //Asynchronous callback 
+        //callback,callback hell, pyramid
+
+        const heading1 = document.querySelector(".heading1")
+        const heading2 = document.querySelector(".heading2")
+        const heading3 = document.querySelector(".heading3")
+        const heading4 = document.querySelector(".heading4")
+        const heading5 = document.querySelector(".heading5")
+        const heading6 = document.querySelector(".heading6")
+        const heading7 = document.querySelector(".heading7")
+
+
+        //callback hell (callback na andar callback)
+        setTimeout(() => {
+            heading1.textContent = "Heading 1"
+            heading1.style.color = "Green"
+            setTimeout(() => {
+                heading2.textContent = "Heading 2"
+                heading2.style.color = "Red"
+                setTimeout(() => {
+                    heading3.textContent = "Heading 3"
+                    heading3.style.color = "Green"
+                    setTimeout(() => {
+                        heading4.textContent = "Heading 4"
+                        heading4.style.color = "Red"
+                        setTimeout(() => {
+                            heading5.textContent = "Heading 5"
+                            heading5.style.color = "Green"
+                            setTimeout(() => {
+                                heading6.textContent = "Heading 6"
+                                heading6.style.color = "Red"
+                                setTimeout(() => {
+                                    heading7.textContent = "Heading 7"
+                                    heading7.style.color = "Green"
+                                }, 1000);
+                            }, 1000);
+                        }, 1000);
+                    }, 1000);
+                }, 1000);
+            }, 1000);
+        }, 1000);
+
+
+        function changeText(element, text, color, time, onSuccess, onFailure) {
+            setTimeout(() => {
+                if (element) {
+                    element.textContent = text;
+                    element.style.color = color;
+                    if (onSuccess) {
+                        onSuccess();
+                    }
+                } else {
+                    if (onFailure) {
+                        onFailure();
+                    }
+                }
+            }, time);
+        }
+        //pyramid  of doom
+        changeText(heading1, "one", "Green", 1000, () => {
+            changeText(heading2, "one", "Green", 1000, () => {
+                changeText(heading3, "one", "Green", 1000, () => {
+                    changeText(heading4, "one", "Green", 1000, () => {
+                        changeText(heading5, "one", "Green", 1000, () => {
+                            changeText(heading6, "one", "Green", 1000, () => {
+                                changeText(heading7, "one", "Green", 1000, () => {
+
+                                }, () => { console.log("Heading does not exist") });
+                            }, () => { console.log("Heading does not exist") });
+                        }, () => { console.log("Heading does not exist") });
+                    }, () => { console.log("Heading does not exist") });
+                }, () => { console.log("Heading does not exist") });
+            }, () => { console.log("Heading does not exist") });
+        }, () => { console.log("Heading does not exist") });
+
+    </script>
+
+</body>
+
+</html>

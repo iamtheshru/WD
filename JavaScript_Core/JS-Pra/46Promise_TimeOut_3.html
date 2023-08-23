@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <script>
+        function mypromise() {
+            return new Promise((resolve, reject) => {
+                const value = true;
+                setTimeout(() => {
+                    if (value) {
+                        resolve();
+                    } else {
+                        reject();
+                    }
+                }, 2000);
+            })
+        }
+
+        mypromise()
+            .then(() => { console.log("resolve"); })
+            .catch(() => { console.log("reject"); })
+
+        //promise resolve
+
+        const myprom = Promise.resolve(5);
+        myprom.then(value => {
+            console.log(value);
+        }
+        )
+
+        //then() (then method hamesha promise return karta hai)
+        //promise chaining
+
+        function mypromise1() {
+            return new Promise((resolve, reject) => {
+                resolve("shraddha");
+            })
+        }
+
+        mypromise1()
+            .then(value => {
+                console.log(value);
+                value += "pooja";
+                return value  //promise return ho raha hai.
+            })
+            .then(value => {
+                console.log(value);
+                value += "zeel";
+                return value
+            })
+            .then(value => {
+                console.log(value);
+                value += "megha";
+                return value
+            })
+            .then(value => {
+                console.log(value);
+            })
+
+    </script>
+
+</body>
+
+</html>

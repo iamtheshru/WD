@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+
+        <input type="text" name="username" id="username" onblur="requirefield1()" placeholder="username"
+            autocomplete="off"><label for="" id="usernameError"></label>
+        <input type="password" name="password" id="password" onblur="requirefield2()" placeholder="password"
+            autocomplete="off"><label for="" id="passwordError"></label>
+        <!-- <input type="email" name="email" id="email" onblur="requirefield()" placeholder="username"
+            autocomplete="off"><label for="" id="emailError"></label>
+        <input type="tel" name="tel" id="tel" onblur="requirefield()" placeholder="username" autocomplete="off"><label
+            for="" id="telError"></label> -->
+        <input type="submit" id="btn" name="btn">
+    </form>
+
+
+    <script>
+        function requirefield1() {
+            // var uname = document.getElementById("username")
+            // console.log(uname);
+            // console.log(uname.value);
+            var uname = document.getElementById("username").value
+            console.log(uname);
+
+
+            if (uname == "") {
+                // document.getElementById("userNameError").innerText = "This field is required Text"
+                document.getElementById("usernameError").innerHTML = "This field is required HTML"
+                // document.getElementById("userNameError").innerText = "<b>This field is required Text</b>"
+                // document.getElementById("userNameError").innerHTML = "<b>This field is required HTML</b>"
+                console.log("this field is required");
+            }
+            else {
+                document.getElementById("userNameError").innerHTML = ""
+                console.log("valid");
+            }
+
+        }
+
+        function requirefield2() {
+
+            var password = document.getElementById("password").value
+            console.log(password);
+
+            if (password == "") {
+                document.getElementById("passwordError").innerHTML = "This field is required HTML"
+                console.log("this field is required");
+            }
+            else {
+                document.getElementById("passwordError").innerHTML = ""
+                console.log("valid");
+            }
+
+        }
+
+    
+        
+    </script>
+</body>

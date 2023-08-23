@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li><code>concat()</code></li>
+        <li><code>copyWithin()</code></li>
+        <li><code>every()</code></li>
+        <li><code>filter()</code></li>
+        <li><code>flat()</code></li>
+        <li><code>flatMap()</code></li>
+        <li><code>forEach()</code></li>
+        <li><code>indexOf()</code></li>
+        <li><code>lastIndexOf()</code></li>
+        <li><code>map()</code></li>
+        <li><code>reduce()</code></li>
+        <li><code>reduceRight()</code></li>
+        <li><code>reverse()</code></li>
+        <li><code>slice()</code></li>
+        <li><code>some()</code></li>
+        <li><code>sort()</code></li>
+        <li><code>splice()</code></li>
+    </ul>
+
+
+    <script>
+        //concat Ex:-
+        const array1 = ['a', 'b', 'c'];
+        const array2 = ['d', 'e', 'f'];
+        const array3 = array1.concat(array2);
+        console.log(array3);
+        // Expected output: Array ["a", "b", "c", "d", "e", "f"]
+    </script>
+
+    <script>
+        //copyWithIn:-
+        const array = ['a', 'b', 'c', 'd', 'e'];
+
+        // Copy to index 0 the element at index 3
+        console.log(array.copyWithin(0, 3, 4));
+        // Expected output: Array ["d", "b", "c", "d", "e"]
+
+        // Copy to index 1 all elements from index 3 to the end
+        console.log(array.copyWithin(1, 3));
+        // Expected output: Array ["d", "d", "e", "d", "e"]
+    </script>
+
+    <script>
+        //every Ex:-
+        const isBelowThreshold = (currentValue) => currentValue < 40;
+
+        const arr = [1, 30, 39, 29, 10, 13];
+
+        console.log(arr.every(isBelowThreshold));
+        // Expected output: true
+    </script>
+
+    <script>
+        //filter Ex:-
+        const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+        const result = words.filter((word) => word.length > 6);
+        console.log(result);
+        // Expected output: Array ["exuberant", "destruction", "present"]
+    </script>
+
+    <script>
+        //flat Ex:-
+        const arr1 = [0, 1, 2, [3, 4]];
+        console.log(arr1.flat());
+        // Expected output: Array [0, 1, 2, 3, 4]
+        const arr2 = [0, 1, 2, [[[3, 4]]]];
+        console.log(arr2.flat(2));
+        // Expected output: Array [0, 1, 2, Array [3, 4]]
+    </script>
+
+    <script>
+        //flatMap Ex:-
+        const arr3 = [1, 2, 1];
+        const result1 = arr3.flatMap((num) => (num === 2 ? [2, 2] : 1));
+        console.log(result1);
+        // Expected output: Array [1, 2, 2, 1]
+    </script>
+
+    <script>
+        //forEach Ex:-
+        const arra = ['a', 'b', 'c'];
+        arra.forEach((element) => console.log(element));
+        // Expected output: "a"
+        // Expected output: "b"
+        // Expected output: "c"
+    </script>
+
+    <script>
+        //IndexOf Ex:-
+        const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+        console.log(beasts.indexOf('bison'));
+        // Expected output: 1
+
+        // Start from index 2
+        console.log(beasts.indexOf('bison', 2));
+        // Expected output: 4
+
+        console.log(beasts.indexOf('giraffe'));
+        // Expected output: -1
+    </script>
+
+    <script>
+        //lastIndexOf Ex:-
+        const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+        console.log(animals.lastIndexOf('Dodo'));
+        // Expected output: 3
+        console.log(animals.lastIndexOf('Tiger'));
+        // Expected output: 1
+    </script>
+
+    <script>
+        //Map Ex:-
+        const arr4 = [1, 4, 9, 16];
+        // Pass a function to map
+        const map1 = arr4.map((x) => x * 2);
+        console.log(map1);
+        // Expected output: Array [2, 8, 18, 32]
+    </script>
+
+    <script>
+        //reduce Ex:-
+        const arr5 = [1, 2, 3, 4];
+        // 0 + 1 + 2 + 3 + 4
+        const initialValue = 0;
+        const sumWithInitial = arr5.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue);
+
+        console.log(sumWithInitial);
+        // Expected output: 10
+
+    </script>
+
+    <script>
+        //reduceRight Ex:-
+        const arr6 = [
+            [0, 1],
+            [2, 3],
+            [4, 5],
+        ];
+        const result2 = arr6.reduceRight((accumulator, currentValue) => accumulator.concat(currentValue));
+        console.log(result2);
+        // Expected output: Array [4, 5, 2, 3, 0, 1]
+    </script>
+
+    <script>
+        //reverse Ex:-
+        const arr7 = ['one', 'two', 'three'];
+        console.log('arr7:', arr7);
+        // Expected output: "arr7:" Array ["one", "two", "three"]
+
+        const reversed = arr7.reverse();
+        console.log('reversed:', reversed);
+        // Expected output: "reversed:" Array ["three", "two", "one"]
+
+        // Careful: reverse is destructive -- it changes the original array.
+        console.log('arr7:', arr7);
+        // Expected output: "arr7:" Array ["three", "two", "one"]
+    </script>
+
+    <script>
+        //slice Ex:-
+        const animalss = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+        console.log(animalss.slice(2));
+        // Expected output: Array ["camel", "duck", "elephant"]
+
+        console.log(animalss.slice(2, 4));
+        // Expected output: Array ["camel", "duck"]
+
+        console.log(animalss.slice(1, 5));
+        // Expected output: Array ["bison", "camel", "duck", "elephant"]
+
+        console.log(animalss.slice(-2));
+        // Expected output: Array ["duck", "elephant"]
+
+        console.log(animalss.slice(2, -1));
+        // Expected output: Array ["camel", "duck"]
+
+        console.log(animalss.slice());
+        // Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+    </script>
+
+    <script>
+        //some Ex:-
+        const arr8 = [1, 2, 3, 4, 5];
+
+        // Checks whether an element is even
+        const even = (element) => element % 2 === 0;
+
+        console.log(arr8.some(even));
+        // Expected output: true
+    </script>
+
+    <script>
+        //sort Ex:-
+        const months = ['March', 'Jan', 'Feb', 'Dec'];
+        months.sort();
+        console.log(months);
+        // Expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+        const arr9 = [1, 30, 4, 21, 100000];
+        array1.sort();
+        console.log(arr9);
+        // Expected output: Array [1, 100000, 21, 30, 4]
+    </script>
+
+    <script>
+        //splice Ex:-
+        const monthss = ['Jan', 'March', 'April', 'June'];
+        monthss.splice(1, 0, 'Feb');
+        // Inserts at index 1
+        console.log(monthss);
+        // Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+        months.splice(4, 1, 'May');
+        // Replaces 1 element at index 4
+        console.log(monthss);
+        // Expected output: Array ["Jan", "Feb", "March", "April", "May"]
+    </script>
+
+</body>
+
+</html>
