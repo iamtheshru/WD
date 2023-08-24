@@ -1,0 +1,11 @@
+.disp-none {
+    display: none;
+}
+
+.vis-hide {
+    visibility: hidden;
+}
+
+.vis-coll {
+    visibility: collapse;
+}

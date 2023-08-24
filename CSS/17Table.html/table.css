@@ -1,0 +1,11 @@
+table {
+    border: 2px solid lightseagreen;
+}
+
+td {
+    border: 3px solid lightcoral;
+}
+
+table {
+    border-collapse: collapse;
+}

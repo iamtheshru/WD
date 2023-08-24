@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: serif;
+
+}
+
+.col ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.wrap ul {
+    flex-wrap: wrap;
+}
+
+.wrap ul li i {
+    width: 250px;
+}

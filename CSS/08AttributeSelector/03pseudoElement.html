@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2::after {
+            content: "~";
+        }
+
+        h2::before {
+            content: "~";
+        }
+
+        /* p::first-line {
+            font-size: 20px;
+            color: white;
+            background-color: blueviolet;
+        } */
+
+        .pera:first-line {
+            font-size: 20px;
+            color: white;
+            background-color: blueviolet;
+        }
+
+        p::first-letter {
+            font-size: 35px;
+            color: brown;
+        }
+
+        /* 
+        tr:nth-child(even) {
+            color: brown;
+            background: cyan;
+        } */
+
+        /* tr:nth-child(odd) {
+            color: cornflowerblue;
+            background: darkgreen;
+        } */
+
+        /* tr:nth-child(3n+1) {
+            background-color: brown;
+            color: white;
+        } */
+
+        tr:nth-child(3n) {
+            background: sandybrown;
+            color: darkgreen;
+        }
+
+        /* tr:nth-child(2) {
+            background: rgb(231, 187, 10);
+            color: blue;
+        } */
+    </style>
+</head>
+
+<body>
+    <h2>Testing</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate culpa atque mollitia dolores, perspiciatis
+        veritatis magni quo ad quibusdam neque, ducimus,
+        quasi esse ipsum aliquid nulla minus perferendis? Fugiat, repellendus?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate culpa atque mollitia dolores, perspiciatis
+        veritatis magni quo ad quibusdam neque, ducimus,
+        quasi esse ipsum aliquid nulla minus perferendis? Fugiat, repellendus?</p>
+    <p class="pera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate culpa atque mollitia dolores,
+        perspiciatis
+        veritatis magni quo ad quibusdam neque, ducimus,
+        quasi esse ipsum aliquid nulla minus perferendis? Fugiat, repellendus?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate culpa atque mollitia dolores, perspiciatis
+        veritatis magni quo ad quibusdam neque, ducimus,
+        quasi esse ipsum aliquid nulla minus perferendis? Fugiat, repellendus?</p>
+
+    <table>
+        <tr>
+            <td>Test</td>
+            <td>Test</td>
+            <td>Test</td>
+        <tr>
+            <td>Test</td>
+            <td>Test</td>
+            <td>Test</td>
+        <tr>
+            <td>Test</td>
+            <td>Test</td>
+            <td>Test</td>
+        <tr>
+            <td>Test</td>
+            <td>Test</td>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>Test</td>
+            <td>Test</td>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>Test</td>
+            <td>Test</td>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>Test</td>
+            <td>Test</td>
+            <td>Test</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

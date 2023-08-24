@@ -1,0 +1,13 @@
+.table-responsive {
+    border-collapse: collapse;
+    width: 400px;
+    height: 300px;
+    overflow: scroll;
+    background: linear-gradient(blue, white, lightgray);
+}
+
+td,
+th {
+    border: 2px solid;
+    padding: 10px;
+}
