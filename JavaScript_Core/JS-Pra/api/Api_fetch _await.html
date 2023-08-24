@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHR</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <script>
+        console.log("start");
+
+        const URL = "https://jsonplaceholder.typicode.com/posts";
+
+        // async function getPosts() {
+        //     const response = await fetch(URL);
+        //     if (!response.ok) {
+        //         throw new Error("Something went wrong");
+        //     }
+        //     const data = await response.json();
+        //     return data;
+        // }
+
+        const getPosts = async () => {
+            const response = await fetch(URL);
+            if (!response.ok) {
+                throw new Error("Something went wrong");
+            }
+            const data = await response.json();
+            return data;
+        }
+
+        getPosts()
+            .then(mydata => {
+                console.log(mydata);
+            })
+            .catch(error => {
+                console.log("inside catch");
+                console.log(error);
+            })
+
+        console.log("end");
+    </script>
+
+</body>
+
+</html>

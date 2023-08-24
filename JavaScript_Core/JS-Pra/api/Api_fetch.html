@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHR</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <script>
+        const URL = "https://jsonplaceholder.typicode.com/posts";
+
+        // fetch(URL)
+        fetch(URL, {
+            method: "POST",
+            body: JSON.stringify({
+                title: 'foo',
+                body: 'bar',
+                userId: 1,
+            }),
+            headers: {
+                'Content-type': 'application/json; charse=UTF-8',
+            },
+        })
+            .then(responce => {
+                // return responce.json() //404 ni error aave tyare pan promise resovel thay che.
+                if (responce.ok) {
+                    return responce.json();
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.log("inside catch"); //catch tyare lagu pade tyare network error hoy.
+                console.log(Error);
+            })
+    </script>
+
+</body>
+
+</html>

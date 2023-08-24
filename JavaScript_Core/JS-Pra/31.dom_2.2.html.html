@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-black {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container" class="shraddha">
+        <h1>My Heading</h1>
+        <p>Some useful information</p>
+    </div>
+    <input type="text" id="">
+
+    <script>
+        // const rootNode = document.getRootNode();
+        // const htmlElementNode = rootNode.childNodes[1];
+
+        // const headElementNode = htmlElementNode.childNodes[0];
+        // const textElementNode = htmlElementNode.childNodes[1];
+        // const bodyElementNode = htmlElementNode.childNodes[2];
+
+
+        // console.log(bodyElementNode);
+        // console.log(bodyElementNode.parentNode);
+        // console.log(headElementNode.nextSibling); //aena pachhi no next
+        // console.log(headElementNode.nextElementSibling); // space nahi le.
+        // console.log(bodyElementNode.childNodes);//child malse.
+
+        // const h1 = document.querySelector("h1");
+        // // const div = h1.parentNode;
+        // const div = h1.parentNode.parentNode;
+        // div.style.color = "#efefef";
+        // div.style.backgroundColor = "#333";
+
+        // const container = document.querySelector("#container");
+        // console.log(container.childNodes);
+        // console.log(container.children);
+
+        // const body = document.body
+        // body.style.color = "#efefef";
+        // body.style.backgroundColor = "#333";
+        const container = document.querySelector("#container");
+        // console.log(container.classList);
+        // container.classList.add('bg-black');
+        // container.classList.remove('bg-black');
+        // const ans = container.classList.contains("shraddha");
+        // console.log(ans);
+        container.classList.toggle('bg-black');
+
+        
+    </script>
+</body>
+
+</html>
