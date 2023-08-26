@@ -1,0 +1,298 @@
+.bg {
+    background: linear-gradient(#0000004f, #0000002d) !important;
+}
+
+.btn-bg {
+    background-color: rgba(228, 165, 143, 0.475);
+    border: none;
+}
+
+.bor input,
+select {
+    border: none !important;
+    border-bottom: 1px solid #000 !important;
+}
+
+.fa-brands {
+    font-size: 40px;
+    color: #ec1616;
+}
+
+.size {
+    width: 33% !important;
+}
+
+.rad {
+    border-radius: 320px 320px 0px 0px;
+    border: 1px solid #e0dbdb;
+}
+
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.animation {
+    transition: all 3s;
+
+}
+
+.animation:hover {
+    padding-left: 30px !important;
+}
+
+.width img {
+    aspect-ratio: 2/1;
+    object-fit: contain;
+    background-color: #f7f7f7;
+}
+
+.slick-slide {
+    margin: 0px 10px !important;
+}
+
+.mr-date {
+    width: 45% !important;
+    right: 0px;
+    top: 170px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: gray !important;
+}
+
+.newsdate span {
+    display: block;
+    font-size: 60px;
+    background: none;
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    /* -webkit-text-stroke-color: transparent; */
+}
+
+.footer-bg {
+    background: rgba(217, 186, 145, 0.1);
+}
+
+.z-ind {
+    z-index: 20;
+    left: 50px;
+    right: 50px;
+    top: 25px;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bridal1 {
+    position: absolute;
+    top: 150px;
+    background-color: #fff;
+    font-size: 22px !important;
+    padding: 10px 18px;
+    left: 100px;
+}
+
+.bridal {
+    position: absolute;
+    top: 50px;
+    font-size: 22px !important;
+    padding: 10px;
+    text-align: center;
+    color: #fff !important;
+}
+
+.jodi-name {
+    position: absolute;
+    /* top: 190px; */
+    bottom: -100px;
+    background-color: #fff;
+    font-size: 18px !important;
+    padding: 5px 20px;
+    left: 100px;
+    text-align: center;
+}
+
+.jodi-name1 {
+    position: absolute;
+    /* top: 520px; */
+    bottom: -50px;
+    background-color: #fff;
+    font-size: 18px !important;
+    padding: 5px 20px;
+    left: 100px;
+    text-align: center;
+}
+
+.jodi-name span,
+.jodi-name1 span {
+    color: gray;
+}
+
+.font-face h2 {
+    font-family: iconing;
+    color: gray !important;
+    font-size: 50px;
+}
+
+@font-face {
+    font-family: iconing;
+    src: url(../img/font/static/DancingScript-Medium.ttf);
+}
+
+.bor-1 input {
+    border: none;
+    background-color: #d9ba91;
+    color: #fff;
+}
+
+.footer-bg1 i {
+    color: #343131;
+    font-size: 27px;
+}
+
+.navbar1 {
+    position: fixed;
+    left: -100px;
+    right: -100px;
+    top: -30px;
+    z-index: 100;
+}
+
+.zoom {
+    transition: all 2s;
+    overflow: hidden;
+
+}
+
+.zoom img {
+    display: block;
+}
+
+.zoom:hover .jodi-name,
+.jodi-name1 {
+    transition: all 1s ease-in-out;
+    bottom: 50px;
+}
+
+.zoom img:hover {
+    transition: all 2s ease-in-out;
+    transform: scale(1.1);
+    filter: brightness(50%);
+    position: relative;
+}
+
+.zoom2,
+.zoom3 {
+    overflow: hidden;
+}
+
+.zoom2 img:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.zoom3 img:hover {
+    transition: all .5s;
+    filter: grayscale(80%);
+    transform: scale(1.3);
+}
+
+input {
+    outline: none;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.Inq {
+    position: absolute;
+}
+
+@media (max-width:576px) {
+    .animation {
+        display: none;
+    }
+
+    .Inq {
+        position: relative;
+    }
+
+    .mr-date {
+        top: 59px;
+        /* height: 100px; */
+
+    }
+
+    .mr-date p,
+    span {
+        display: none;
+    }
+
+    i::before {
+        display: none;
+    }
+
+    .p-3 {
+        padding: 0 !important;
+    }
+
+    .mr-date h2 {
+        font-size: 16px;
+    }
+
+    .navbar1 {
+        left: -50px;
+        right: -50px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        display: none !important;
+    }
+
+    .footer-bg ul {
+        padding: 0;
+    }
+
+
+}

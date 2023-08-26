@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* border: 1px solid; */
+}
+
+.container {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.pos-re {
+    position: relative;
+}
+
+.pos-ab {
+    position: absolute;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align {
+    align-items: center;
+}
+
+.jsc {
+    justify-content: center;
+}
+
+.main {
+    justify-content: space-between;
+}
+
+.header-bg1 {
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+}
+
+.header-bg2 {
+    background-color: #238074;
+}
+
+.nav-text2 ul li {
+    display: inline-block;
+    padding: 25px 10px;
+}
+
+.nav-text2 ul li i {
+    padding: 0 10px;
+}
+
+.nav-text3 {
+    background-color: #343a40;
+    padding: 25px 30px;
+}
+
+.nav-text1 {
+    padding: 25px 10px;
+}
+
+.head-text1 ul li {
+    display: inline-block;
+}
+
+.head-text1 a {
+    color: #fff;
+}
+
+.head-logo {
+    padding: 25px 60px;
+    background-color: #57aba0;
+}
+
+.head-nub {
+    padding: 32px 10px;
+    background-color: #57aba0;
+    font-size: 25px;
+}
+
+.head-text1 {
+    margin: 0 10px;
+}
+
+.head-text1 ul li {
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+.head-search {
+    color: #fff;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    /* padding-left: 35px; */
+    padding-right: 35px;
+    border-right: 1px solid #ffffff3a;
+}
+
+.head-nub a {
+    color: #fff;
+}
+
+.head-nub i {
+    padding: 0 15px;
+    font-size: 25px;
+}
+
+.home1 {
+    display: none;
+    position: absolute;
+    left: -250px;
+    border: 2px solid;
+    transition: all 1s;
+    z-index: 100;
+}
+
+.header-style1 {
+    display: none;
+    position: absolute;
+    /* left: 80px; */
+    width: 100%;
+    border: 2px solid;
+    z-index: 100;
+}
+
+.about1 {
+    display: none;
+    position: absolute;
+    left: -300px;
+    border: 2px solid;
+    z-index: 100;
+    transition: all 2s;
+}
+
+.pages1 {
+    display: none;
+    position: absolute;
+    left: -350px;
+    border: 2px solid;
+    z-index: 100;
+    transition: all 2s;
+}
+
+.sec1-bg2 {
+    background-color: #238074;
+    border-top: 1px solid #b5b0b066;
+}
+
+.sec1-img img {
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+.sec1-text1 {
+    top: 240px;
+    color: #fff;
+    text-align: center;
+}
+
+.sec1-text1 h2 {
+    font-size: 60px;
+    padding: 5px;
+}
+
+.sec1-text1 p {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.ps {
+    padding: 50px 0;
+}
+
+.mt-1 {
+    margin: 0 50px;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-70 {
+    width: 70%;
+}
+
+.col-80 {
+    width: 80%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.sec2-text1 h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 10px 0;
+}
+
+.sec2-icon1 p {
+    text-align: center;
+    color: #238074;
+    font-size: 40px;
+}
+
+.sec2-text2 h2 {
+    font-size: 30px;
+    padding: 5px;
+}
+
+.sec2-text2 p {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(101, 90, 90, 0.868);
+    line-height: 28px;
+    padding: 5px;
+}
+
+.sec2-contact {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.sec2-contact input {
+    width: 100%;
+    padding: 20PX;
+    border-radius: 10px;
+    border: 1px solid #dfe0e5;
+    margin: 10px;
+}
+
+.sec2-contact textarea {
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #dfe0e5;
+    outline: none;
+    font-weight: 400;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 100%;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    color: gray !important;
+    font-size: 17px !important;
+    text-align: start !important;
+}
+
+textarea::placeholder {
+    padding: 10px;
+}
+
+.sec2-btn button {
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #dfe0e5;
+    outline: none;
+    font-weight: 400;
+    border-radius: 10px;
+    margin: 20px 30px;
+    width: 100%;
+    padding: 30px;
+    background-color: #efa286;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.footer-bg {
+    padding: 80px 0;
+    background-color: black;
+    color: #ffff;
+}
+
+.footer-logo img {
+    background-color: #efa286;
+    height: 80px;
+    width: 180px;
+    text-align: center;
+    background-color: #efa286;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 5px;
+}
+
+.footer-text1 p {
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 5px;
+    font-size: 18px;
+}
+
+.footer-text1 h2 {
+    border: 1px solid #ffffff2a;
+    margin: 10px 20px 10px 5px;
+}
+
+.footer-text1 h3 {
+    font-size: 25px;
+    padding: 10px 5px;
+}
+
+.footer-icon1 li i {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: gray;
+    color: #ffff;
+    padding: 7.5px;
+    text-align: center;
+}
+
+.footer-icon1 ul li {
+    display: inline-block;
+}
+
+.footer-icon1 ul li {
+    margin: 10px
+}
+
+.footer-text2 h3 {
+    padding: 10px 15px;
+}
+
+.footer-text2 p {
+    color: gray;
+    padding: 15px;
+}
+
+.footer-text2 span {
+    color: #efa286;
+    padding: 0 10px 0 0;
+}
+
+.footer-text3 h2 {
+    padding: 25px 15px;
+}
+
+.footer-img1 img {
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.footer-box {
+    padding: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.078);
+    margin: 5px;
+}
+
+.footer-text3 P {
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.call {
+    color: gray;
+}
+
+.footer-icon2 i {
+    padding: 15px 10px;
+    color: #efa286;
+}
+
+.footer-bg2 {
+    background-color: #238074;
+    padding: 30px;
+    margin: 20px;
+}
+
+.footer-text4 h5 {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.footer-text4 h3 {
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.footer-text4 input {
+    margin: 8px 0;
+    border: 1px solid #ffffff36;
+    background-color: #238074;
+    width: 100%;
+    padding: 8px;
+}
+
+input::placeholder,
+section::placeholder,
+textarea::placeholder {
+    color: #fff;
+    font-size: 13px;
+}
+
+.footer-text4 select {
+    width: 100%;
+    background-color: #238074;
+    color: #ffff;
+    border: 1px solid #ffffff36;
+    font-size: 10px;
+    padding: 8px;
+}
+
+.footer-text4 textarea {
+    width: 100%;
+    margin: 10px 0;
+    background-color: #238074;
+    font-size: 15px;
+    color: #ffff;
+    border: 1px solid #ffffff36;
+    padding: 5px;
+}
+
+.footer-text4 button {
+    background-color: #efa286;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff36;
+
+}
