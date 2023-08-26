@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>OOPS</h2>
+    <p>Object Oriented Prog Sys/Structure</p>
+    <p>OOPs stands on 4 pillars</p>
+    <img src="oopsbased.png" alt="">
+    <p>class is a collection of datamembers and member functions only</p>
+    <p>class is a wrapper for providing basic level of securities</p>
+    <p>without instance/Object of class we are not able to access the properties of that class</p>
+    <p>with the help of new keyword we are able to create an object of any class</p>
+    <p>Encapsulation wrapping data into single unit its done through class, class is an example of encapsulation</p>
+
+    <script>
+        class MathOp {
+            addition(a, b) {
+                // console.log(a + b); //1000 line of code
+                return a + b;
+            }
+        }
+        // console.log(addition());//Uncaught ReferenceError: addition is not defined
+        let ObjectOfMathOp = new MathOp;
+        console.log(ObjectOfMathOp);
+        console.log(ObjectOfMathOp.addition(10, 90));
+
+
+        //Ex:-
+        class BankAccount {
+            constructor(accountNo, accountName, balance) {
+                this.accountNo = accountNo;
+                this.accountName = accountName;
+                this.balance = balance;
+            }
+            ShowAccountDetails() {
+                console.log(`Account Number:${this.accountNo}`);
+                console.log(`Accountname:${this.accountName}`);
+                console.log(`Balance:${this.balance}`);
+            }
+            deposit(amount) {
+                this.balance += amount;
+                this.ShowAccountDetails();
+            }
+            withdraw(amount) {
+                if (this.balance >= amount) {
+                    this.balance -= amount;
+                    this.ShowAccountDetails();
+                } else {
+                    console.log("Insufficient Blance");
+                }
+            }
+        }
+
+        let myBankAccount = new BankAccount("123456", "John Doe", 1000);
+        myBankAccount.deposit(500);
+
+    </script>
+</body>
+
+</html>
