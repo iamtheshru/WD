@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Constructor is a method which is invoked by default when objects are created</p>
+    <p>Constructor never return</p>
+    <p>Constructor used for init something</p>
+
+    <script>
+        // class ConstructorExample {
+        //     constructor() {
+        //         console.log('Class initialization block called');
+        //     }
+        //     SimpleMethode() {
+        //         console.log("called");
+        //         return 'static method has been called.';
+        //     }
+        // }
+
+        // let objectSimpleMethod = new ConstructorExample
+        // objectSimpleMethod.SimpleMethode();
+
+        class ConstructorExample {
+            // Dbase = ""
+            constructor(aa) {
+                this.Dbase = aa
+                console.log('Class initialization block called');
+            }
+            SimpleMethode() {
+                console.log("called",this.Dbase);
+                return 'static method has been called.';
+            }
+        }
+
+        let objectSimpleMethod = new ConstructorExample("Dbase")
+        objectSimpleMethod.SimpleMethode();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Private properties are declared with # names (pronounced "hash names"), which are identifiers prefixed with #.
+        The hash prefix is an inherent part of the property name — you can draw relationship with the old underscore
+        prefix convention _privateField — but it's not an ordinary string property, so you can't dynamically access it
+        with the bracket notation.</p>
+
+    <script>
+        class AccessModi {
+            #privateField = "privateField data"; //data member
+            GenderalData = "Common Data"; //data member
+            dataAccess() {
+                console.log("This is parent", this.#privateField);
+                console.log("This is parent", this.GenderalData);
+
+            }
+        }
+        class ClassName extends AccessModi {
+            something() {
+                // console.log(this.#privateField);
+                console.log(this.GenderalData);
+            }
+        }
+        ObjClassName = new ClassName
+        ObjClassName.something()
+        ObjClassName.dataAccess()
+    </script>
+</body>
+
+</html>
