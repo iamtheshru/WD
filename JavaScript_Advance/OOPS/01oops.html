@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h2>OOPS</h2>
+    <h2>OOPS</h2> 
     <p>Object Oriented Prog Sys/Structure</p>
     <p>OOPs stands on 4 pillars</p>
     <img src="oopsbased.png" alt="">
@@ -18,8 +18,7 @@
     <p>without instance/Object of class we are not able to access the properties of that class</p>
     <p>with the help of new keyword we are able to create an object of any class</p>
     <p>Encapsulation wrapping data into single unit its done through class, class is an example of encapsulation</p>
-
-    <script>
+    <script> 
         class MathOp {
             addition(a, b) {
                 // console.log(a + b); //1000 line of code
@@ -48,19 +47,49 @@
                 this.balance += amount;
                 this.ShowAccountDetails();
             }
-            withdraw(amount) {
-                if (this.balance >= amount) {
-                    this.balance -= amount;
-                    this.ShowAccountDetails();
-                } else {
-                    console.log("Insufficient Blance");
-                }
-            }
+            // withdraw(amount) {
+            //     if (this.balance >= amount) {
+            //         this.balance -= amount;
+            //         this.ShowAccountDetails();
+            //     } else {
+            //         console.log("Insufficient Blance");
+            //     }
+            // }
         }
 
         let myBankAccount = new BankAccount("123456", "John Doe", 1000);
         myBankAccount.deposit(500);
 
+    </script>
+    <script>
+        //Ex:-
+        class Person {
+            constructor(name, age, collegeName) {
+                this.name = name;
+                this.age = age;
+                this.collegeName = collegeName;
+            }
+            Name() {
+                // return `${this.name}`
+                console.log(`${this.name}`);
+            }
+            Age() {
+                // return `${this.age}`
+                console.log(`${this.age}`);
+            }
+            CollegeName() {
+                // return `${this.collegeName}`
+                console.log(`${this.collegeName}`);
+            }
+            data() {
+                console.log(`Hello I am ${this.name},and my age is ${this.age} Years, and my CollegName is ${this.collegeName}`);
+            }
+        }
+        let PersonDetail = new Person("Shraddha patel", 27, "R.G.Shah Science College ");
+        PersonDetail.Name();
+        PersonDetail.Age();
+        PersonDetail.CollegeName();
+        PersonDetail.data();
     </script>
 </body>
 

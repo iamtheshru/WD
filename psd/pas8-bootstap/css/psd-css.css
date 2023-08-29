@@ -263,8 +263,15 @@ input {
 
     }
 
+    .jodi-name {
+        left: 0;
+        right: 0;
+        background-color: #ffffff76;
+    }
+
     .mr-date p,
-    span {
+    span,
+    .bridal1 {
         display: none;
     }
 
@@ -281,8 +288,9 @@ input {
     }
 
     .navbar1 {
-        left: -50px;
-        right: -50px;
+        left: 0px;
+        right: 0px;
+        top: 0;
     }
 
     .carousel-control-prev-icon,
@@ -294,5 +302,13 @@ input {
         padding: 0;
     }
 
+    .z-ind {
+        left: 0;
+        right: 0;
+        top: 0;
+    }
 
+    .contact-area1 {
+        padding: 20px;
+    }
 }

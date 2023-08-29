@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>accessing parent class properties to the child</p>
+    <!-- <img src="types-of-inheritance-c-sharp.png" alt=""> -->
+    <!-- 
+    <script>
+        class MathOp {
+            addition(a, b) {
+                console.log("inside addition", a, b);
+                return a + b;
+            }
+        }
+        class other {
+            data() {
+                console.log("inside data");
+            }
+        }
+        class AdvMathOp extends MathOp {
+            AverageOftow(x, z) {
+                let sum = this.addition(z, x);
+                console.log("addition res", sum);
+                return sum / 2;
+            }
+        }
+        let AdvMathOpObject = new AdvMathOp;
+        let avg_res = AdvMathOpObject.AverageOftow(60, 70)
+        let addi_res = AdvMathOpObject.addition(60, 70);
+        console.log("addition of 60 and 70 is ", addi_res);
+        console.log("Avearge of 60 and 70 is ", avg_res);
+
+    </script> -->
+    <script>
+        //Ex:-
+        class Person {
+            constructor(name, age, collegeName) {
+                this.name = name;
+                this.age = age;
+                this.collegeName = collegeName;
+            }
+            Name() {
+                // return `${this.name}`
+                console.log(`${this.name}`);
+            }
+            Age() {
+                // return `${this.age}`
+                console.log(`${this.age}`);
+            }
+            CollegeName() {
+                // return `${this.collegeName}`
+                console.log(`${this.collegeName}`);
+            }
+            data() {
+                console.log(`Hello I am ${this.name},and my age is ${this.age} Years, and my CollegName is ${this.collegeName}`);
+            }
+        }
+
+        class PersonDt extends Person {
+            constructor(name, age, collegeName, subject, rollNamber) {
+                super(name, age, collegeName);
+                this.subject = subject;
+                this.rollNamber = rollNamber;
+            }
+            Subject() {
+                return `${this.subject}`
+                // console.log(`${this.subject}`);
+            }
+            RollNamber() {
+                return `${this.rollNamber}`
+                // console.log(`${this.rollNamber}`);
+            }
+            AllData() {
+                console.log(`Hello I am ${this.name},and my age is ${this.age} Years, and my CollegName is ${this.collegeName} & subject ${this.subject} & my RollNumber ${this.rollNamber}`);
+            }
+        }
+        let PersonDetail = new PersonDt("Shraddha patel", 27, "Tops Technologies ", "Frontend", 16);
+        let Name = PersonDetail.Name();
+        let Age1 = PersonDetail.Age();
+        let CollegeName1 = PersonDetail.CollegeName();
+        let Data = PersonDetail.data();
+        let subject1 = PersonDetail.Subject();
+        console.log(subject1);
+        let RollNamber1 = PersonDetail.RollNamber();
+        console.log(RollNamber1);
+        let AllData1 = PersonDetail.AllData();
+    </script>
+    <script>
+        
+    </script>
+</body>
+
+</html>
