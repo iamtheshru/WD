@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function isEqualDeep(obj1, obj2) {
+            if (obj1 === null || obj2 === null || obj1 === undefined || obj2 === undefined) {
+                return obj1 === obj2;
+            }
+            if (typeof obj1 !== typeof obj2) {
+                return false
+            }
+            if (typeof obj1 !== "object") {
+                return obj1 === obj2
+            }
+            const keys1 = Object.keys(obj1)
+            const keys2 = Object.keys(obj2)
+
+            if (keys1.length !== keys2.length) {
+                return false
+            }
+            for (const key of keys1) {
+                if (!isEqualDeep(obj1[key], obj2[key])) {
+                    return false
+                }
+            }
+            return true
+
+        }
+
+        // Example usage
+        const object1 = {
+            id: 1,
+            name: "John",
+        };
+
+        const object2 = {
+            id: 1,
+            name: "John",
+        };
+
+        const object3 = {
+            id: 2,
+            name: "Jane",
+        };
+
+        console.log(isEqualDeep(object1, object2)); // true
+        console.log(isEqualDeep(object1, object3)); // false
+
+    </script>
+
+</body>
+
+</html>

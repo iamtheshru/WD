@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Write a method that makes a shallow compare of two objects
+
+        let object1 = {
+            name: 'zen',
+            age: 10
+        };
+
+        let object2 = {
+            name: 'yana',
+            age: 11
+        };
+        let object3 = {
+            name: 'zen',
+            age: 10
+        }
+
+        // create a function for comparing two objects.
+        function isEqual(obj1, obj2) {
+            let keys1 = Object.keys(obj1);
+            let keys2 = Object.keys(obj2);
+
+            if (keys1.length !== keys2.length) { //if both object length is not equal.
+                return false
+            }
+            for (const key of keys1) {
+                if (obj1[key] !== obj2[key]) { //if both objects are not equal.
+                    return false
+                }
+            }
+            return true
+        }
+        // for testing the function.
+        console.log(["Object1: ", object1, "Object3: ", object3], "compare: ", isEqual(object1, object3)); //true
+        console.log(["Object1: ", object1, "Object2: ", object2], "compare: ", isEqual(object1, object2)); //false
+
+    </script>
+</body>
+
+</html>

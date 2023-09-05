@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  Write a method that returns new object without provided properties
+        const Object = {
+            id: 1,
+            name: "Zen",
+            age: 9,
+            city: "Mumbai"
+        };
+        const arrayRemove = ["id", "city"];
+
+        function properties(obj, props) {
+            const newObj = { ...obj }
+            props.forEach(value => {
+                if (newObj.hasOwnProperty(value)) {
+                    delete newObj[value]
+                }
+            });
+            return newObj
+        }
+
+        const newObject = properties(Object, arrayRemove);
+        console.log(newObject);
+
+    </script>
+
+</body>
+
+</html>

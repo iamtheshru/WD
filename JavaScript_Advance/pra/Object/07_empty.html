@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Write a method that makes a deep check is an object empty
+        function objEmpty(obj) {
+            if (obj === null || obj === undefined) {
+                return true
+            }
+            if (typeof obj !== 'object') {
+                return false // Non-object types are not empty
+            }
+
+            for (const key in obj) {
+                if (obj.hasOwnProperty) {
+                    // console.log(obj);
+                    if (!objEmpty(obj[key])) {
+                        return false
+                    }
+                }
+            }
+            return true
+        }
+
+        const emptyObj = {};
+        const nonEmptyObj = { key: "value" };
+        const nullValue = null;
+        const undefinedValue = undefined;
+
+        console.log(objEmpty(emptyObj));
+        console.log(objEmpty(nonEmptyObj));
+        console.log(objEmpty(nullValue));
+        console.log(objEmpty(undefinedValue));
+    </script>
+
+</body>
+
+</html>

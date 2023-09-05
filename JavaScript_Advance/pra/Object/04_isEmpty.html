@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Write a method that makes a shallow check is object empty
+        let isEmpty = function (obj) {
+
+            if (typeof obj === 'object' && !Array.isArray(obj)) {
+                return Object.keys(obj).length === 0;
+            }
+            return false;
+        };
+        const emptyObject = {};
+        const nonEmptyObject = { key: "value" };
+        console.log(isEmpty(emptyObject));      // true
+        console.log(isEmpty(nonEmptyObject));   // false
+
+    </script>
+
+</body>
+
+</html>
