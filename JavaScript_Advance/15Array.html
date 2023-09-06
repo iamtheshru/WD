@@ -76,7 +76,8 @@
     <script>
         //filter Ex:-
         const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-
+        const re = words.filter((words) => words.length < 6)
+        console.log(re);
         const result = words.filter((word) => word.length > 6);
         console.log(result);
         // Expected output: Array ["exuberant", "destruction", "present"]
@@ -223,7 +224,7 @@
         // Expected output: Array ["Dec", "Feb", "Jan", "March"]
 
         const arr9 = [1, 30, 4, 21, 100000];
-        array1.sort();
+        arr9.sort();
         console.log(arr9);
         // Expected output: Array [1, 100000, 21, 30, 4]
     </script>
@@ -258,7 +259,7 @@
     </Script>
     <Script>
         //EX FIND
-        const array6 = [5, 12, 8, 130, 44];
+        const array6 = [5, 13, 8, 130, 44];
 
         const found = array6.find((element) => element > 10);
 
@@ -289,7 +290,7 @@
 
         const isLargeNumber1 = (element) => element > 45;
 
-        console.log(array9.findLastIndex(isLargeNumbe1));
+        console.log(array9.findLastIndex(isLargeNumber1));
         // Expected output: 3
         // Index of element with value: 130
     </script>

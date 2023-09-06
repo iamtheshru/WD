@@ -19,11 +19,11 @@
             for (let index = 0; index < b.length; index++) {
                 counter += b[index]
             }
-            //   // console.log(counter);
+            // console.log(counter);
             return a + counter + c;
         }
         //  addition(10, 20);
-        //  addition(10, 80);
+        // addition(10, 80);
         //  console.log(addition(10, 80,80,50));
         console.log(addition(10, 80, 80, 50, 90, 80));
 
@@ -39,7 +39,19 @@
         const lyrics = ["head", ...parts, "and", "toes"];
         console.log(lyrics);
         //  ["head", "shoulders", "knees", "and", "toes"]
+
+        const data1 = {
+            name: "zee",
+            age: 20
+        }
+
+        const data2 = {
+            city: "Ahmedabad",
+            collegName: "R.G.SHAH"
+        }
+        const data = { ...data1, ...data2 }
+        console.log(data);
     </script>
-</body> 
+</body>
 
 </html>

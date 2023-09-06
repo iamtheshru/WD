@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>closures function- function return funnction</p>
+    <script>
+        function mainfunction() {
+            console.log("called main function");
+            const childfunction = () => {
+                console.log("called child function");
+            }
+            return childfunction()
+        }
+        // mainfunction()
+        // console.log(mainfunction);
+        console.log(mainfunction());
+        // console.log(mainfunction()());
+
+        function outer(outer_arg) {
+            console.log(outer_arg);
+            function inner(inner_arg) {
+                return outer_arg + inner_arg
+            }
+            return inner;
+        }
+        let get_func = outer(5);
+        console.log(get_func(50));
+    </script>
+</body>
+
+</html>
