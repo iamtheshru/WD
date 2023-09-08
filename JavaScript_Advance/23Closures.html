@@ -10,6 +10,10 @@
 
 <body>
     <p>closures function- function return funnction</p>
+    <p>A closure is the combination of a function bundled together (enclosed) with references to its surrounding state
+        (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner
+        function. In JavaScript, closures are created every time a function is created, at function creation time.</p>
+
     <script>
         function mainfunction() {
             console.log("called main function");
@@ -18,9 +22,9 @@
             }
             return childfunction()
         }
-        // mainfunction()
+        mainfunction()
         // console.log(mainfunction);
-        console.log(mainfunction());
+        // console.log(mainfunction());
         // console.log(mainfunction()());
 
         function outer(outer_arg) {
@@ -32,6 +36,99 @@
         }
         let get_func = outer(5);
         console.log(get_func(50));
+
+        // const f = 10;
+        // function sum(a) {
+        //     return function (b) {
+        //         return function (c) {
+        //             return function (d) {
+        //                 return function (e) {
+        //                     return a + b + c + d + e + f
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        // let fun = (sum(1)(2)(3)(4)(5))
+        // // console.log(sum(1)(2)(3)(4)(5));
+        // console.log(fun)
+
+        const f = 10;
+        function sum1(a) {
+            return function sum2(b) {
+                return function sum3(c) {
+                    return function sum4(d) {
+                        return function sum5(e) {
+                            return a + b + c + d + e + f
+                        };
+                    };
+                };
+            };
+        };
+        const sum2 = sum1(1);
+        const sum3 = sum2(2);
+        const sum4 = sum3(3);
+        const sum5 = sum4(4);
+        const result = sum5(5);
+        console.log(result); 
+    </script>
+    <script>
+        // for (let index = 0; index < 10; index++) {
+        //     // console.log(index);
+        // }
+        // // console.log(index); //error index is not defined
+        // for (var index = 0; index < 10; index++) {
+        //     // console.log(index);
+        // }
+        // // console.log(index); //10
+
+        // function testing() {
+        //     let dataInside = "something let"
+        //     var dataInsideVar = "something var"
+        //     console.log(dataInside);
+        //     console.log(dataInsideVar);
+        // }
+        // testing();
+        // console.log(dataInside); //dataInside is not defined
+        // console.log(dataInsideVar); //dataInside is not defined
+
+        // function init() {
+        //     var name = "Mozila";// name is a local variable created by init
+        //     function display() {
+        //         // displayName() is the inner function, that forms the closure
+        //         console.log(name); // use variable declared in the parent function
+        //     }
+        //     display();
+        // }
+        // init();
+
+        // function makeFunc() {
+        //     const name = "Mozilla";
+        //     function displayName() {
+        //         console.log(name);
+        //     }
+        //     return displayName;
+        // }
+
+        // const myFunc = makeFunc();
+        // myFunc();
+
+        // function testing() {
+        //     console.log("called");
+        //     return "ret"
+        // }
+        // console.log(testing);
+        // console.log(testing());
+
+        function makeAdder(x) {
+            console.log("inside main x", x);
+            return function (y) {
+                console.log("inside main y", y);
+                return x + y;
+            };
+        }
+        const add = makeAdder(5);
+        console.log(add(10));
     </script>
 </body>
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <ol id="disp">
+    </ol>
+    <script>
+        // fetch(url).then(json).then(result)
+        // fetch("https://jayramin.000webhostapp.com/allusers").then((responce) => console.log(responce));
+        // fetch("https://jayramin.000webhostapp.com/allusers").then((responce) => { return responce.json() })
+
+        fetch("https://jayramin.000webhostapp.com/allusers")
+            .then((response) => response.json())
+            .then((result) => {
+                console.log(result);
+                let htmlData = "";
+                (result.Data).forEach(element => {
+                    // console.log(element);
+                    // console.log(element.username);
+                    htmlData += `<li>${element.username}${element.email}</li>`
+                });
+                document.getElementById("disp").innerHTML = htmlData
+            });
+
+    </script>
+</body>
+
+</html>
