@@ -9,17 +9,73 @@
 </head>
 
 <body>
-    <h2>Callback hell</h2>
+    <h1>Callback hell</h1>
+    <h2 class="heading1">Hello World</h2>
+    <h2 class="heading2">Hello World</h2>
+    <h2 class="heading3">Hello World</h2>
+    <h2 class="heading4">Hello World</h2>
+    <h2 class="heading5">Hello World</h2>
+    <h2 class="heading6">Hello World</h2>
+    <h2 class="heading7">Hello World</h2>
     <script>
-        function MakeCart(prod, function () {
-            api.cardprocceds(cartdata, function () {
-                api.maypayment(paymentdata, function () {
-                    api.shipping(shippingdata, function () {
-                        api.reciepts()
-                    })
-                })
-            })
-        }) 
+        let heading1 = document.querySelector(".header1");
+        let heading2 = document.querySelector(".header2");
+        let heading3 = document.querySelector(".header3");
+        let heading4 = document.querySelector(".header4");
+        let heading5 = document.querySelector(".header5");
+        let heading6 = document.querySelector(".header6");
+        let heading7 = document.querySelector(".header7");
+
+        // setTimeout(() => {
+        //     heading1.textContent = "Heading 1"
+        //     heading1.style.color = "violet";
+        //     setTimeout(() => {
+        //         heading2.textContent = "Heading 2"
+        //         heading2.style.color = "violet";
+        //         setTimeout(() => {
+        //             heading3.textContent = "Heading 3"
+        //             heading3.style.color = "violet";
+        //             setTimeout(() => {
+        //                 heading4.textContent = "Heading 4"
+        //                 heading4.style.color = "violet";
+        //                 setTimeout(() => {
+        //                     heading5.textContent = "Heading 5"
+        //                     heading5.style.color = "violet";
+        //                     setTimeout(() => {
+        //                         heading6.textContent = "Heading 6"
+        //                         heading6.style.color = "violet"
+        //                         setTimeout(() => {
+        //                             heading7.textContent = "Heading 7"
+        //                             heading7.style.color = "violet"
+        //                         }, 1000)
+        //                     }, 1000)
+        //                 }, 1000)
+        //             }, 1000)
+        //         }, 1000)
+        //     }, 1000)
+        // }, 1000)
+
+        function changeText(element, text, color, time, onSuccessCallback, onFailurCallback) {
+            setTimeout(() => {
+                if (element) {
+                    element.textContent = text;
+                    element.style.color = color;
+                    if (onSuccessCallback) {
+                        onSuccessCallback()
+                    }
+                } else {
+                    if (onFailurCallback) {
+                        onFailurCallback()
+                    }
+                }
+            }, time);
+        }
+
+        changeText(heading1,"one","red",1000()=>{
+            console.log();
+        },()=>{
+
+        })
     </script>
 </body>
 

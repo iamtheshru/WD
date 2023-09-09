@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        // function resolveAfter2Seconds(params) {
+        //     console.log("called inside resolveAfter2Second");
+        //     return new Promise(resolve => {
+        //         // setTimeout(() => {
+        //         //     // console.log("called inside TimeOut");
+        //         //     resolve("resolve")
+        //         fetch("https://jayramin.000webhostapp.com/allusers")
+        //             .then((res) => res.json())
+        //             .then((response) => {
+        //                 // console.log(response);
+        //                 resolve(response.Data);
+        //                 return response
+        //             })
+        //         // }, 2000)
+        //     })
+        // }
+
+        // async function asyncall() {
+        //     console.log("called aysnCall before resolved");
+        //     const result = await resolveAfter2Seconds();
+        //     console.log("result", result);
+        //     console.log("called asyncCall after resolved");
+        // }
+
+        // // function asyncall() {
+        // //     console.log("called asyncCall before resolved");
+        // //     const result = resolveAfter2Seconds();
+        // //     console.log("result",result);
+        // //     console.log("called asyncCall after resolved");
+        // // }
+
+        // asyncall();
+
+        function data1(Name) {
+            function data2(Last) {
+                console.log(`${Name}${Last}`);
+            }
+            return data2
+        }
+
+        let ans = data1("shraddha");
+        ans("Patel");
+
+
+
+    </script>
+</body>
+
+</html>

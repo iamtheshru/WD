@@ -16,6 +16,7 @@
         called immediately after the invocation of the outer function, with no intervening asynchronous tasks, while
         asynchronous callbacks are called at some point later, after an asynchronous operation has completed.</p>
 
+    <p id="shr"></p>
     <script>
         // function mainfunc(e) {
         //     console.log("called mainfunc", e);
@@ -56,14 +57,59 @@
         // }
         // greet('Peter', callMe);
 
-        function sayBye(name, myFunction) {
-            console.log("Hello World");
-            myFunction(name);
+        // function sayBye(name, myFunction) {
+        //     console.log("Hello World");
+        //     myFunction(name);
+        // }
+        // function sayName(name) {
+        //     console.log('Hello' + '' + name);
+        // }
+        // setTimeout(sayBye, 2000, 'John', sayName);
+
+        // function mainFunction(callback) {
+        //     setTimeout(function () {
+        //         callback("Operation complete");
+        //     }, 1000);
+        // }
+
+        // // Define the callback function
+        // function callbackFunction(result) {
+        //     console.log("Result: " + result);
+        // }
+
+        // // Call the main function with the callback function
+        // mainFunction(callbackFunction);
+
+        function myfun(name, lastName, callback) {
+            callback(name, lastName);
+            // localStorage.setItem("name", name)
+            // console.log(localStorage.getItem("name", name));
+            // var stor = localStorage.getItem("name", name)
+            // let name1 = document.getElementById("shr").innerHTML = stor
         }
-        function sayName(name) {
-            console.log('Hello' + '' + name);
+        function myfun1(name, lastName) {
+            console.log(`${name} ${lastName}`);
         }
-        setTimeout(sayBye, 2000, 'John', sayName);
+        myfun("shraddha", "patel", myfun1)
+
+
+        function myfun2(callback) {
+            callback("shraddha", "patel");
+        }
+        function myfun3(name, lastName) {
+            console.log(name, lastName);
+        }
+        myfun2(myfun3)
+
+        // function fun(callback) {
+        //     setTimeout(function () {
+        //         callback(" shraddha");
+        //     }, 1000);
+        // }
+        // function myfun(name) {
+        //     console.log("name is" + name);
+        // }
+        // fun(myfun);
 
     </script>
 </body>
