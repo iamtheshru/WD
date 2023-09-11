@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <input type="text" id="inp">
+    <button id="btn">Click</button>
+    <p id="dis"></p>
+    <script>
+        let Input = document.getElementById("inp");
+        let Button = document.getElementById("btn")
+
+        Button.addEventListener("click", () => {
+            console.log(Input.value);
+            document.getElementById("dis").innerHTML = Input.value
+        });
+
+        async function koebhi() {
+            fetch("https://api.opencagedata.com/geocode/v1/json?q=${ahmedabad}&key=faed4d9eb29d483a866000c901ccb680")
+                .then((response) => response.json())
+                .then((result) =>
+                    console.log(result.results)
+                )
+                .then((data) =>
+                    console.log(data)
+                )
+        }
+        koebhi()
+
+    </script>
+</body>
+
+</html>
