@@ -10,30 +10,37 @@
 </head>
 
 <body>
-    <input type="text" id="inp">
+    <input type="text" id="inp" placeholder="City">
     <button id="btn">Click</button>
     <p id="dis"></p>
+    <p id="dis1"></p>
     <script>
         let Input = document.getElementById("inp");
-        let Button = document.getElementById("btn")
+        let Button = document.getElementById("btn");
+        if (Input.value = "") {
+            alert("Please enter the city")
+        } else {
+            Button.addEventListener("click", () => {
+                fetch(`https://api.opencagedata.com/geocode/v1/json?q=${city}&key=faed4d9eb29d483a866000c901ccb680`)
+                    .then((response) => response.json())
+                    .then((result) => {
+                        let data = result["results"][1]["annotations"]["DMS"];
+                        console.log(data);
+                        document.getElementById("dis").innerHTML = JSON.stringify(data);
+                    });
+                fetch(`https://api.openweathermap.org/data/2.5/weather?lat=23.0218734&lon=72.5984903&appid=ff431b01e24bf42cc8b9d90009e86b7f`)
+                    .then((res) => res.json())
+                    .then((rst) => {
+                        let data1 = rst["weather"]
+                        document.getElementById("dis1").innerHTML = JSON.stringify(data1);
+                        // let data2 = document.getElementById("dis1").innerHTML = JSON.stringify(rst["name"]);
+                        // console.log(Name);
+                        // console.log(data1);
+                        // return rst
+                    });
+            });
 
-        Button.addEventListener("click", () => {
-            console.log(Input.value);
-            document.getElementById("dis").innerHTML = Input.value
-        });
-
-        async function koebhi() {
-            fetch("https://api.opencagedata.com/geocode/v1/json?q=${ahmedabad}&key=faed4d9eb29d483a866000c901ccb680")
-                .then((response) => response.json())
-                .then((result) =>
-                    console.log(result.results)
-                )
-                .then((data) =>
-                    console.log(data)
-                )
         }
-        koebhi()
-
     </script>
 </body>
 

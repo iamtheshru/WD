@@ -39,14 +39,17 @@
     </pre>
     <script>
         alert(Math.random()); // 0.1234567894322
-        alert(Number.isFinite(123)); // true
-        alert(Number.isFinite(Infinity)); // false
+        // alert(Number.isFinite(123)); // true
+        // alert(Number.isFinite(Infinity)); // false
 
-        alert(Number.isNaN(NaN)); // true
+        // alert(String.isNaN(NaN)); 
+        console.log(Number.isNaN("aaa"));
+        // alert(Number.isNaN(NaN)); // true
 
-        alert(Math.round(15.15)); //15
+        alert(Math.round(15.40)); //15
+        alert(Math.round(15.55)); //16
         alert(Math.ceil(15.15)); //16
-        alert(Math.floor(15.15)); //15 
+        alert(Math.floor(15.95)); //15 
     </script>
 </body>
 
