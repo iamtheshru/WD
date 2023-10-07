@@ -13,10 +13,11 @@
     <script>
         let sayHiMixin = {
             sayHi() {
-                alert(`Hello ${this.name}`);
+                // alert(`Hello ${this.name}`);
+                console.log(`${this.name}`);
             },
             sayBye() {
-                alert(`Bye ${this.name}`)
+                console.log(`${this.name}`);
             }
         };
         class User {
@@ -24,9 +25,10 @@
                 this.name = name;
             }
         }
+        // console.log(User.prototype);
         Object.assign(User.prototype, sayHiMixin);
         new User("Dube").sayHi();
-        new User("Dube").sayBye();
+        new User("hello").sayBye();
         // console.log(sayHiMixin);
         // console.log(sayHiMixin.sayHi());
     </script>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>prop demo</title>
+    <style>
+        img {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="#"> Name:shraddha
+        <input type="checkbox" class="check">
+    </label>
+    <br>
+    <label for="#"> Name:shraddha
+        <input type="checkbox" class="check">
+    </label>
+    <br>
+    <label for="#"> Name:shraddha
+        <input type="checkbox" class="check">
+    </label>
+    <br>
+    <label for="#"> Name:shraddha
+        <input type="checkbox" class="check">
+    </label>
+    <br>
+    <label for="#"> Name:shraddha
+        <input type="checkbox" class="check">
+    </label>
+    <br>
+    <br>
+    <label for="#"><button onclick="BtnCheck()">All Checkbox</button></label>
+
+    <script>
+        function BtnCheck() {
+            let checkboxes = document.querySelectorAll(".check")
+            // console.log(checkboxes);
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked == false) {
+                    checkboxes[i].checked = true;
+                } else {
+                    checkboxes[i].checked = false;
+                }
+            }
+
+        }
+
+    </script>
+</body>

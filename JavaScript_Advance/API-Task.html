@@ -15,20 +15,20 @@
     <p id="dis"></p>
     <p id="dis1"></p>
     <script>
-        let Input = document.getElementById("inp");
         let Button = document.getElementById("btn");
-        if (Input.value = "") {
-            alert("Please enter the city")
-        } else {
-            Button.addEventListener("click", () => {
-                fetch(`https://api.opencagedata.com/geocode/v1/json?q=${city}&key=faed4d9eb29d483a866000c901ccb680`)
+        Button.addEventListener("click", () => {
+            let city = document.getElementById("inp");
+            if (city.value == "") {
+                alert("Please enter the city")
+            } else {
+                fetch(`https://api.opencagedata.com/geocode/v1/json?q=${city.value}&key=faed4d9eb29d483a866000c901ccb680`)
                     .then((response) => response.json())
                     .then((result) => {
                         let data = result["results"][1]["annotations"]["DMS"];
-                        console.log(data);
+                        // console.log(data);
                         document.getElementById("dis").innerHTML = JSON.stringify(data);
                     });
-                fetch(`https://api.openweathermap.org/data/2.5/weather?lat=23.0218734&lon=72.5984903&appid=ff431b01e24bf42cc8b9d90009e86b7f`)
+                fetch("https://api.openweathermap.org/data/2.5/weather?lat=23.0218734&lon=72.5984903&appid=ff431b01e24bf42cc8b9d90009e86b7f")
                     .then((res) => res.json())
                     .then((rst) => {
                         let data1 = rst["weather"]
@@ -37,10 +37,12 @@
                         // console.log(Name);
                         // console.log(data1);
                         // return rst
-                    });
-            });
 
-        }
+                    });
+            }
+        });
+
+
     </script>
 </body>
 

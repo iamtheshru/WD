@@ -15,16 +15,19 @@
             data = "Somethig"
             addition(a, b) {
                 console.log(this.data);
-                console.log(this.other());
+                // console.log(this.other());
                 return a + b;
             }
             other() {
+                console.log(this.addition(40, 50));
                 return "data";
             }
         }
         MathOpOp = new MathOp
-        let Addition = MathOpOp.addition(50, 90)
-        console.log(Addition);
+        // let Addition = MathOpOp.addition(50, 90)
+        // console.log(Addition);
+        let map = MathOpOp.other()
+        console.log(map);
     </script>
 </body>
 

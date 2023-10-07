@@ -38,20 +38,29 @@
         button:hover {
             background-color: rgb(214, 214, 214);
         }
+
+        .AddData1 {
+            display: block;
+        }
     </style>
 
 </head>
+
 
 <body>
     <main>
         <div class="container">
             <h1>current color : <span class="current-color">rgb(255,255,255)</span></h1>
-            <button>Chaange Color</button>
+            <button id="button">Chaange Color</button>
+            <button id="btnAdd">Add Data</button>
+            <p class="AddData1 "></p>
         </div>
     </main>
     <script>
-        const mainButton = document.querySelector("button");
+        const mainButton = document.getElementById("button");
+        const AddDataButton = document.getElementById("btnAdd");
         const currentColor = document.querySelector(".current-color")
+        const AddData = document.querySelector(".AddData1")
         const body = document.body;
 
         function randomColorGenerator() {
@@ -61,11 +70,40 @@
             const rendomColor = `rgb(${red}, ${green}, ${blue})`;
             return rendomColor;
         }
+        const randomdata1 = new Array();
         mainButton.addEventListener("click", () => {
             const randomColor = randomColorGenerator();
             body.style.backgroundColor = randomColor;
             currentColor.textContent = randomColor;
-        })
+            randomdata1.push(randomColor)
+            // console.log(randomdata1);
+            return randomdata1;
+        });
+
+        AddDataButton.addEventListener("click", (e) => {
+            // e.preventDefault();
+            const randomColor = randomColorGenerator();
+            AddData.textContent = randomdata1;
+            for (let i = 0; i < randomdata1.length; i++) {
+                if (randomdata1.length > 0) {
+                    let newButton = document.createElement("button");
+                    const newData = document.createTextNode("Remove");
+                    newButton.appendChild(newData);
+                    AddData.append(newButton);
+                    randomdata1[i];
+
+                }
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
 
     </script>
 </body>
