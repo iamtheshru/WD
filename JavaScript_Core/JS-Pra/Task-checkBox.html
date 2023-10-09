@@ -4,50 +4,38 @@
 <head>
     <meta charset="utf-8">
     <title>prop demo</title>
-    <style>
-        img {
-            padding: 10px;
-        }
-    </style>
 </head>
 
 <body>
-    <label for="#"> Name:shraddha
-        <input type="checkbox" class="check">
-    </label>
-    <br>
-    <label for="#"> Name:shraddha
-        <input type="checkbox" class="check">
-    </label>
-    <br>
-    <label for="#"> Name:shraddha
-        <input type="checkbox" class="check">
-    </label>
-    <br>
-    <label for="#"> Name:shraddha
-        <input type="checkbox" class="check">
-    </label>
-    <br>
-    <label for="#"> Name:shraddha
-        <input type="checkbox" class="check">
-    </label>
-    <br>
-    <br>
-    <label for="#"><button onclick="BtnCheck()">All Checkbox</button></label>
-
+    <ul class="main">
+        <li><input type="checkbox" id="select_all" onclick="CheckUncheck(this)" /> Select all</li>
+        <ul onclick="AllChek(this)">
+            <li><input type="checkbox" class="checkbox" value="1" />Item 1</li>
+            <li><input type="checkbox" class="checkbox" value="2" />Item 2</li>
+            <li><input type="checkbox" class="checkbox" value="3" />Item 3</li>
+            <li><input type="checkbox" class="checkbox" value="4" />Item 4</li>
+            <li><input type="checkbox" class="checkbox" value="5" />Item 5</li>
+        </ul>
+    </ul>
     <script>
-        function BtnCheck() {
-            let checkboxes = document.querySelectorAll(".check")
-            // console.log(checkboxes);
-            for (let i = 0; i < checkboxes.length; i++) {
-                if (checkboxes[i].checked == false) {
-                    checkboxes[i].checked = true;
-                } else {
-                    checkboxes[i].checked = false;
-                }
-            }
+        let Checkbox = document.querySelectorAll('.checkbox');
+        let AllCheck = document.getElementById('select_all');
 
+        function CheckUncheck(checkbox) {
+            for (let i = 0; i < Checkbox.length; i++) {
+                Checkbox[i].checked = checkbox.checked;
+            }
         }
 
+        function AllChek(box) {
+            if (!Checkbox.checked) {
+                AllCheck.checked = false;
+            } else {
+                AllCheck.checked = true;
+            }
+        }
+
+
     </script>
+
 </body>

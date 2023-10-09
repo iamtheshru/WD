@@ -38,10 +38,6 @@
         button:hover {
             background-color: rgb(214, 214, 214);
         }
-
-        .AddData1 {
-            display: block;
-        }
     </style>
 
 </head>
@@ -52,13 +48,15 @@
         <div class="container">
             <h1>current color : <span class="current-color">rgb(255,255,255)</span></h1>
             <button id="button">Chaange Color</button>
-            <button id="btnAdd">Add Data</button>
-            <p class="AddData1 "></p>
+            <button id="btnAdd" onclick="btnAdd()">Add Data</button>
+            <ul class="AddData1">
+
+            </ul>
         </div>
     </main>
     <script>
         const mainButton = document.getElementById("button");
-        const AddDataButton = document.getElementById("btnAdd");
+        // const AddDataButton = document.getElementById("btnAdd");
         const currentColor = document.querySelector(".current-color")
         const AddData = document.querySelector(".AddData1")
         const body = document.body;
@@ -76,36 +74,45 @@
             body.style.backgroundColor = randomColor;
             currentColor.textContent = randomColor;
             randomdata1.push(randomColor)
-            // console.log(randomdata1);
             return randomdata1;
         });
-
-        AddDataButton.addEventListener("click", (e) => {
-            // e.preventDefault();
+        function btnAdd() {
             const randomColor = randomColorGenerator();
-            AddData.textContent = randomdata1;
+            const newUl = document.createElement("ul");
+            const newLiInnerHtml = ` <li>${randomdata1}${newButton}</li>`;
+            newUl.innerHTML = newLiInnerHtml;
+            AddData.append(newUl);
+            console.log(newUl);
+            var index = 0;
+            randomdata1.splice(index, 1);
+            // for (let i = 0; i < randomdata1.length; i++) {
+            //     if (randomdata1.length > 0) {
+            //         AddData.innerHTML = randomdata1[i];
+            //     } else {
+            //         AddData.innerHTML = "none left";
+            //     }
+            // }
             for (let i = 0; i < randomdata1.length; i++) {
                 if (randomdata1.length > 0) {
-                    let newButton = document.createElement("button");
-                    const newData = document.createTextNode("Remove");
-                    newButton.appendChild(newData);
-                    AddData.append(newButton);
-                    randomdata1[i];
-
+                    AddData.innerHTML = randomdata1[i];
+                } else {
+                    AddData.innerHTML = "none left";
                 }
+                let newButton = document.createElement("button");
+                const newData = document.createTextNode("Remove");
+                newButton.append(newData);
+                AddData.append(newButton);
+                console.log(newLiInnerHtml);
+                newButton.addEventListener("click", () => {
+                    randomdata1.splice(i, 1);
+                    btnAdd();
+                })
             }
-        });
-    </script>
-
-
-
-
-
-
-
-
+            return newButton;
+        }
 
     </script>
+
 </body>
 
 </html>
