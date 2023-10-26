@@ -81,6 +81,22 @@
         const result = words.filter((word) => word.length > 6);
         console.log(result);
         // Expected output: Array ["exuberant", "destruction", "present"]
+
+
+        const duplicate = (input) => {
+            const duplicates = input.filter((item, index) => input.indexOf(item) !== index);
+            return Array.from(new Set(duplicates));
+        }
+        const a = [1, 1, 2, 2, 3, 3, 4, 5, 6, 1];
+        console.log(duplicate(a));
+
+
+        let ar = ["apple", "mango", "apple", "orange", "mango", "mango"];
+
+        function removeDuplicates(ar) {
+            return ar.filter((item, index) => ar.indexOf(item) === index);
+        }
+        console.log(removeDuplicates(ar));
     </script>
 
     <script>

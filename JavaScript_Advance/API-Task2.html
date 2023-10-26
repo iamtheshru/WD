@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <table id="table">
+
+    </table>
+    <script>
+        fetch('https://jayramin.000webhostapp.com/allusers').then((response) => response.json())
+            .then((result) => result['Data'])
+            .then((data) => {
+                let finalData = data;
+                finalData.map(function (e) {
+
+                    let table = document.getElementById('table');
+                    let tr = document.createElement("tr");
+                    let td1 = document.createElement("td");
+                    let td2 = document.createElement("td");
+                    let td3 = document.createElement("td");
+                    let td4 = document.createElement("td");
+                    let td5 = document.createElement("td");
+                    let td6 = document.createElement("td");
+                    let td7 = document.createElement("td");
+                    let td8 = document.createElement("td");
+                    let td9 = document.createElement("td");
+                    let td10 = document.createElement("td");
+                    let td11 = document.createElement("td");
+                    let td12 = document.createElement("td");
+                    let td13 = document.createElement("td");
+                    let td14 = document.createElement("td");
+                    let td15 = document.createElement("td");
+                    let td16 = document.createElement("td");
+                    let Img = document.createElement("img");
+
+                    // console.log(e.prof_pic);
+                    Img.setAttribute('src', `${e.prof_pic}`) //not a live image
+                    td16.append(Img)
+                    console.log(Img);
+                    td1.textContent = `${e.id}`
+                    td2.textContent = `${e.username}`
+                    td3.textContent = `${e.fullname}`
+                    td4.textContent = `${e.email}`
+                    td5.textContent = `${e.email_verified_at}`
+                    td6.textContent = `${e.password}`
+                    td7.textContent = `${e.remember_token}`
+                    td8.textContent = `${e.created_at}`
+                    td9.textContent = `${e.updated_at}`
+                    td10.textContent = `${e.role_id}`
+                    td11.textContent = `${e.mobile}`
+                    td12.textContent = `${e.gender}`
+                    td13.textContent = `${e.hobby}`
+                    td14.textContent = `${e.city}`
+                    td15.textContent = `${e.status}`
+                    td16.textContent = Img
+                    tr.append(td1);
+                    tr.append(td2);
+                    tr.append(td3);
+                    tr.append(td4);
+                    tr.append(td5);
+                    tr.append(td6);
+                    tr.append(td7);
+                    tr.append(td8);
+                    tr.append(td9);
+                    tr.append(td10);
+                    tr.append(td11);
+                    tr.append(td12);
+                    tr.append(td13);
+                    tr.append(td14);
+                    tr.append(td15);
+                    tr.append(td16);
+                    table.append(tr);
+                })
+            })
+            .then((data1) => console.log(data1))
+            .catch((red) => "error")
+
+    </script>
+</body>
+
+</html>
