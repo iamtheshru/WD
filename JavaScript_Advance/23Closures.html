@@ -34,9 +34,9 @@
             }
             return inner;
         }
-        outer(5)
-        // let get_func = outer(5);
-        // console.log(get_func(50));
+        // outer(5)
+        let get_func = outer(5);
+        console.log(get_func(50));
 
         // const f = 10;
         // function sum(a) {
@@ -54,24 +54,24 @@
         // // console.log(sum(1)(2)(3)(4)(5));
         // console.log(fun)
 
-        const f = 10;
-        function sum1(a) {
-            return function sum2(b) {
-                return function sum3(c) {
-                    return function sum4(d) {
-                        return function sum5(e) {
-                            return a + b + c + d + e + f
-                        };
-                    };
-                };
-            };
-        };
-        const sum2 = sum1(1);
-        const sum3 = sum2(2);
-        const sum4 = sum3(3);
-        const sum5 = sum4(4);
-        const result = sum5(5);
-        console.log(result); 
+        // const f = 10;
+        // function sum1(a) {
+        //     return function sum2(b) {
+        //         return function sum3(c) {
+        //             return function sum4(d) {
+        //                 return function sum5(e) {
+        //                     return a + b + c + d + e + f
+        //                 };
+        //             };
+        //         };
+        //     };
+        // };
+        // const sum2 = sum1(1);
+        // const sum3 = sum2(2);
+        // const sum4 = sum3(3);
+        // const sum5 = sum4(4);
+        // const result = sum5(5);
+        // console.log(result); 
     </script>
     <script>
         // for (let index = 0; index < 10; index++) {

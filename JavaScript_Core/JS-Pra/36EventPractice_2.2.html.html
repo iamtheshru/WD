@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -113,6 +113,95 @@
 
     </script>
 
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #ans {
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="back" id="back">
+        <div class="box">
+            <h2 class="h2" id="color">#fff</h2>
+            <button type="submit" class="btn" id="btn" onclick="genrateColor()">Random Color Generator</button>
+            <button type="submit" onclick="btnAdd()" class="btn">Add Hash value</button>
+            <!-- <p id="ans"></p> -->
+            <ul id="AddData1">
+
+            </ul>
+        </div>
+    </div>
+    <script>
+        // const AddData = document.querySelector(".AddData1");
+        const randomData1 = new Array();
+        function genrateColor() {
+            const randomNumber = Math.floor(Math.random() * 16777215);
+            //convert hash value
+            const randomCode = "#" + randomNumber.toString(16);
+            document.getElementById("back").style.backgroundColor = randomCode;
+            document.getElementById("color").innerText = randomCode;
+            randomData1.push(randomCode);
+            // console.log(randomData1);
+            return randomData1;
+        }
+        function btnAdd() {
+            // const randomColor = genrateColor();
+            let newButton = document.createElement("button");
+            newButton.innerText = 'remove';
+            const newUl = document.createElement("ul");
+            const newLiInnerHtml = ` <li>${randomData1} ${newButton.outerHTML}</li>`;
+            newUl.innerHTML = newLiInnerHtml;
+            document.getElementById("AddData1").appendChild(newUl);
+            // AddData.append(newUl);
+            console.log(newUl);
+            let index = 0;
+            randomData1.splice(index, 1);
+
+            // console.log(randomData1.splice(index, 1));
+
+            // for (let i = 0; i < randomdata1.length; i++) {
+            //     if (randomdata1.length > 0) {
+            //         AddData.innerHTML = randomdata1[i];
+            //     } else {
+            //         AddData.innerHTML = "none left";
+            //     }
+            // }
+
+            for (let i = 0; i < randomData1.length; i++) {
+
+                if (randomData1.length > 0) {
+                    document.getElementById("AddData1").innerHTML = randomData1[i];
+                    document.getElementById("AddData1").innerText = newButton;
+                } else {
+                    document.getElementById("AddData1").innerHTML = "none left";
+                }
+                newButton.addEventListener("click", () => {
+                    console.log("called");
+                    randomData1.splice(i, 1);
+                    btnAdd();
+                })
+                // newButton.append(newData);xx
+                // AddData.append(newButton);
+                // console.log(newLiInnerHtml);
+
+            }
+
+        }
+        // genrateColor();
+    </script>
 </body>
 
 </html>
