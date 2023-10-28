@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Array InsetElement</p>
+    <input type="text" id="position">
+    <input type="text" id="newEl">
+    <button onclick="inserEl()">Click</button>
+    <script>
+        function inserEl() {
+            console.log("called");
+            let data = [10, 4, 9, 8]
+            let newEl = document.getElementById('position').value;
+            newEl = parseInt(newEl)
+            let position = document.getElementById('newEl').value;
+            for (let i = data.length - 1; i >= 0; i--) {
+                // console.log(data[i]);
+                if (i >= position) {
+                    data[i + 1] = data[i];
+                    if (i == position) {
+                        data[i] = newEl;
+                    }
+                }
+            }
+            console.log(data);
+        }
+
+        // let data = [10, 4, 9, 12, 5, 7, 9]
+        // let newEl = 30;
+        // let position = 3;
+        // for (let i = data.length - 1; i >= 0; i--) {
+        //     // console.log(data[i]);
+        //     if (i >= position) {
+        //         data[i + 1] = data[i];
+        //         if (i == position) {
+        //             data[i] = newEl;
+        //         }
+        //     }
+        // }
+        // console.log(data);
+
+
+        //splice method
+        let data1 = [1, 4, 5, 6]
+        data1.splice(2, 0, 10); // target,delete,inset
+        console.log(data1);
+    </script>
+</body>
+
+</html>

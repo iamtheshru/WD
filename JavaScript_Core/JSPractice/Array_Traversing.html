@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Array Traversing</p>
+    <input type="text" id="inp">
+    <button onClick="getElement()">Click</button>
+    <script>
+        let data = [9, 2, 5, 7, 8, 10]
+        function getElement() {
+            let el = document.getElementById("inp").value;
+            if (el < data.length) {
+                alert(data[el])
+            } else {
+                alert("please enter valid input")
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Array SearchElement</p>
+    <input type="text" id="position">
+    <button onclick="search()">Click</button>
+    <script>
+
+        function search() {
+            let data = [10, 4, 12, 5, 7, 9]
+            let item = document.getElementById('position').value;
+            let index = undefined
+            position = parseInt(position);
+            for (let i = 0; i < data.length - 1; i++) {
+                // console.log(data[i]);
+                // data[i] = data[i + 1]
+                if (data[i] === parseInt(item)) {
+                    index = i;
+                    break;
+                }
+            }
+            console.log(index);
+        }
+
+        // let data = [10, 20, 12, 5, 30, 9]
+        // let item = 12;
+        // let index = undefined
+        // for (let i = 0; i <= data.length - 1; i++) {
+        //     if (data[i] === item) {
+        //         index = i;
+        //         break;
+        //     }
+        // }
+        // console.log(index);
+
+        let names = ["style", "List", "Raw"];
+        let results = names.filter(x => x.includes("s"));
+        console.log(results);
+
+        const alligatorFacts = ["thick scales", 80, "4 foot tail", "rounded snout", 80];
+        let a = alligatorFacts.indexOf("thick scales");
+        console.log(a);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Sorting Element in Array</p>
+    <input type="text" id="position">
+    <button onclick="search()">Click</button>
+    <script>
+        let data = [3, 1, 9, 8, 12];
+        for (let i = 0; i < data.length; i++) {
+            for (let j = 0; j < data.length; j++) {
+                // console.warn(data);
+                if (data[j] > data[j + 1]) {
+                    let temp = data[j];
+                    data[j] = data[j + 1];
+                    data[j + 1] = temp
+                }
+            }
+
+        }
+        // console.log(data);
+
+        //sort method;
+        data.sort(function (a, b) {
+            return a - b;
+        });
+        console.log(data);
+    </script>
+</body>
+
+</html>
