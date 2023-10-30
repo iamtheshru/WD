@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Circular Queue in javaScript </p>
+
+    <script>
+        class Queue {
+            constructor(size) {
+                this.max = size;
+                this.items = new Array(size);
+                this.currentSize = 0;
+                this.real = -1;
+                this.front = -1;
+            }
+            enquene(val) {
+                if (this.currentSize != this.max) {
+                    if (this.real == this.max - 1) {
+                        this.real = 0;
+                    } else {
+                        this.rear++;
+                    }
+                    this.items[this.real] = val;
+                    this.currentSize++;
+                    if (this.front = -1) {
+                        this.front = this.real;
+                    }
+                }
+            }
+            dequeue() {
+                if (this.currentSize != 0) {
+                    this.items[this.front] = null;
+                    if (this.front == this.max - 1) {
+                        this.front = 0
+                    } else {
+                        this.front++;
+                    }
+                    this.currentSize--;
+                } else {
+                    this.front = -1;
+                    this.real = -1;
+                    alert('queue is empty')
+                }
+            }
+            // display() {
+            //     console.log(this.items);
+            // };
+
+        }
+
+        let queue = new Queue(5);
+        queue.enquene(24);
+        queue.enquene(20);
+        queue.enquene(25);
+        console.log(queue);
+        queue.dequeue();
+        console.log(queue);
+    </script>
+
+</body>
+
+</html>

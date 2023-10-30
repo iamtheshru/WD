@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Check String is palindrome</p>
+
+    <script>
+        function palindrome(data) {
+            let star = 0;
+            let end = data.length - 1;
+            let result = true;
+            while (star < end) {
+                if (data[star] !== data[end]) {
+                    result = false;
+                }
+                star++;
+                end--;
+            }
+            return result;
+        }
+        let str = "level";
+        // let str = "hello";
+        console.log(palindrome(str));
+    </script>
+
+</body>
+
+</html>

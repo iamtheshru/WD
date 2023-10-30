@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Recursion</p>
+    <script>
+        function apple(x) {
+            console.log(x);
+            if (x < 10) {
+                apple(x + 1)
+            }
+        }
+        let data = 0
+        apple(data);
+    </script>
+    <script>
+        //factorial
+        function factorial(i) {
+            if (i === 0) {
+                return 1
+            }
+            return i * factorial(i - 1);
+        }
+        let data1 = 5
+        console.log(factorial(data1));
+    </script>
+</body>
+
+</html>

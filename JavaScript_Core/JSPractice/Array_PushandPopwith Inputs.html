@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Push and Pop operations</p>
+    <input type="text" placeholder="Enter Strack Element" id="newEl">
+    <button onclick="push()">Add Element to Stack</button>
+    <button onclick="pop()">Remove Element to Stack</button>
+    <button onclick="display()">Display All Element of Stack</button>
+
+    <script>
+        let data = [];
+        let currentSize = data.length;
+        let max = 5;
+        function push() {
+            let newEl = document.getElementById('newEl').value;
+            if (currentSize >= max) {
+                alert("strack is full you can not add" + newEl)
+            }
+            data[currentSize] = newEl;
+            currentSize += 1;
+            document.getElementById('newEl').value = "";
+            console.log("element added");
+
+        }
+        function pop() {
+            if (currentSize > 0) {
+                currentSize -= 1;
+                data.length = currentSize;
+            } else {
+                alert("stack is already empty")
+            }
+
+        }
+
+        function display() {
+            for (let i = 0; i <= currentSize - 1; i++) {
+                console.log(data[i]);
+            }
+        }
+        push(20);
+        push(30);
+        push(40);
+        push(50);
+        pop()
+        pop()
+        pop()
+
+    </script>
+
+</body>
+
+</html>

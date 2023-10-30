@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Queue in javaScript </p>
+    <script>
+        let dueue = [];
+        let currentSize = dueue.length;
+        let maxSize = 5;
+        function enqueue(newEl) {
+            if (currentSize >= maxSize) {
+                alert("dueue is full")
+            } else {
+                dueue[currentSize] = newEl;
+                currentSize++;
+            }
+        };
+        function dequeue() {
+            if (currentSize > 0) {
+                for (let i = 0; i < dueue.length; i++) {
+                    dueue[i] = dueue[i + 1]
+                }
+                currentSize--;
+                dueue.length = currentSize;
+            } else {
+                alert("dueue is emty")
+            }
+        };
+        function display() {
+            console.log(dueue);
+        };
+
+        enqueue(20);
+        enqueue(30);
+        display();
+        dequeue();
+        display();
+    </script>
+
+</body>
+
+</html>

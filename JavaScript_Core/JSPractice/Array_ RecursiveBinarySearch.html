@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Recursive Binary Search in javaScript </p>
+
+    <script>
+        let data = [2, 6, 9, 12, 19, 22, 25, 27]
+        let find = 25;
+        let start = 0;
+        let end = data.length - 1;
+        let position = undefined;
+        function recursive(data, start, end) {
+            mid = Math.floor((start + end) / 2);
+            if (find === data[mid]) {
+                position = mid;
+                return true;
+            } else if (data[mid] < find) {
+                recursive(data, mid + 1, end);
+            } else {
+                recursive(data, start, mid - 1);
+            }
+        }
+        recursive(data, start, end)
+        console.log(position);
+    </script>
+
+</body>
+
+</html>

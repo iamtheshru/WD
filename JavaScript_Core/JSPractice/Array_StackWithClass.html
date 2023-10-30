@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Reverse String with Stack </p>
+    <script>
+
+        class Stack {
+            item = [];
+            currentSize;
+            maxSize;
+            name;
+            // name1 = name.split('');
+            constructor(size) {
+                this.maxSize = size;
+                this.currentSize = this.item.length;
+                // this.name = "zeel"
+                // this.name1 = name.split('')
+                // this.name1 = revesname1(name1);
+            }
+            push(newEl) {
+                if (this.currentSize >= this.maxSize) {
+                    alert("stack is full")
+                } else {
+                    this.item[this.currentSize] = newEl;
+                    this.currentSize++;
+                }
+            };
+            pop() {
+                if (this.currentSize > 0) {
+                    this.currentSize--;
+                    this.item.length = this.currentSize;
+                } else {
+                    alert("stack is emty")
+                }
+            };
+            display() {
+                console.log(this.item);
+            };
+            // revesname1() {
+            //     for (let i = 0; i < item.length; i++) {
+            //         push(item[i]);
+            //     }
+            //     for (let i = 0; i < item.length; i++) {
+            //         item[i] = pop();
+            //     }
+            //     console.log(this.item);
+            // }
+        }
+        s1 = new Stack(5)
+        s1.push(20);
+        s1.push(30);
+        s1.push(40);
+        s1.display();
+        s1.pop();
+        s1.pop();
+        s1.display()
+        // s1.revesname1()
+
+
+    </script>
+
+</body>
+
+</html>

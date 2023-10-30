@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Queue in javaScript </p>
+    <input type="text" placeholder="enter element " id="newEl">
+    <button onclick="enqueue()">Add Element</button>
+    <br />
+    <button onclick="dequeue()">Remove Element</button>
+    <button onclick="display()">Display Element</button>
+    <button onclick="front()">Get Front Element</button>
+    <button onclick="real()">Get Real Element</button>
+    <script>
+        let queue = [];
+        let currentSize = queue.length;
+        let maxSize = 5;
+        function enqueue() {
+            let newEl = document.getElementById('newEl').value;
+            if (currentSize >= maxSize) {
+                alert("queue is full")
+            } else {
+                queue[currentSize] = newEl;
+                currentSize++;
+            }
+        };
+        function dequeue() {
+            if (currentSize > 0) {
+                for (let i = 0; i < queue.length; i++) {
+                    queue[i] = queue[i + 1]
+                }
+                currentSize--;
+                queue.length = currentSize;
+            } else {
+                alert("queue is emty")
+            }
+        };
+        function display() {
+            console.log(queue);
+        };
+
+        function front() {
+            if (!isEmpty()) {
+                console.log(queue[0]);
+            } else {
+                alert('queue is already empty')
+            }
+        }
+
+        function real() {
+            if (!isEmpty()) {
+                console.log(queue[currentSize - 1]);
+            } else {
+                alert('queue is already empty')
+            }
+        }
+        function isEmpty() {
+            if (currentSize <= 0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

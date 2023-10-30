@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Insertion sort in javaScript </p>
+
+    <script>
+        let arr = [26, 34, 25, 35, 54, 2]
+        function insertionSort(data) {
+            let i, current, j;
+            for (let i = 0; i < data.length; i++) {
+                current = data[i];
+                j = i - 1;
+                while (j >= 0 && data[j] > current) {
+                    data[j + 1] = data[j];
+                    j = j - 1;
+                }
+                data[j + 1] = current;
+
+            }
+        }
+        insertionSort(arr)
+        console.log(arr);
+    </script>
+
+</body>
+
+</html>

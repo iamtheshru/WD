@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Reverse String with Stack </p>
+    <script>
+        let data = [];
+        let currentSize = data.length;
+        function push(newEl) {
+            data[currentSize] = newEl;
+            currentSize += 1;
+        }
+        function pop() {
+            lastRemoveItem = data[currentSize - 1]
+            currentSize -= 1;
+            data.length = currentSize;
+            return lastRemoveItem
+        }
+
+        function revesname1(item) {
+            for (let i = 0; i < item.length; i++) {
+                push(item[i]);
+            }
+            for (let i = 0; i < item.length; i++) {
+                item[i] = pop();
+            }
+        }
+        let name = "zeel";
+        let name1 = name.split('');
+        console.log(name1);
+        revesname1(name1);
+        console.log(name1);
+        console.log(name1.join(''));
+
+        push(20);
+        push(30);
+        push(40);
+        pop()
+        pop()
+
+
+    </script>
+
+</body>
+
+</html>
