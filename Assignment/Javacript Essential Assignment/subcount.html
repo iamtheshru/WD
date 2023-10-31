@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Price</th>
+                <th>Amount</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" onchange="price(this)"></td>
+                <td><input type="text" onchange="amount(this)"></td>
+                <td class="netPrice">0</td>
+            </tr>
+            <tr>
+                <td><input type="text" onchange="price(this)"></td>
+                <td><input type="text" onchange="amount(this)"></td>
+                <td class="netPrice">0</td>
+            </tr>
+            <tr>
+                <td><input type="text" onchange="price(this)"></td>
+                <td><input type="text" onchange="amount(this)"></td>
+                <td class="netPrice">0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="total"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        var total = document.getElementById("total");
+        var netPrice = document.getElementsByClassName("netPrice");
+
+        function price(price) {
+            var amount = price.parentElement.parentElement.children[1].children[0].value;
+            var res = price.parentElement.parentElement.children[2].innerHTML = amount * price.value;
+            totalprice();
+        }
+        function amount(amount) {
+
+            var price = amount.parentElement.parentElement.children[0].children[0].value;
+            var res = amount.parentElement.parentElement.children[2].innerHTML = price * amount.value;
+            totalprice();
+        }
+        function totalprice() {
+            var cal = 0
+            for (let i = 0; i < netPrice.length; i++) {
+                cal += parseInt(netPrice[i].innerText);
+            }
+            total.innerHTML = cal;
+        }
+    </script>
+</body>
+
+</html>
