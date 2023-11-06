@@ -16,13 +16,17 @@
         function getElement() {
             let el = document.getElementById("inp").value;
             if (el < data.length) {
-                alert(data[el])
+                console.log((data[el]));
+                document.getElementById('inp').value = "";
+                document.getElementById('inp').focus()
             } else {
                 alert("please enter valid input")
+                document.getElementById('inp').value = "";
+                document.getElementById('inp').focus()
             }
         }
     </script>
-    
+
 </body>
 
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Linked List in JavaScript</p>
+    <script>
+        class list {
+            constructor(data) {
+                this.head = {
+                    value: data,
+                    next: null,
+                };
+                this.tail = this.head;
+                this.size = 1
+            }
+            appendNode(nodeData) {
+                let newNode = {
+                    value: nodeData,
+                    next: null
+                };
+                this.tail.next = newNode;
+                this.tail = newNode;
+                this.size += 1;
+            }
+            travering() {
+                let counter = 0;
+                let currentNode = this.head;
+                while (counter < this.size) {
+                    console.log(currentNode);
+                    currentNode = currentNode.next;
+                    counter++;
+                }
+            }
+        }
+
+        let data = new list(100);
+        data.appendNode(200);
+        data.appendNode(300);
+        console.log("Size of the linked list is " + data.size);
+        console.log('list', data);
+        data.travering();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Set Data Structure </p>
+    <script>
+        let data = new Set(["peter"]);
+        data.add({ "email": "test@test.com" })
+        console.log(data);
+        data.has("peter");
+        // Output: true
+        data.delete("peter")
+        console.log(data)
+        // Output: [ { email: 'test@test.com' } ]
+        if (data.size === 1 && data.hasOwnProperty('email')) {
+            console.log("The set has an object with the key 'email'.")
+        } else {
+            console.log("The set does not have an object with the key 'email'.")
+        }
+    </script>
+</body>
+
+</html>

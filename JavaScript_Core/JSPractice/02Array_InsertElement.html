@@ -9,12 +9,12 @@
 
 <body>
     <p>Array InsetElement</p>
-    <input type="text" id="position">
-    <input type="text" id="newEl">
+    <input type="text" id="position" placeholder="position">
+    <input type="text" id="newEl" placeholder="element">
     <button onclick="inserEl()">Click</button>
     <script>
         function inserEl() {
-            console.log("called");
+            // console.log("called");
             let data = [10, 4, 9, 8]
             let newEl = document.getElementById('position').value;
             newEl = parseInt(newEl)
@@ -47,9 +47,9 @@
 
 
         //splice method
-        let data1 = [1, 4, 5, 6]
-        data1.splice(2, 0, 10); // target,delete,inset
-        console.log(data1);
+        // let data1 = [1, 4, 5, 6]
+        // data1.splice(2, 0, 10); // target,delete,inset
+        // console.log(data1);
     </script>
 </body>
 

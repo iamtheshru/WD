@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Map Data Structure </p>
+    <script>
+        let data = new Map([
+            ['name', 'John'],
+            [true, 'bool key'],
+            [100, 'hundred']
+        ]);
+        console.log(data.size)
+        // Output: 3
+        data.set('color', 'green');
+        console.log(data.get('color'))
+        // Output: green
+        data.delete('color')
+        console.log(data.has('color'));
+        // Output: false
+        for (let item of data) {
+            console.log(`${item[0]}: ${item[1]}`)
+        }
+        data.clear();
+        if (data.size === 0) {
+            console.log("Map is empty");
+        } else {
+            console.log("Map still has items")
+        }
+        console.log(data);
+    </script>
+</body>
+
+</html>
