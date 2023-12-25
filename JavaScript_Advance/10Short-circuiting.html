@@ -21,10 +21,10 @@
         Still, we should apply ?. carefully, only where it’s acceptable, according to our code logic, that the left part doesn’t exist. So that it won’t hide programming errors from us, if they occur.</PRE>
     <script>
         // console.log(user?.address); //ReferenceError: Cannot access 'user' before initialization
-        // let user = null;
+        let user = null;
 
         // console.log(user?.address); // undefined
-        // console.log(user?.address.street); // undefined
+        console.log(user?.address.street); // undefined
         // let user = null;
         // let x = 0;
 
@@ -41,6 +41,7 @@
         let a = id1.toString()
         let b = id2.toString()
         alert(a == b); // true
+        alert(a === b); // true
         console.log(id1.toString());
 
 

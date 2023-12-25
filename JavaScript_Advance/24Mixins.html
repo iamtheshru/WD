@@ -25,11 +25,11 @@
                 this.name = name;
             }
         }
-        // console.log(User.prototype);
+        console.log(User.prototype);
         Object.assign(User.prototype, sayHiMixin);
         new User("Dube").sayHi();
         new User("hello").sayBye();
-        // console.log(sayHiMixin);
+        console.log(sayHiMixin);
         // console.log(sayHiMixin.sayHi());
     </script>
 </body>

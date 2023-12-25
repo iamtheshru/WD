@@ -30,12 +30,12 @@
             console.log(num);
             num = 1, 2, 3, 4, 5
         }
-        
+
         let range = {
             from: 1,
             to: 5
         };
-        
+
         console.log(range);
         range[Symbol.iterator] = function () {
             // return {
@@ -79,7 +79,8 @@
         while (true) {
             let result = iterator.next();
             if (result.done) break;
-            alert(result.value); // outputs characters one by one
+            // alert(result.value); // outputs characters one by one
+            console.log(result.value);
         }
     </script>
 </body>
