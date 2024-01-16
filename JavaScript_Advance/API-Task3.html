@@ -18,19 +18,20 @@
     <script>
         fetch('https://fakestoreapi.com/products')
             .then((response) => response.json())
-            .then((data) => {
-                let data1 = data['id'];
-                console.log(data1);
-            })
-            // .then((result) => {
-            //     // let finalData = result
-            //     // console.log(finalData)
-            //     console.log(result)
-            //     // finalData.map(function (e) {
-            //     //     console.log(e);
-            //     //     // let img=document.createElement()
-            //     // })
+            // .then((data) => {
+            //     let data1 = data['id'];
+            //     console.log(data['id']);
             // })
+            .then((result) => {
+                let finalData = result
+                console.log(finalData)
+                // console.log(result)
+                finalData.map(function (e) {
+                    console.log(e);
+                    // console.log(e.id);
+                    //     // let img=document.createElement()
+                })
+            })
             .catch((red) => "error")
 
 

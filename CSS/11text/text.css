@@ -45,8 +45,8 @@
 
  .Transformation {
      /* text-transform: lowercase; */
-     /* text-transform: capitalize; */
-     text-transform: uppercase;
+     text-transform: capitalize;
+     /* text-transform: uppercase; */
  }
 
  div,

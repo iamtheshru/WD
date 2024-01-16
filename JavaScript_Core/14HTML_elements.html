@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #disp {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,7 +33,7 @@
     <input type="text" name="inpClass" class="inpClass" id="inpClass">
     <button id="btn">Click</button>
     <h2>Keyboard Event</h2>
-    <input type="text" onkeydown="getData(this)" placeholder="Onkeydown" name="" id=""> <br>
+    <input type="text" id="aa" onkeydown="getData(this)" placeholder="Onkeydown" name="" id=""> <br>
     <input type="text" onkeypress="getData(this)" placeholder="OnkeyPress" name="" id=""> <br>
     <input type="text" onkeyup="getData(this)" placeholder="OnkeyUp" name="" id=""><br>
     <div class="disp" id="disp"></div>
@@ -37,6 +43,7 @@
         function getData(kaipan) {
             console.log(kaipan.value);
             document.getElementById("disp").innerText = kaipan.value
+            document.getElementById("disp").style.backgroundColor = "red"
         }
 
         document.getElementById("btn").addEventListener("click", function () {

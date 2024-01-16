@@ -13,7 +13,6 @@
     </style>
     <script type="text/javascript">
         function validate() {
-
             var user = document.getElementById("e").value;
             var user2 = document.getElementById("e");
             var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -22,17 +21,21 @@
                 return true;
             }
             else {
-                user2.style.border = "red solid 3px";
+                user2.style.border = "green solid 10px";
+                // alert('aaa')
                 return false;
             }
         }
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault()
+        })
     </script>
 </head>
 
 <body bgcolor="cyan">
     <center>
         <h1>Email Registration</h1>
-        <form>
+        <form id="form">
             <fieldset style="width:300px">
                 <legend>Registation Form</legend>
                 <table>
