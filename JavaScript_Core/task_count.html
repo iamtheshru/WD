@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" name="number" id="num" required>
+    <button type="button" onclick="checkForPrime()"> Submit </button>
+
+    <script>
+        function checkForPrime() {
+            let Input = document.getElementById('num').value;
+            const number = Input;
+            let data = false;
+
+            if (number == 1) {
+                console.log(" 1 is neither prime nor composite");
+            }
+            else if (number > 1) {
+                for (let i = 2; i < number / 2; i++) {
+                    if (number % i == 0) {
+                        data = true;
+                        break;
+                    }
+                }
+                if (data == true) {
+                    console.log(`${number} is not a prime number`);
+                }
+                else {
+                    console.log(`${number} is a prime number`);
+                }
+            }
+            else {
+                console.log(`${number} is not a prime number`);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -47,9 +47,11 @@
             <input type="submit" value="Add Todo" class="btn_input" />
         </form>
         <ul class="todo-list">
+            <!-- Existing list item remains unchanged -->
             <li>
                 <span>Todo</span>
                 <div class="btn">
+                    <button class="edit">Edit</button>
                     <button class="done">Done</button>
                     <button class="remove">Remove</button>
                 </div>
@@ -60,17 +62,15 @@
 
         const todo = document.querySelector(".todo-form");
         const todoInput = document.querySelector(".todo-form input[type='text']");
-        // console.log(todoInput);
         const todoList = document.querySelector(".todo-list");
-
 
         todo.addEventListener("submit", (e) => {
             e.preventDefault();
-            // console.log(todoInput.value);
             const newTodoText = todoInput.value;
             const newLi = document.createElement("li");
             const newLiInnerHtml = ` <span> ${newTodoText} </span>
                 <div class="btn">
+                    <button class="edit">Edit</button>
                     <button class="done">Done</button>
                     <button class="remove">Remove</button>
                 </div>`;
@@ -80,8 +80,6 @@
         });
 
         todoList.addEventListener("click", (e) => {
-            // console.log(e.target.classList);
-
             if (e.target.classList.contains("remove")) {
                 const targetLi = e.target.parentNode.parentNode;
                 targetLi.remove();
@@ -89,7 +87,15 @@
             else if (e.target.classList.contains("done")) {
                 const liSpan = e.target.parentNode.previousElementSibling;
                 liSpan.style.textDecoration = "line-through";
-                console.log(liSpan);
+            }
+            else if (e.target.classList.contains("edit")) {
+                const liSpan = e.target.parentNode.previousElementSibling;
+                const currentText = liSpan.textContent;
+                const editInput = document.createElement("input");
+                editInput.type = "text";
+                editInput.value = currentText;
+                liSpan.textContent = '';
+                liSpan.appendChild(editInput);
             }
         });
 
