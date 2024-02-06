@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function secondMax(arr) {
+            if (arr.length < 2) {
+                return "Array must have at least two elements.";
+            }
+
+            let max = arr[0];
+            let secondMax = arr[1];
+
+            if (secondMax > max) {
+                // Swap max and secondMax
+                [max, secondMax] = [secondMax, max];
+            }
+
+            for (let i = 2; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    secondMax = max;
+                    max = arr[i];
+                } else if (arr[i] > secondMax && arr[i] !== max) {
+                    secondMax = arr[i];
+                }
+            }
+
+            if (secondMax === undefined) {
+                return "No second maximum value found.";
+            }
+
+            return secondMax;
+        }
+
+        // Example usage:
+        const arr = [3, 7, 1, 9, 5, 8];
+        const result = secondMax(arr);
+        console.log("Second maximum value:", result);
+
+
+    </script>
+    <!-- <script>
+        function thirdMax(arr) {
+            if (arr.length < 3) {
+                return "Array must have at least three elements.";
+            }
+
+            let max = arr[0];
+            let secondMax = arr[1];
+            let thirdMax = arr[2];
+
+            // Ensure thirdMax is the smallest of the three
+            if (thirdMax > secondMax) {
+                [secondMax, thirdMax] = [thirdMax, secondMax];
+            }
+            if (secondMax > max) {
+                [max, secondMax] = [secondMax, max];
+            }
+            if (thirdMax > secondMax) {
+                [secondMax, thirdMax] = [thirdMax, secondMax];
+            }
+
+            for (let i = 3; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    thirdMax = secondMax;
+                    secondMax = max;
+                    max = arr[i];
+                } else if (arr[i] > secondMax && arr[i] !== max) {
+                    thirdMax = secondMax;
+                    secondMax = arr[i];
+                } else if (arr[i] > thirdMax && arr[i] !== max && arr[i] !== secondMax) {
+                    thirdMax = arr[i];
+                }
+            }
+
+            if (thirdMax === undefined) {
+                return "No third maximum value found.";
+            }
+
+            return thirdMax;
+        }
+
+        // Example usage:
+        const arr = [3, 7, 1, 9, 5, 8];
+        const result = thirdMax(arr);
+        console.log("Third maximum value:", result);
+
+    </script> -->
+
+</body>
+
+</html>

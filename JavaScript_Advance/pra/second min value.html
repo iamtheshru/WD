@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function secondMin(arr) {
+            if (arr.length < 2) {
+                return "Array must have at least two elements.";
+            }
+
+            let min = arr[0];
+            let secondMin = arr[1];
+
+            if (secondMin < min) {
+                // Swap min and secondMin
+                [min, secondMin] = [secondMin, min];
+            }
+
+            for (let i = 2; i < arr.length; i++) {
+                if (arr[i] < min) {
+                    secondMin = min;
+                    min = arr[i];
+                } else if (arr[i] < secondMin && arr[i] !== min) {
+                    secondMin = arr[i];
+                }
+            }
+
+            if (secondMin === undefined) {
+                return "No second minimum value found.";
+            }
+
+            return secondMin;
+        }
+
+        // Example usage:
+        const arr = [3, 7, 1, 9, 5, 8];
+        const result = secondMin(arr);
+        console.log("Second minimum value:", result);
+
+
+
+    </script>
+</body>
+
+</html>

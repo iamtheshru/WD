@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let string = "Jeevveej";
+        // let reversedString = "";
+        // for (let left = string.length - 1; left >= 0; left--) {
+        //     reversedString += string[left];
+        //     if (reversedString !== string) {
+        //         console.log("palidrome");
+        //     }
+        // }
+
+        for (let i = 0; i < 10; i++) {
+            {
+                for (let j = 0; j < 10 - i; j++) {
+                    document.write("&nbsp;");
+                }
+                for (let k = 1; k <= i; k++) {
+                    document.write("*")
+                }
+            }
+            document.write("<br>")
+        }
+        for (let i = 0; i < 10; i++) {
+            {
+                for (let j = 10; j > 10 - i; j--) {
+                    document.write("&nbsp;");
+                }
+                for (let k = 10; k > i; k--) {
+                    document.write("*")
+                }
+            }
+            document.write("<br>")
+        }
+
+        for (var i = 0; i <= 5; i++) {
+            document.write("")
+            {
+                for (var j = 0; j < i; j++) {
+                    document.write(" " + (i + j) + "")
+                }
+            }
+            document.write("<br>")
+        }
+    </script>
+</body>
+
+</html>

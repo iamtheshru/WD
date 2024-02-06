@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p> Write a Program to Check Whether a Character is a Vowel or Consonant vowel = a,e,i,o,u</p>
+    <input type="text" id="inp">
+    <button onclick="btnfn()">click</button>
+    <!-- <script>
+        function btnfn() {
+            let input = document.getElementById("inp").value;
+            if (input == "a" || input == "e" || input == "i" || input == "o" || input == "u" || input == "A" || input == "E" || input == "I" || input == "O" || input == "U") {
+                console.log("Vowel Character");
+            } else {
+                    console.log("Consonant Character");
+            }
+        }
+    </script> -->
+    <!-- <p> Write a Program to Count the Number of Vowels.</p>
+    <script>
+        function Vowel(ch) {
+            return ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u' || ch == "A" || ch == "E" || ch == "I" || ch == "O" || ch == "U";
+        }
+        function btnfn() {
+            let input = document.getElementById("inp").value;
+            console.log(input);
+            let count = 0
+            for (let i = 0; i < input.length; i++) {
+                if (Vowel(input[i])) {
+                    count += 1
+                    console.log("Vowel Character");
+                }
+                else {
+                    console.log("Consonant Character");
+                }
+            }
+            console.log(count);
+        }
+    </script> -->
+    <p> Write a Program to Remove the Vowels from a String</p>
+    <script>
+        function Vowel(ch) {
+            return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == "A" || ch == "E" || ch == "I" || ch == "O" || ch == "U";
+        }
+
+        function btnfn() {
+            var result = "";
+            let input = document.getElementById("inp").value;
+            // console.log(input);
+            for (let i = 0; i < input.length; i++) {
+                if (!Vowel(input[i])) {
+                    result += input[i]
+                }
+            }
+            console.log(result);
+        }
+
+
+        // var name = "shraddha";
+        // var result = "";
+        // function Vowel(ch) {
+        //     return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == "A" || ch == "E" || ch == "I" || ch == "O" || ch == "U";
+        // }
+        // for (let i = 0; i < name.length; i++) {
+        //     if (!Vowel(name[i])) {
+        //         result += name[i];
+        //     }
+        // }
+        // console.log(result);
+    </script>
+</body>
+
+</html>

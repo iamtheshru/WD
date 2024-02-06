@@ -14,7 +14,7 @@
     <button id="btn">Click</button>
     <p id="dis"></p>
     <p id="dis1"></p>
-    <script>
+    <!-- <script>
         let Button = document.getElementById("btn");
         Button.addEventListener("click", () => {
             let city = document.getElementById("inp");
@@ -42,6 +42,42 @@
             }
         });
 
+
+    </script> -->
+    <script>
+        let a = [1, 22, 4, 3, 10];
+        // let max = a[0]
+        // let min = a[1]
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i] > max) {
+        //         max = a[i]
+        //         console.log(max);
+        //     } else {
+        //         if (a[i] < min) {
+        //             muni = a[i]
+        //             console.log(a[i]);
+        //         }
+        //     }
+        //     // return
+
+        // }
+        let max = Math.max(...a);
+        console.log(max);
+
+        // let max1 = a[0];
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i] > max1) {
+        //         max1 = a[i];
+        //     }
+        // }
+        // console.log(max1);
+        let min = a[1];
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] < min) {
+                min = a[i];
+            }
+        }
+        console.log(min);
 
     </script>
 </body>

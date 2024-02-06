@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="inp">
+    <button onclick="btnfn()">click</button>
+    <script>
+        function btnfn() {
+            let input = document.getElementById("inp").value;
+            if (input > 0) {
+                console.log("positive");
+            } else {
+                if (input == 0) {
+                    console.log("zero");
+                } else {
+                    console.log("negative");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
