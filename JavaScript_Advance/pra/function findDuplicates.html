@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function findDuplicates(arr) {
+            var duplicates = [];
+            var seen = {};
+
+            for (var i = 0; i < arr.length; i++) {
+                if (seen[arr[i]] === undefined) {
+                    seen[arr[i]] = 1;
+                    console.log(seen[arr[i]]);
+                } else if (seen[arr[i]] === 1) {
+                    console.log(duplicates);
+                    duplicates[duplicates.length] = arr[i];
+                    seen[arr[i]] = 2;
+                }
+            }
+
+            return duplicates;
+        }
+
+        var myArray = [1, 2, 3, 4, 2, 5, 5, 3, 7, 8, 1];
+        var result = findDuplicates(myArray);
+
+        console.log("Duplicate elements: ", result);
+    </script>
+</body>
+
+</html>

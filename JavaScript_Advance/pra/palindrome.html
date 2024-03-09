@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,46 +9,23 @@
 
 <body>
     <script>
-        // let string = "Jeevveej";
-        // let reversedString = "";
-        // for (let left = string.length - 1; left >= 0; left--) {
-        //     reversedString += string[left];
-        //     if (reversedString !== string) {
-        //         console.log("palidrome");
-        //     }
-        // }
-
-        for (let i = 0; i < 10; i++) {
-            {
-                for (let j = 0; j < 10 - i; j++) {
-                    document.write("&nbsp;");
-                }
-                for (let k = 1; k <= i; k++) {
-                    document.write("*")
-                }
+        let string = "Jeevveek";
+        let right = string.length - 1;
+        let palindrome = true;
+        for (let left = 0; left < right; left++, right--) {
+            if (string[left] == string[right]) {
+                continue;
             }
-            document.write("<br>")
+            else {  
+                palindrome = false;
+                break;
+            }
         }
-        for (let i = 0; i < 10; i++) {
-            {
-                for (let j = 10; j > 10 - i; j--) {
-                    document.write("&nbsp;");
-                }
-                for (let k = 10; k > i; k--) {
-                    document.write("*")
-                }
-            }
-            document.write("<br>")
-        }
+        if (palindrome) {
+            console.log("string is palindrome");
+        } else {
+            console.log("string is not palindrome");
 
-        for (var i = 0; i <= 5; i++) {
-            document.write("")
-            {
-                for (var j = 0; j < i; j++) {
-                    document.write(" " + (i + j) + "")
-                }
-            }
-            document.write("<br>")
         }
     </script>
 </body>

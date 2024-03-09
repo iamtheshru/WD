@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const employees = [
+            { id: 1, name: 'Alice', managerId: 4 },
+            { id: 2, name: 'Bob', managerId: 3 },
+            { id: 3, name: 'Charlie', managerId: 4 },
+            { id: 4, name: 'David', managerId: null },
+            { id: 5, name: 'Eva', managerId: 3 },
+        ]
+        employees.sort((a, b) => {
+            // if (a.managerId === null && b.managerId !== null) {
+            //     console.log("aa");
+            // }
+
+            return b.managerId - a.managerId;
+        });
+
+        let result = []
+        for (let i = 0; i < employees.length; i++) {
+            if (employees[i].managerId === null) {
+                result.push(employees[i])
+                employees.length = employees.length - 1
+            }
+
+        }
+        console.log(result);
+        console.log(employees);
+        let data1 = [...result, [...employees]]
+        console.log(data1);
+
+    </script>
+</body>
+
+</html>
