@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function FlatteningData(arr) {
+            return arr.reduce((acc, value) =>
+                // console.log(acc.concat(FlatteningData(value)))
+                Array.isArray(value) ? acc.concat(FlatteningData(value)) : acc.concat(value)
+                , [])
+
+        }
+        console.log(FlatteningData([1, [2, [3, 4], 5], 6]));
+        console.log(flattenArray([1, [2, [3, [4, [5]]]]]));
+
+
+    </script>
+</body>
+
+</html>

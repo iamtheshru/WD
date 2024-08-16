@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +23,7 @@
             .then((result) => {
                 console.log(result)
                 let htmlData = "";
-                (result.Data).forEach(element => {
+                (result.Data).map(element => {
                     console.log(element);
                     console.log(element.username);
                     htmlData += `<li>${element.username}${element.email}</li>`

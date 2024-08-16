@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function FindingDuplicate(arr) {
+            let seen = new Set();
+            for (const value of arr) {
+                if (seen.has(value)) {
+                    return true
+                }
+                let data = seen.add(value);
+                console.log(data);
+            }
+            return false;
+        }
+
+        console.log(FindingDuplicate([1, 2, 4, 5, 5]));
+    </script>
+</body>
+
+</html>

@@ -78,20 +78,20 @@
         //     console.log("Result: " + result);
         // }
 
-        // Call the main function with the callback function
+        // // // Call the main function with the callback function
         // mainFunction(callbackFunction);
 
-        function myfun(name, lastName, callback) {
-            callback(name, lastName);
-            localStorage.setItem("name", name)
-            console.log(localStorage.getItem("name", name));
-            var stor = localStorage.getItem("name", name)
-            let name1 = document.getElementById("shr").innerHTML = stor
-        }
-        function myfun1(name, lastName) {
-            console.log(`${name} ${lastName}`);
-        }
-        myfun("shraddha", "patel", myfun1)
+        // function myfun(name, lastName, callback) {
+        //     callback(name, lastName);
+        //     localStorage.setItem("name", name)
+        //     console.log(localStorage.getItem("name", name));
+        //     var stor = localStorage.getItem("name", name)
+        //     let name1 = document.getElementById("shr").innerHTML = stor
+        // }
+        // function myfun1(name, lastName) {
+        //     console.log(`${name} ${lastName}`);
+        // }
+        // myfun("shraddha", "patel", myfun1)
 
 
         // function myfun2(callback) {
@@ -113,33 +113,34 @@
         // fun(myfun);
 
 
-        var D1 = "pooja";
-        var D2 = sessionStorage.setItem("name", D1);
-        var D3 = sessionStorage.getItem("name", D1);
-        console.log("d1", D1);
-        console.log("d2", D2);
-        console.log("d3", D3);
-        var D4 = document.getElementById("shr").innerHTML = D3
+        // var D1 = "pooja";
+        // var D2 = sessionStorage.setItem("name", D1);
+        // var D3 = sessionStorage.getItem("name", D1);
+        // console.log("d1", D1);
+        // console.log("d2", D2);
+        // console.log("d3", D3);
+        // var D4 = document.getElementById("shr").innerHTML = D3
 
-        var D1 = "zeel";
-        var D2 = localStorage.setItem("name", D1);
-        var D3 = localStorage.getItem("name", D1);
-        console.log("d1", D1);
-        console.log("d2", D2);
-        console.log("d3", D3);
-        var D4 = document.getElementById("shr1").innerHTML = D3
 
-        var D1 = "megha";
-        setCookie("name", D1, 7);  // Set a cookie named 'name' with value 'megha' that expires in 7 days
-        var D2 = getCookie("name");  // Assuming you have the getCookie function defined (as shown in the previous example)
-        var D3 = getCookie("name");  // Retrieve the value of the 'name' cookie
+        // var D1 = "zeel";
+        // var D2 = localStorage.setItem("name", D1);
+        // var D3 = localStorage.getItem("name", D1);
+        // console.log("d1", D1);
+        // console.log("d2", D2);
+        // console.log("d3", D3);
+        // var D4 = document.getElementById("shr1").innerHTML = D3
 
-        console.log("d1", D1);
-        console.log("d2", D2);
-        console.log("d3", D3);
+        // var D1 = "megha";
+        // var data = setCookie("name", D1, 7);  // Set a cookie named 'name' with value 'megha' that expires in 7 days
+        // var D2 = getCookie("name");  // Assuming you have the getCookie function defined (as shown in the previous example)
+        // var D3 = getCookie("name");  // Retrieve the value of the 'name' cookie
 
-        // Display the cookie value in an HTML element
-        var D4 = document.getElementById("shr1").innerHTML = D3;
+        // console.log("d1", D1);
+        // console.log("d2", D2);
+        // console.log("d3", D3);
+
+        // // Display the cookie value in an HTML element
+        // var D4 = document.getElementById("shr1").innerHTML = D3;
 
 
     </script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function removeFalsyValues(obj) {
+            let newobj = {};
+            for (let key in obj) {
+                // console.log(obj[key]);
+                if (obj[key]) {
+                    // console.log(key);
+                    newobj[key] = obj[key]
+                }
+            }
+            return newobj;
+
+        }
+
+        let originalObject = {
+            name: "Alice",
+            age: 0,
+            occupation: "",
+            city: "New York",
+            married: false
+        };
+
+        console.log(removeFalsyValues(originalObject));
+        // let data = removeFalsyValues(originalObject);
+
+    </script>
+</body>
+
+</html>

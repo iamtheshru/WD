@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [2, 5, 7, 10, 8, 50];
+        let maxDifference = 0;
+        let DiffIndex1 = 0;
+        let DiffIndex2 = 0;
+
+        for (let i = 0; i < array.length; i++) {
+            for (let j = i + 1; j < array.length; j++) {
+                let diff = array[j] - array[i];
+                if (diff > maxDifference) {
+                    maxDifference = diff;
+                    DiffIndex1 = array[i];
+                    DiffIndex2 = array[j]
+                }
+            }
+        }
+
+        console.log("DiffIndex1:", DiffIndex1, "DiffIndex2:", DiffIndex2, maxDifference);
+    </script>
+</body>
+
+</html>

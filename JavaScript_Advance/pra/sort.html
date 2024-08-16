@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [2, 5, 7, 10, 8, 50];
+
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array.length; j++) {
+                if (array[i] < array[j]) {
+                    var x = array[i]
+                    // console.log(x);
+                    array[i] = array[j]
+                    array[j] = x
+                }
+            }
+        }
+        console.log(array);
+
+
+        const emp = [
+            { id: 1, name: 'Alice', managerId: 4 },
+            { id: 2, name: 'Bob', managerId: 3 },
+            { id: 3, name: 'Charlie', managerId: 4 },
+            { id: 4, name: 'David', managerId: null },
+            { id: 5, name: 'Eva', managerId: 3 },
+        ]
+
+        for (let i = 0; i < emp.length - 1; i++) {
+            for (let j = 0; j < emp.length - 1; j++) {
+                if (emp[i].managerId > emp[j + 1].managerId) {
+                    const temp = emp[i];
+                    emp[i] = emp[j + 1];
+                    emp[j + 1] = temp;
+                }
+            }
+        }
+
+        console.log(emp);
+    </script>
+</body>
+
+</html>

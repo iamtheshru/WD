@@ -71,12 +71,21 @@
             }, time);
         }
 
-        // changeText(heading1,"one","red",1000()=>{
-        //     console.log();
-        // },
-        // ()=>{
+        changeText(heading1, "one", "red", 1000, () => {
+            changeText(heading2, "one", "red", 1000, () => {
+                changeText(heading3, "one", "red", 1000, () => {
+                    changeText(heading4, "one", "red", 1000, () => {
+                        changeText(heading5, "one", "red", 1000, () => {
+                            changeText(heading6, "one", "red", 1000, () => {
+                                changeText(heading7, "one", "red", 1000, () => {
 
-        // })
+                                }, () => { console.log("heading does not exist") })
+                            }, () => { console.log("heading does not exist") })
+                        }, () => { console.log("heading does not exist") })
+                    }, () => { console.log("heading does not exist") })
+                }, () => { console.log("heading does not exist") })
+            }, () => { console.log("heading does not exist") })
+        }, () => { console.log("heading does not exist") })
     </script>
 </body>
 

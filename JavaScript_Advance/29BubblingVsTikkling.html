@@ -55,32 +55,32 @@
         // }, false);
 
         //Tikkling
-        // grandparent.addEventListener("click", (e) => {
-        //     // event.stopPropagation()
-        //     console.log("grandparent");
-        // }, true);
-        // parent.addEventListener("click", (e) => {
-        //     // event.stopPropagation()
-        //     console.log("parent");
-        // }, true);
-        // child.addEventListener("click", (e) => {
-        //     // event.stopPropagation()
-        //     console.log("child");
-        // }, true);
-
-
         grandparent.addEventListener("click", (e) => {
-            event.stopPropagation()
+            // event.stopPropagation()
             console.log("grandparent");
-        }, false);
+        }, true);
         parent.addEventListener("click", (e) => {
-            event.stopPropagation()
+            // event.stopPropagation()
             console.log("parent");
-        }, false);
+        }, true);
         child.addEventListener("click", (e) => {
-            event.stopPropagation()
+            // event.stopPropagation()
             console.log("child");
-        }, false);
+        }, true);
+
+
+        // grandparent.addEventListener("click", (e) => {
+        //     event.stopPropagation()
+        //     console.log("grandparent");
+        // }, false);
+        // parent.addEventListener("click", (e) => {
+        //     event.stopPropagation()
+        //     console.log("parent");
+        // }, false);
+        // child.addEventListener("click", (e) => {
+        //     event.stopPropagation()
+        //     console.log("child");
+        // }, false);
     </script>
 </body>
 

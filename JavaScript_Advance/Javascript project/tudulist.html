@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            /* display: flex;
+            justify-content: space-between;
+            align-items: center; */
+        }
+
+        button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>ToDo List</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList">
+        <!-- Tasks will be added here dynamically -->
+    </ul>
+
+    <script>
+        function addTask() {
+            var taskInput = document.getElementById("taskInput");
+            var taskList = document.getElementById("taskList");
+
+            if (taskInput.value.trim() === "") {
+                alert("Please enter a task!");
+                return;
+            }
+
+            var newTask = document.createElement("li");
+            newTask.textContent = taskInput.value;
+
+            var editButton = document.createElement("button");
+            editButton.textContent = "Edit";
+            editButton.onclick = function () {
+                var updatedTask = prompt("Edit task:", newTask.textContent);
+                if (updatedTask !== null) {
+                    newTask.textContent = updatedTask;
+                }
+            };
+
+            var deleteButton = document.createElement("button");
+            deleteButton.textContent = "Delete";
+            deleteButton.onclick = function () {
+                taskList.removeChild(newTask);
+            };
+
+            newTask.appendChild(deleteButton);
+            newTask.appendChild(editButton);
+            taskList.appendChild(newTask);
+
+            // Clear input field after adding task
+            taskInput.value = "";
+        }
+    </script>
+
+
+</body>
+
+</html>

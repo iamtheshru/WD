@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function groupBy(array, property) {
+            return array.reduce((acc, obj) => {
+                let key = obj[property];
+                // console.log(obj);
+                if (!acc[key]) {
+                    acc[key] = [];
+                    // console.log(acc[key]);
+                }
+                acc[key].push(obj);
+                return acc;
+            }, {})
+        }
+
+        let people = [
+            { name: "Alice", age: 25 },
+            { name: "Bob", age: 30 },
+            { name: "Charlie", age: 25 },
+            { name: "David", age: 30 }
+        ];
+
+        let data = groupBy(people, "age");
+        console.log(data);
+    </script>
+</body>
+
+</html>

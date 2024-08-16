@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array1 = [2, 5, 7, 10, 8, 50];
+        let smallestValue = array1[0];
+        let largestValue = array1[0];
+
+        for (let i = 0; i < array1.length; i++) {
+            if (array1[i] < smallestValue) {
+                smallestValue = array1[i]
+            }
+            if (array1[i] > largestValue) {
+                largestValue = array1[i]
+            }
+        }
+        console.log(smallestValue); // 2
+        console.log(largestValue); // 50
+    </script>
+</body>
+
+</html>

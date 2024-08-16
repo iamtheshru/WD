@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let urls = [
+            "https://www.example.com/page1",
+            "https://subdomain.example.com/page2",
+            "https://another.example.org/page3"
+        ];
+
+        let domains = urls.map(url => new URL(url).hostname);
+
+        console.log("Domains:", domains);
+
+        let domains1 = urls.map(url => new URL(url).hostname.replace(/^www\./, ''));
+
+        console.log("Domains:", domains1);
+    </script>
+</body> 
+
+</html>

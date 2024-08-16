@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Array of employees
+        const employees = [
+            { id: 1, name: 'Alice', salary: 50000 },
+            { id: 2, name: 'Bob', salary: 60000 },
+            { id: 3, name: 'Charlie', salary: 75000 },
+            { id: 4, name: 'David', salary: 45000 },
+            { id: 5, name: 'Eva', salary: 70000 }
+        ];
+
+        // Function to find employee with the highest salary
+
+        function highestSalary(employees) {
+            if (employees == 0) {
+                return null
+            }
+
+            let highestPaidEmployee = employees[0]; // Initialize with the first employee
+            for (let i = 0; i < employees.length; i++) {
+                if (employees[i].salary > highestPaidEmployee.salary) {
+                    highestPaidEmployee = employees[i]
+                }
+            }
+            return highestPaidEmployee;
+        }
+
+        let highestPaidEmployee = highestSalary(employees);
+        console.log(highestPaidEmployee);
+    </script>
+</body>
+
+</html>

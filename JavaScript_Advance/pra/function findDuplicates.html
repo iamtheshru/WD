@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,22 +14,24 @@
         function findDuplicates(arr) {
             var duplicates = [];
             var seen = {};
-
+            // Practice make man perfect
+            // Work untill you no longer have to introduce yourself.
             for (var i = 0; i < arr.length; i++) {
                 if (seen[arr[i]] === undefined) {
                     seen[arr[i]] = 1;
-                    console.log(seen[arr[i]]);
-                } else if (seen[arr[i]] === 1) {
-                    console.log(duplicates);
+                    // console.log("aaa", seen[arr[i]]);
+                } else if (seen[arr[i]] >= 1) {
+                    // console.log(duplicates);
                     duplicates[duplicates.length] = arr[i];
-                    seen[arr[i]] = 2;
+                    seen[arr[i]] = seen[arr[i]] + 1;
+                    console.log(seen[arr[i]]);
                 }
             }
 
-            return duplicates;
+            return { duplicates, seen };
         }
 
-        var myArray = [1, 2, 3, 4, 2, 5, 5, 3, 7, 8, 1];
+        var myArray = [1, 2, 3, 4, 2, 5, 5, 2, 3, 7, 8, 1, 2];
         var result = findDuplicates(myArray);
 
         console.log("Duplicate elements: ", result);

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Arrays of students and courses
+        const students = [
+            { id: 1, name: 'Alice' },
+            { id: 2, name: 'Bob' },
+            { id: 3, name: 'Charlie' },
+            { id: 4, name: 'David' }
+        ];
+
+        const courses = [
+            { id: 101, name: 'Math', students: [1, 2, 3] },
+            { id: 102, name: 'Science', students: [2, 3, 4] }
+        ];
+
+        function findStudentsEnrolledInBothCourses(students, courses) {
+            const enrolledStudents = {};
+
+            courses.forEach(course => {
+                course.students.forEach(studentId => {
+                    if (!enrolledStudents[studentId]) {
+                        enrolledStudents[studentId] = 1;
+                    } else {
+                        enrolledStudents[studentId]++;
+                    }
+                })
+            });
+
+            const studentsEnrolledInBoth = students.filter(student => {
+                return enrolledStudents[student.id] === courses.length;
+            })
+            return studentsEnrolledInBoth.map(student => student.name)
+
+        }
+
+        const studentsEnrolledInBoth = findStudentsEnrolledInBothCourses(students, courses);
+        console.log("Students enrolled in both courses:", studentsEnrolledInBoth);
+
+       
+
+    </script>
+</body>
+
+</html>

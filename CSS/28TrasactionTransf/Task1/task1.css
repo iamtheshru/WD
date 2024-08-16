@@ -18,6 +18,7 @@ img {
     text-align: center;
     box-shadow: 5px 4px 8px 4px gray;
     animation: roted 6s alternate infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 .card:hover .card-mid {

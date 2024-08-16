@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let name = "shraddha";
+        let reversedName = "";
+
+        for (let i = name.length - 1; i >= 0; i--) {
+            reversedName += name[i];
+        }
+
+        console.log(reversedName);
+
+
+        // Original object
+        const originalObj = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+
+        // Function to reverse object properties
+        function reverseObject(obj) {
+            const reversedObj = {};
+            const keys = Object.keys(obj);
+            const length = keys.length;
+
+            for (let i = length - 1; i >= 0; i--) {
+                const key = keys[i];
+                console.log(key);
+                reversedObj[key] = obj[key];
+            }
+
+            return reversedObj;
+        }
+
+        // Reverse the original object
+        const reversedObj = reverseObject(originalObj);
+
+        // Output the reversed object
+        console.log(reversedObj);
+
+
+    </script>
+</body>
+
+</html>

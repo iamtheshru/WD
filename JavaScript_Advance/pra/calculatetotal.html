@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const products = [
+            { name: 'Laptop', price: 1000, quantity: 2 },
+            { name: 'Phone', price: 500, quantity: 3 },
+            { name: 'Headphones', price: 100, quantity: 5 },
+            { name: 'Mouse', price: 20, quantity: 10 }
+        ];
+
+        function calculateTotalValue(products) {
+            let totalvalue = 0;
+
+            for (let i = 0; i < products.length; i++) {
+                const product = products[i];
+                totalvalue += product.price * product.quantity;
+            }
+
+            return totalvalue;
+        }
+        const totalValue = calculateTotalValue(products);
+        console.log("Total value of all products:", totalValue);
+
+    </script>
+</body>
+
+</html>

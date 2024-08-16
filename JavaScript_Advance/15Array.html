@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -89,7 +89,6 @@
         }
         const a = [1, 1, 2, 2, 3, 3, 4, 5, 6, 1];
         console.log(duplicate(a));
-
 
         let ar = ["apple", "mango", "apple", "orange", "mango", "mango"];
 
@@ -240,9 +239,12 @@
         // Expected output: Array ["Dec", "Feb", "Jan", "March"]
 
         const arr9 = [1, 30, 4, 21, 100000];
-        arr9.sort();
-        console.log(arr9);
+        // arr9.sort();
+        // console.log(arr9);
         // Expected output: Array [1, 100000, 21, 30, 4]
+        arr9.sort((a, b) => a - b);
+        console.log(arr9);
+
     </script>
 
     <script>
