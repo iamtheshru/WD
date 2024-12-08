@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Create a CLI app which takes name, unit test marks, pre final marks, final marks of 5 students. And then print
+        who has the highest marks. What if I ask you to print the average as well? </h1>
+
+    <div>
+        <input type="text" class="form-control" placeholder="CHEMISTRY" id="chemistry">
+    </div>
+    <div>
+        <input type="text" class="form-control" placeholder="PHYSICS" id="physics">
+    </div>
+    <div>
+        <input type="text" class="form-control" placeholder="MATHS" id="maths">
+    </div>
+    <div>
+        <input type="text" class="form-control" placeholder="ENGLISH" id="english">
+    </div>
+    <div>
+        <input type="button" value="show Percentage" class="form-button" onclick="calculate()">
+    </div>
+
+    <div class="form-group showdata">
+        <p id="showdata"></p>
+    </div>
+    <script>
+        function calculate() {
+            let CHEMISTRY = document.getElementById('chemistry').value;
+            let PHYSICS = document.getElementById('physics').value;
+            let MATHS = document.getElementById('maths').value;
+            let ENGLISH = document.getElementById('english').value;
+            let grades = "";
+
+            let totalgrades = parseFloat(CHEMISTRY) + parseFloat(PHYSICS) + parseFloat(MATHS) + parseFloat(ENGLISH);
+            let percentage = (totalgrades / 400) * 100;
+            if (percentage <= 100 && percentage >= 80) {
+                grades = "A";
+            } else if (percentage <= 79 && percentage >= 60) {
+                grades = "B";
+            } else if (percentage <= 59 && percentage >= 40) {
+                grades = "C";
+            } else {
+                grades = "F";
+            }
+
+            if (CHEMISTRY == "" || PHYSICS == "" || MATHS == "" || ENGLISH == "") {
+                document.getElementById("showdata").innerHTML = "Please enter all fields";
+            } else {
+                if (percentage >= 39.5) {
+                    document.getElementById("showdata").innerHTML = `out of 400 your total is ${totalgrades} and percentage is ${percentage} and grades ${grades}.you are pass`;
+                } else {
+                    document.getElementById("showdata").innerHTML = `out of 400 your total is ${totalgrades} and percentage is ${percentage} and grades ${grades}.you are fail`;
+                }
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

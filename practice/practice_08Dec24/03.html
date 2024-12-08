@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Create a web app where I can input a text. Now create two buttons + and -. On clicking + increase the fontSize
+        by 2px and vice versa.
+    </h1>
+
+    <input type="text" id="input" placeholder="Enter first number">
+    <div>
+        <button id="add">+</button>
+        <button id="subtract">-</button>
+    </div>
+    <div id="text"></div>
+    <script>
+        const input = document.getElementById("input")
+        const increase = document.getElementById("add")
+        const decrease = document.getElementById("subtract")
+        const text = document.getElementById("text")
+
+        input.addEventListener('input', () => {
+            text.textContent = input.value
+        });
+
+        let fontSize = 16;
+
+        increase.addEventListener('click', () => {
+            fontSize += 2;
+            text.style.fontSize = fontSize + "px";
+            input.value = ""
+        })
+        decrease.addEventListener('click', () => {
+            if (fontSize > 4) {
+                fontSize -= 2;
+                text.style.fontSize = fontSize + "px";
+                input.value = ""
+            }
+
+        })
+
+
+    </script>
+
+</body>
+
+</html>

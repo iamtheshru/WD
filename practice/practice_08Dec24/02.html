@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Create a web app which would take two inputs. It would also have 4 buttons: +, -, x /. Based on the button
+        clicked perform the operation on the two inputs. You can do this in React or vanillaJS based on your choice.
+    </h1>
+
+    <input type="number" id="input1" placeholder="Enter first number">
+    <input type="number" id="input2" placeholder="Enter second number">
+    <div>
+        <button id="add">+</button>
+        <button id="subtract">-</button>
+        <button id="multiply">x</button>
+        <button id="divide">/</button>
+    </div>
+    <div id="result"></div>
+    <script>
+        const input1 = document.getElementById("input1")
+        const input2 = document.getElementById("input2")
+        const result = document.getElementById("result")
+
+        function getinput() {
+            const num1 = parseFloat(input1.value);
+            const num2 = parseFloat(input2.value);
+            return [num1, num2];
+        }
+        function updateresult(results) {
+            result.textContent = "Result :" + results;
+        }
+
+        document.getElementById("add").addEventListener("click", () => {
+            const [num1, num2] = getinput();
+            if (!isNaN(num1) && !isNaN(num2)) {
+                updateresult(num1 + num2)
+            } else {
+                updateresult('Please enter valid numbers')
+            }
+        })
+
+        document.getElementById("subtract").addEventListener("click", () => {
+            const [num1, num2] = getinput();
+            if (!isNaN(num1) && !isNaN(num2)) {
+                updateresult(num1 - num2);
+            } else {
+                updateresult('Please enter valid numbers')
+            }
+        })
+
+        document.getElementById("multiply").addEventListener("click", () => {
+            const [num1, num2] = getinput();
+            if (!isNaN(num1) && !isNaN(num2)) {
+                updateresult(num1 * num2);
+            } else {
+                updateresult('Please enter valid numbers')
+            }
+        })
+
+        document.getElementById("divide").addEventListener("click", () => {
+            const [num1, num2] = getinput();
+            if (!isNaN(num1) && !isNaN(num2)) {
+                if (num2 === 0) {
+                    updateresult("Cannot divide by zero");
+                } else {
+                    updateresult(num1 / num2);
+                }
+            } else {
+                updateresult('Please enter valid numbers')
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

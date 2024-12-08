@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Create a web app where I can input a text. Now, create three buttons h1, h2, h3. When I click on any of the
+        button, the text should become h1, h2, or h3.</h1>
+
+    <input type="text" id="input" placeholder="Enter first number">
+    <div>
+        <button id="h1">h1</button>
+        <button id="h2">h2</button>
+        <button id="h3">h3</button>
+    </div>
+    <div id="text"></div>
+    <script>
+        const input = document.getElementById("input")
+        const h1 = document.getElementById("h1")
+        const h2 = document.getElementById("h2")
+        const h3 = document.getElementById("h3")
+        const text = document.getElementById("text")
+
+        input.addEventListener('input', () => {
+            text.textContent = input.value
+        });
+
+
+        h1.addEventListener('click', () => {
+            text.innerHTML = `<h1>${text.textContent}</h1>`
+        })
+
+        h2.addEventListener('click', () => {
+            text.innerHTML = `<h2>${text.textContent}</h2>`
+        })
+
+        h3.addEventListener('click', () => {
+            text.innerHTML = `<h3>${text.textContent}</h3>`
+        })
+    </script>
+
+</body>
+
+</html>
