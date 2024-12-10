@@ -29,39 +29,33 @@
         by 2px and vice versa.
     </h1>
 
-    <input type="text" id="input" placeholder="Enter first number">
+    <input type="text" id="input">
     <div>
         <button id="add">+</button>
         <button id="subtract">-</button>
     </div>
     <div id="text"></div>
+
     <script>
         const input = document.getElementById("input")
-        const increase = document.getElementById("add")
-        const decrease = document.getElementById("subtract")
+        const add = document.getElementById("add")
+        const subtract = document.getElementById("subtract")
         const text = document.getElementById("text")
+        let fontSize = 12;
 
         input.addEventListener('input', () => {
             text.textContent = input.value
         });
 
-        let fontSize = 16;
-
-        increase.addEventListener('click', () => {
+        add.addEventListener("click", () => {
             fontSize += 2;
             text.style.fontSize = fontSize + "px";
-            input.value = ""
+        });
+
+        subtract.addEventListener("click", () => {
+            fontSize -= 2;
+            text.style.fontSize = fontSize + "px"
         })
-        decrease.addEventListener('click', () => {
-            if (fontSize > 4) {
-                fontSize -= 2;
-                text.style.fontSize = fontSize + "px";
-                input.value = ""
-            }
-
-        })
-
-
     </script>
 
 </body>

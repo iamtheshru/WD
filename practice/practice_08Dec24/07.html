@@ -38,17 +38,16 @@
     <h1>Create a web app with a button loaded. Show a text loading... on a web app. However, hide it if I click on the
         button loaded. </h1>
     <div id="loader" class="center"></div>
-    <button id="loadButton" class="btn">Submit</button>
-
+    <button id="loadButton" class="btn">CLick</button>
 
     <script>
-        const loadButton = document.getElementById('loadButton');
-        const loader = document.getElementById('loader');
+        const loadButton = document.getElementById("loadButton");
+        const loaded = document.getElementById("loader");
 
-        loadButton.addEventListener('click', () => {
+        loadButton.addEventListener("click", () => {
             loadButton.disabled = false;
-            loader.style.display = 'none';
-        });
+            loaded.style.display = 'none'
+        })
     </script>
 
 
