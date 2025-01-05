@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        How to show Page Loading div until
+        the page has finished loading?
+    </title>
+</head>
+
+<body>
+
+    <Script>
+        // {
+        //     var obj = { name: "Jugnu", surname: "Prajapati" };
+        //     var obj = { name: "Mitesh", surname: "pandya" };
+        //     console.log(obj); //{ name: "Mitesh", surname: "pandya" }
+        // }
+
+        // {
+        //     const obj = { color: "blue", item: "top" };
+        //     var obj = { color: "yellow", item: "shirt" };
+        //     console.log(obj); //'obj' has already been declared
+        // }
+
+        // var myData = {
+        //     name: "Parul",
+        //     printName: function () {
+        //         console.log(this.name) //parul
+        //     }
+        // }
+        // myData.printName();
+
+        // var myData = {
+        //     name: "Parul",
+        //     printName: function (role) {
+        //         console.log(name, role)
+        //     }
+        // }
+        // myData.printName("PA"); //PA
+
+
+        // const cycleDetails = {
+        //     wheels: 2,
+        //     seat: 1,
+        //     carrier: 2
+        // };
+
+        // const { wheels: cycleWheels, seat: cycleSeat } = cycleDetails;
+
+        // console.log(cycleWheels); //2
+        // console.log(cycleSeat); //1
+
+
+
+        // const name = "Dave";
+        // const age = 40;
+        // const myData = { name, age };
+        // console.log(myData); // {name: 'Dave', age: 40}
+
+
+
+
+        // const person = {
+        //     fullName: function (city, country) {
+        //         console.log(firstName + " " + lastName + "," + city + "," + country);
+        //     }
+        // };
+
+        // const person1 = {
+        //     firstName: "John",
+        //     lastName: "Doe"
+        // };
+
+        // person.fullName.call(person1, "Oslo", "Norway"); //firstName is not defined
+
+        // const person1 = {
+        //     fullName: function (city, country) {
+        //         console.log(
+        //             this.firstName + " " + this.lastName + "," + city + "," + country
+        //         );
+        //     }
+        // };
+
+        // const person2 = {
+        //     firstName: "John",
+        //     lastName: "Dave"
+        // };
+
+        // person1.fullName.call(person2, ["Oslo", "Norway"]); //john,Dave,Oslo,Norway,undefined
+
+
+        // const person3 = {
+        //     firstName: "Mary",
+        //     lastName: "Doe",
+        //     display: function () {
+        //         console.log(this.firstName + " " + this.lastName);
+        //     }
+        // };
+
+        // setTimeout(person3.display, 3000);//undefined ,undefined
+
+
+        // const person4 = {
+        //     firstName: "Ocodo",
+        //     lastName: "Learn",
+        //     display: function () {
+        //         console.log(this.firstName + " " + this.lastName);
+        //     }
+        // };
+
+        // let display = person4.display.bind(person4);
+        // setTimeout(display, 3000); //ocodo lern
+
+
+        // var obj1 = {
+        //     address: "Mumbai, India",
+        //     getAddress: function () {
+        //         console.log(this.address);
+        //     }
+        // }
+
+        // var getAddress = obj1.getAddress;
+        // var obj2 = { name: "akshay" };
+        // obj2.getAddress(); //obj2.getAddress() not a function
+
+
+        // var obj = {
+        //     name: "Arjun",
+        //     getName: function () {
+        //         console.log(this.name);
+        //     }
+        // }
+
+        // var getName = obj.getName;
+        // var obj2 = { name: "Dhiraj", getName };
+        // obj2.getName(); //Dhiraj
+
+        // (function () {
+        //     var objA = new Object({ foo: "foo" });
+        //     var objB = new Object({ foo: "foo" });
+        //     console.log(objA == objB);
+        //     console.log(objA === objB);
+        // }()) //false false
+
+
+        // const props = [
+        //     { id: 1, name: "John" },
+        //     { id: 2, name: "Jack" },
+        //     { id: 3, name: "Tom" }
+        // ];
+
+        // const [, , { name }] = props;
+        // console.log(name); //Tom
+
+
+        // function add(item, items = []) {
+        //     items.push(item);
+        //     return items;
+        // }
+
+        // console.log(add("Orange"));//[Orange]
+        // console.log(add("Apple"));//[Apple]
+
+
+        // (function greetNewCustomer() {
+        //     console.log('Hello ' + this.name);
+        // }.bind({
+        //     name: 'John'
+        // })()); //Hello John
+
+
+        // function getName1() {
+        //     console.log(this.name);
+        // }
+
+        // let personObj = {
+        //     name: "Joy",
+        //     print: getName1
+        // };
+
+        // personObj.print(); //Joy
+
+
+        // (function () {
+        //     var objA = {
+        //         foo: 'foo',
+        //         bar: 'bar'
+        //     };
+        //     var objB = {
+        //         foo: 'foo',
+        //         bar: 'bar'
+        //     };
+        //     console.log(objA == objB);
+        //     console.log(objA === objB);
+        // }()); //false false
+
+
+        // (function () {
+        //     var objA = new Object({ foo: "foo" });
+        //     var objB = new Object({ foo: "foo" });
+        //     console.log(objA == objB);
+        //     console.log(objA === objB);
+        // }()); //false false
+
+
+
+        // (function () {
+        //     var objA = Object.create({
+        //         foo: 'foo'
+        //     });
+        //     var objB = Object.create(objA);
+        //     console.log(objA.toString() == objB.toString());
+        //     console.log(objA.toString() === objB.toString());
+        // }()); //true true
+
+
+
+        // var obj = {
+        //     message: "Hello",
+        //     innerMessage: function () {
+        //         (function () {
+        //             console.log(this.message);
+        //         })();
+        //     }
+        // };
+        // obj.innerMessage(); //undefined
+
+        // var obj = {
+        //     message: "Hello",
+        //     innerMessage: function () {
+        //         var self = this;
+        //         (function () {
+        //             console.log(self.message);
+        //         })();
+        //     }
+        // };
+        // obj.innerMessage(); //Hello
+
+
+        // const obj = {
+        //     prop: 42
+        // };
+        // Object.freeze(obj);
+
+        // obj.prop = 43;
+        // console.log(obj.prop); //42
+
+
+        // const employee = {
+        //     name: "Mayank",
+        //     Hobbies: ["Cricket", "Hockey"],
+        //     address: {
+        //         street: "Bellandur",
+        //         city: "Bangalore"
+        //     }
+        // };
+        // Object.freeze(employee);
+        // employee.name = "Pooja";
+        // employee.address.city = "Noida";
+        // employee.Hobbies[0] = "Game";
+        // console.log(employee.address.city); //Noida
+        // console.log(employee.Hobbies[0]); //Game
+        // console.log(employee.name); //Mayank
+
+
+        // const o1 = { a: 1 };
+        // const o2 = { b: 2 };
+        // const o3 = { c: 3 };
+
+        // const obj = Object.assign(o1, o2, o3);
+        // console.log(obj); // { a: 1, b: 2, c: 3 }
+
+
+        // const obj1 = { a: 1, b: 1, c: 1 };
+        // const obj2 = { b: 2, c: 2 };
+        // const obj3 = { c: 3 };
+
+        // const obj = Object.assign({}, obj1, obj2, obj3);
+        // console.log(obj); // { a: 1, b: 2, c: 3 }
+
+
+        // const obj4 = { a: 1, b: 1, c: 1 };
+        // const obj5 = { b: 2, c: 2 };
+        // const obj6 = { c: 3 };
+
+        // const obj = Object.assign({ d: 5 }, obj4, obj5, obj6);
+        // console.log(obj); // { d: 5, a: 1, b: 2, c: 3 }
+
+
+        const objcn = Object.create(null);
+        objcn.p = 1;
+        console.log("objcn is: " + objcn.p); //1
+
+        // const obj = { 50: "a", 2: "b", 6: "c" };
+        // console.log(Object.keys(obj)); //[2, 6, 50]
+
+        // (function () {
+        //     setTimeout(() => console.log(1), 2000);
+        //     console.log(2);
+        //     setTimeout(() => console.log(3), 0);
+        //     console.log(4);
+        // })(); //2,4,3,1
+    </Script>
+</body>
+
+</html>
