@@ -14,19 +14,21 @@
 </head>
 
 <body>
-
-    <div class="container">
-        <h1>Generate a<p>Randomm Password</p>
-        </h1>
-        <div class="dispaly">
-            <input type="text" id="Password" placeholder="Password">
-            <div onclick="copyPasswod()"><i class="fa-solid fa-copy"></i></div>
+    <div class="app">
+        <h1>Simple Quize</h1>
+        <div class="quiz">
+            <h2 id="question">Question goes here</h2>
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn">Next</button>
         </div>
-        <button onclick="creatPassword()"><i class="fa-solid fa-bolt"></i>Generate Password</button>
     </div>
 
     <script src="./javascript/script.js"></script>
-
 </body>
 
 </html>

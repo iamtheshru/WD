@@ -155,22 +155,26 @@
                 d3 = d2 - d1;
             } else {
                 m3--;
-                d3 = getDaysInMonth(y1, m1) + d2 - d1;  
+                // d3 = getDaysInMonth(y1, m1) + d2 - d1;
+                // console.log(getDaysInMonth(y1, m1));
+                // 1999,01+08-09=31+8-9=30
+                // 31 +08 -09=30
+
             }
 
-            if (m3 < 0) {
-                m3 = 11;
-                y3--;
-            }
+            // if (m3 < 0) {
+            //     m3 = 11;
+            //     y3--;
+            // }
             result.innerHTML = `you are<span>${y3}</span> years,<span>${m3}</span> month and <span>${d3}</span> day old `
         }
 
         function getDaysInMonth(year, month) {
-            console.log(new Date(year, month, 0));
-            return new Date(year, month, 0).getDate();
+            console.log(new Date(year, month, 0).getDate());
+            // return new Date(year, month, 0).getDate();
 
         }
-
+        // getDaysInMonth("2024", "02")
     </script>
 
 </body>

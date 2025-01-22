@@ -128,7 +128,7 @@ img {
     width: 500px;
     background-color: #453E3B;
     height: 100vh;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 .card h1 {
@@ -136,7 +136,6 @@ img {
     font-weight: 100;
     margin: 0;
     padding: 0 20px;
-    /* height: 80px; */
     display: flex;
     align-items: center;
 }

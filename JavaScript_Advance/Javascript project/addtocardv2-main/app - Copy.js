@@ -51,7 +51,6 @@ let product = [
         price: 6000,
     }
 ];
-let listCards = [];
 function initApp() {
     product.forEach((value, key) => {
         let newDiv = document.createElement('div');
@@ -59,17 +58,21 @@ function initApp() {
         newDiv.innerHTML = `
         <img src="image/${value.image}">
         <div class="title">${value.name}</div>
-        <div class="price">${value.price.toLocaleString()}</div>
+        <div class="price">${value.price}</div>
         <button onclick="addToCard(${key})">Add To Card</button>`;
         list.appendChild(newDiv);
     })
 };
 initApp();
+let listCards = [];
 function addToCard(key) {
     if (listCards[key] == null) {
+
         // copy product form list to list card
         listCards[key] = JSON.parse(JSON.stringify(product[key]));
         listCards[key].quantity = 1;
+        // console.log(listCards[key].quantity);
+
     }
     reloadCard();
 }
@@ -78,15 +81,19 @@ function reloadCard() {
     listCard.innerHTML = '';
     let count = 0;
     let totalPrice = 0;
+    // console.log(listCards);
+
     listCards.forEach((value, key) => {
         totalPrice = totalPrice + value.price;
         count = count + value.quantity;
+        console.log(totalPrice);
+
         if (value != null) {
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
                 <div><img src="image/${value.image}"/></div>
                 <div>${value.name}</div>
-                <div>${value.price.toLocaleString()}</div>
+                <div>${value.price}</div>
                 <div>
                 <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
                 <div class="count">${value.quantity}</div>
@@ -95,7 +102,7 @@ function reloadCard() {
             listCard.appendChild(newDiv);
         }
     })
-    total.innerText = totalPrice.toLocaleString();
+    total.innerText = totalPrice;
     quantity.innerText = count;
 }
 
